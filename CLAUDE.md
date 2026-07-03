@@ -22,10 +22,10 @@ For Routerly version `X.Y.Z` on channel `C`:
 
 | Priority | URL path | Example |
 |----------|----------|---------|
-| 1 (highest) | `versions/X.Y.Z.json` | `versions/0.3.0.json` |
-| 2 | `versions/X.Y.json` | `versions/0.3.json` |
-| 3 | `versions/X.json` | `versions/0.json` |
-| 4 | `channels/C.json` | `channels/stable.json` |
+| 1 (highest) | `versions/providers-X.Y.Z.json` | `versions/providers-0.3.0.json` |
+| 2 | `versions/providers-X.Y.json` | `versions/providers-0.3.json` |
+| 3 | `versions/providers-X.json` | `versions/providers-0.json` |
+| 4 | `channels/providers-C.json` | `channels/providers-stable.json` |
 | 5 (lowest) | `providers.json` | `providers.json` |
 
 Files that return HTTP 404 are silently skipped. `providers.json` is always fetched.
@@ -44,13 +44,13 @@ The merge result is: layer 1 wins over layer 2 wins over … wins over layer 5.
 ```
 providers.json            # Stable base catalog. Always fetched.
 versions/
-  X.Y.Z.json              # Exact patch-version override (e.g. 0.3.0.json)
-  X.Y.json                # Minor-version override   (e.g. 0.3.json)
-  X.json                  # Major-version override   (e.g. 0.json)
+  providers-X.Y.Z.json   # Exact patch override  (e.g. providers-0.3.0.json)
+  providers-X.Y.json     # Minor override        (e.g. providers-0.3.json)
+  providers-X.json       # Major override        (e.g. providers-0.json)
 channels/
-  stable.json             # Overrides for the stable release channel
-  latest.json             # Overrides for the latest/edge channel
-  beta.json               # Overrides for the beta channel
+  providers-stable.json  # Stable channel override
+  providers-latest.json  # Latest/edge channel override
+  providers-beta.json    # Beta channel override
 SCHEMA.md                 # Field reference + pricing source URLs
 CLAUDE.md                 # This file
 .github/
