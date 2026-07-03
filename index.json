@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "default": "stable",
+  "channels": {
+    "stable": "providers.json",
+    "latest": "providers-latest.json"
+  },
+  "versions": {
+    "0.3.0": "providers.json",
+    "0.3": "providers.json",
+    "0": "providers.json"
+  }
+}
