@@ -30,18 +30,21 @@ If `index.json` is missing (404), fall back to `providers.json` directly.
 1. Create `providers/providers.YYYYMMDDHHMMSS.json` with the new catalog content.
 2. Compute its SHA-256: `shasum -a 256 providers/providers.YYYYMMDDHHMMSS.json`
 3. Update `index.json`:
-   - Add or update version/channel entries pointing to the new file.
+   - Add or update version/channel entries using semver ranges (same syntax as `package.json`).
    - Add an entry in `providers` with `createdAt`, `updatedAt`, and the checksum.
-   - Multiple versions can point to the same file — zero duplication.
+
+Version ranges work exactly like npm/Composer:
 
 ```json
 "versions": {
-  "0.4.0": "providers/providers.20260901120000.json",
-  "0.3.1": "providers/providers.20260703170500.json",
-  "0.3.0": "providers/providers.20260703170500.json"
+  "^0.4.0": "providers/providers.20260901120000.json",
+  "^0.3.0": "providers/providers.20260703170500.json"
 }
 ```
 
+`^0.3.0` covers `0.3.0`, `0.3.1`, `0.3.5`, etc. — no need to list each explicitly.
+
+Resolution: evaluate all ranges against the Routerly version, pick the most specific match.
 Old files stay in the repo for rollback — just update `index.json` to repoint.
 
 ---
@@ -66,7 +69,7 @@ CLAUDE.md                 # This file
   "schemaVersion": 1,
   "default": "stable",
   "channels": { "stable": "providers/providers.YYYYMMDDHHMMSS.json" },
-  "versions": { "0.3.0": "providers/providers.YYYYMMDDHHMMSS.json" },
+  "versions": { "^0.3.0": "providers/providers.YYYYMMDDHHMMSS.json" },
   "providers": {
     "providers/providers.YYYYMMDDHHMMSS.json": {
       "createdAt": "2026-07-03T17:05:00Z",
