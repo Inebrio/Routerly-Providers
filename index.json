@@ -6,9 +6,7 @@
     "latest": "providers/providers.20260703170500.json"
   },
   "versions": {
-    "0.3.0": "providers/providers.20260703170500.json",
-    "0.3": "providers/providers.20260703170500.json",
-    "0": "providers/providers.20260703170500.json"
+    "^0.3.0": "providers/providers.20260703170500.json"
   },
   "providers": {
     "providers/providers.20260703170500.json": {
