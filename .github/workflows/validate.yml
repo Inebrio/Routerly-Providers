@@ -1,0 +1,17 @@
+name: Validate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate JSON files
+        run: |
+          find . -name "*.json" -not -path "./.git/*" | sort | while read -r f; do
+            node -e "JSON.parse(require('fs').readFileSync(process.argv[1],'utf8')); process.stdout.write('ok  ' + process.argv[1] + '\n')" "$f"
+          done
