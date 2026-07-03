@@ -3,68 +3,92 @@
     "endpoint": "https://api.openai.com/v1",
     "models": [
       {
+        "id": "gpt-5.5",
+        "input": 5,
+        "output": 30,
+        "cache": 0.5,
+        "contextWindow": 400000,
+        "notes": "GPT-5.5 - current frontier model for complex coding and research"
+      },
+      {
+        "id": "gpt-5.4",
+        "input": 2.5,
+        "output": 15,
+        "cache": 0.25,
+        "contextWindow": 400000,
+        "notes": "GPT-5.4"
+      },
+      {
+        "id": "gpt-5.4-mini",
+        "input": 0.75,
+        "output": 4.5,
+        "cache": 0.075,
+        "contextWindow": 400000,
+        "notes": "GPT-5.4 Mini"
+      },
+      {
         "id": "gpt-5.2",
         "input": 1.75,
         "output": 14,
         "cache": 0.175,
-        "contextWindow": 128000,
-        "notes": "Flagship GPT‑5.2 model"
+        "contextWindow": 400000,
+        "notes": "GPT-5.2 (previous frontier)"
       },
       {
         "id": "gpt-5.1",
         "input": 1.25,
         "output": 10,
         "cache": 0.125,
-        "contextWindow": 128000,
-        "notes": "High‑capacity GPT‑5.1 model"
+        "contextWindow": 400000,
+        "notes": "GPT-5.1"
       },
       {
         "id": "gpt-5",
         "input": 1.25,
         "output": 10,
         "cache": 0.125,
-        "contextWindow": 128000,
-        "notes": "Base GPT‑5 model"
+        "contextWindow": 400000,
+        "notes": "Base GPT-5 model"
       },
       {
         "id": "gpt-5-mini",
         "input": 0.25,
         "output": 2,
         "cache": 0.025,
-        "contextWindow": 128000,
-        "notes": "Smaller GPT‑5 variant for cost‑sensitive tasks"
+        "contextWindow": 400000,
+        "notes": "Smaller GPT-5 variant for cost-sensitive tasks"
       },
       {
         "id": "gpt-5-nano",
         "input": 0.05,
         "output": 0.4,
         "cache": 0.005,
-        "contextWindow": 128000,
-        "notes": "Ultra‑compact GPT‑5 variant"
+        "contextWindow": 400000,
+        "notes": "Ultra-compact GPT-5 variant"
       },
       {
         "id": "gpt-4.1",
         "input": 2,
         "output": 8,
         "cache": 0.5,
-        "contextWindow": 128000,
-        "notes": "GPT‑4.1 text model"
+        "contextWindow": 1047576,
+        "notes": "GPT-4.1 text model"
       },
       {
         "id": "gpt-4.1-mini",
         "input": 0.4,
         "output": 1.6,
         "cache": 0.1,
-        "contextWindow": 128000,
-        "notes": "Smaller GPT‑4.1 variant"
+        "contextWindow": 1047576,
+        "notes": "Smaller GPT-4.1 variant"
       },
       {
         "id": "gpt-4.1-nano",
         "input": 0.1,
         "output": 0.4,
         "cache": 0.025,
-        "contextWindow": 128000,
-        "notes": "Ultra‑compact GPT‑4.1 variant"
+        "contextWindow": 1047576,
+        "notes": "Ultra-compact GPT-4.1 variant"
       },
       {
         "id": "gpt-4o",
@@ -72,7 +96,7 @@
         "output": 10,
         "cache": 1.25,
         "contextWindow": 128000,
-        "notes": "GPT‑4o (Omni) multimodal model"
+        "notes": "GPT-4o (Omni) multimodal model"
       },
       {
         "id": "gpt-4o-mini",
@@ -80,38 +104,30 @@
         "output": 0.6,
         "cache": 0.075,
         "contextWindow": 128000,
-        "notes": "Mini variant of GPT‑4o"
+        "notes": "Mini variant of GPT-4o"
       },
       {
         "id": "gpt-realtime",
         "input": 4,
         "output": 16,
         "cache": 0.4,
-        "contextWindow": 128000,
-        "notes": "Low‑latency GPT model for streaming"
+        "contextWindow": 32000,
+        "notes": "Low-latency GPT model for streaming (text token price)"
       },
       {
         "id": "gpt-realtime-mini",
         "input": 0.6,
         "output": 2.4,
         "cache": 0.06,
-        "contextWindow": 128000,
-        "notes": "Compact realtime model"
-      },
-      {
-        "id": "o1",
-        "input": 15,
-        "output": 60,
-        "cache": 7.5,
-        "contextWindow": 128000,
-        "notes": "Large agentic model (o1)"
+        "contextWindow": 32000,
+        "notes": "Compact realtime model (text token price; not verified on live page)"
       },
       {
         "id": "o3",
         "input": 2,
         "output": 8,
         "cache": 0.5,
-        "contextWindow": 128000,
+        "contextWindow": 200000,
         "notes": "Reasoning model (o3)"
       },
       {
@@ -119,8 +135,17 @@
         "input": 1.1,
         "output": 4.4,
         "cache": 0.275,
-        "contextWindow": 128000,
+        "contextWindow": 200000,
         "notes": "Reinforcement-tuned mini model"
+      },
+      {
+        "id": "o1",
+        "input": 15,
+        "output": 60,
+        "cache": 7.5,
+        "contextWindow": 200000,
+        "notes": "Large agentic model (o1), superseded by GPT-5",
+        "deprecated": true
       },
       {
         "id": "text-embedding-3-large",
@@ -128,7 +153,9 @@
         "output": 0,
         "contextWindow": 8191,
         "notes": "OpenAI embedding model (3072-dim)",
-        "capabilities": { "embedding": true }
+        "capabilities": {
+          "embedding": true
+        }
       },
       {
         "id": "text-embedding-3-small",
@@ -136,7 +163,9 @@
         "output": 0,
         "contextWindow": 8191,
         "notes": "OpenAI embedding model (1536-dim, fastest)",
-        "capabilities": { "embedding": true }
+        "capabilities": {
+          "embedding": true
+        }
       },
       {
         "id": "text-embedding-ada-002",
@@ -144,7 +173,9 @@
         "output": 0,
         "contextWindow": 8191,
         "notes": "OpenAI legacy embedding model",
-        "capabilities": { "embedding": true }
+        "capabilities": {
+          "embedding": true
+        }
       }
     ]
   },
@@ -155,10 +186,10 @@
         "id": "claude-fable-5",
         "input": 10,
         "output": 50,
-        "cache": 1.0,
+        "cache": 1,
         "cacheWrite": 12.5,
         "contextWindow": 1000000,
-        "notes": "Claude Fable 5 — most capable model (June 2026)"
+        "notes": "Claude Fable 5 - most capable model"
       },
       {
         "id": "claude-opus-4-8",
@@ -167,7 +198,7 @@
         "cache": 0.5,
         "cacheWrite": 6.25,
         "contextWindow": 1000000,
-        "notes": "Claude Opus 4.8 — flagship model"
+        "notes": "Claude Opus 4.8 - flagship model"
       },
       {
         "id": "claude-opus-4-7",
@@ -197,13 +228,31 @@
         ]
       },
       {
+        "id": "claude-opus-4-5",
+        "input": 5,
+        "output": 25,
+        "cache": 0.5,
+        "cacheWrite": 6.25,
+        "contextWindow": 1000000,
+        "notes": "Claude Opus 4.5"
+      },
+      {
+        "id": "claude-sonnet-5",
+        "input": 3,
+        "output": 15,
+        "cache": 0.3,
+        "cacheWrite": 3.75,
+        "contextWindow": 1000000,
+        "notes": "Claude Sonnet 5. Introductory pricing 2/10 input/output through 2026-08-31, then 3/15"
+      },
+      {
         "id": "claude-sonnet-4-6",
         "input": 3,
         "output": 15,
         "cache": 0.3,
         "cacheWrite": 3.75,
         "contextWindow": 1000000,
-        "notes": "Claude Sonnet 4.6 — balanced speed and intelligence"
+        "notes": "Claude Sonnet 4.6 - balanced speed and intelligence"
       },
       {
         "id": "claude-sonnet-4-5",
@@ -227,8 +276,10 @@
         "id": "claude-haiku-4-5",
         "input": 1,
         "output": 5,
-        "cache": 0.1,        "cacheWrite": 1.25,        "contextWindow": 200000,
-        "notes": "Entry‑level Claude model"
+        "cache": 0.1,
+        "cacheWrite": 1.25,
+        "contextWindow": 200000,
+        "notes": "Claude Haiku 4.5 - entry-level"
       },
       {
         "id": "claude-opus-4-1",
@@ -237,7 +288,8 @@
         "cache": 1.5,
         "cacheWrite": 18.75,
         "contextWindow": 200000,
-        "notes": "Legacy Opus model"
+        "notes": "Legacy Opus model",
+        "deprecated": true
       },
       {
         "id": "claude-sonnet-4-1",
@@ -246,7 +298,8 @@
         "cache": 0.3,
         "cacheWrite": 3.75,
         "contextWindow": 200000,
-        "notes": "Legacy Sonnet model"
+        "notes": "Not present on official pricing; retained deprecated for backward compatibility",
+        "deprecated": true
       }
     ]
   },
@@ -258,21 +311,28 @@
         "input": 0,
         "output": 0,
         "contextWindow": 1000000,
-        "notes": "Claude Fable 5 — most capable model (June 2026)"
+        "notes": "Claude Fable 5 - most capable model"
       },
       {
         "id": "claude-opus-4-8",
         "input": 0,
         "output": 0,
         "contextWindow": 1000000,
-        "notes": "Claude Opus 4.8 — flagship model"
+        "notes": "Claude Opus 4.8 - flagship model"
+      },
+      {
+        "id": "claude-sonnet-5",
+        "input": 0,
+        "output": 0,
+        "contextWindow": 1000000,
+        "notes": "Claude Sonnet 5"
       },
       {
         "id": "claude-sonnet-4-6",
         "input": 0,
         "output": 0,
         "contextWindow": 1000000,
-        "notes": "Claude Sonnet 4.6 — balanced speed and intelligence"
+        "notes": "Claude Sonnet 4.6 - balanced speed and intelligence"
       },
       {
         "id": "claude-sonnet-4-5",
@@ -286,7 +346,7 @@
         "input": 0,
         "output": 0,
         "contextWindow": 200000,
-        "notes": "Claude Haiku 4.5 — entry-level"
+        "notes": "Claude Haiku 4.5 - entry-level"
       }
     ]
   },
@@ -297,25 +357,64 @@
         "id": "gpt-5.5",
         "input": 0,
         "output": 0,
-        "notes": "GPT-5.5 — frontier model for complex coding and research (ChatGPT Plus/Pro)"
+        "notes": "GPT-5.5 - frontier model for complex coding and research (ChatGPT Plus/Pro)"
       },
       {
         "id": "gpt-5.4",
         "input": 0,
         "output": 0,
-        "notes": "GPT-5.4 — strong model for everyday coding (ChatGPT Plus/Pro)"
+        "notes": "GPT-5.4 - strong model for everyday coding (ChatGPT Plus/Pro)"
       },
       {
         "id": "gpt-5.4-mini",
         "input": 0,
         "output": 0,
-        "notes": "GPT-5.4-Mini — fast model for simpler coding tasks (ChatGPT Plus/Pro)"
+        "notes": "GPT-5.4-Mini - fast model for simpler coding tasks (ChatGPT Plus/Pro)"
       }
     ]
   },
   "gemini": {
     "endpoint": "https://generativelanguage.googleapis.com/v1beta/openai/",
     "models": [
+      {
+        "id": "gemini-3.5-flash",
+        "input": 1.5,
+        "output": 9,
+        "cache": 0.15,
+        "notes": "Gemini 3.5 Flash - current flagship (output includes thinking); context window not verified"
+      },
+      {
+        "id": "gemini-3.1-pro-preview",
+        "input": 2,
+        "output": 12,
+        "cache": 0.2,
+        "contextWindow": 2000000,
+        "notes": "Preview of Gemini 3.1 Pro",
+        "pricingTiers": [
+          {
+            "metric": "context_tokens",
+            "above": 200000,
+            "input": 4,
+            "output": 18,
+            "cache": 0.4
+          }
+        ]
+      },
+      {
+        "id": "gemini-3.1-flash-lite",
+        "input": 0.25,
+        "output": 1.5,
+        "cache": 0.025,
+        "notes": "Gemini 3.1 Flash Lite; context window not verified"
+      },
+      {
+        "id": "gemini-3-flash-preview",
+        "input": 0.5,
+        "output": 3,
+        "cache": 0.05,
+        "contextWindow": 2000000,
+        "notes": "Preview of Gemini 3 Flash"
+      },
       {
         "id": "gemini-2.5-pro",
         "input": 1.25,
@@ -350,29 +449,13 @@
         "notes": "Lightweight version of Gemini 2.5 Flash"
       },
       {
-        "id": "gemini-3.1-pro-preview",
-        "input": 2,
-        "output": 12,
-        "cache": 0.2,
-        "contextWindow": 2000000,
-        "notes": "Preview of Gemini 3.1 Pro",
-        "pricingTiers": [
-          {
-            "metric": "context_tokens",
-            "above": 200000,
-            "input": 4,
-            "output": 18,
-            "cache": 0.4
-          }
-        ]
-      },
-      {
         "id": "gemini-3-pro-preview",
         "input": 2,
         "output": 12,
         "cache": 0.2,
         "contextWindow": 2000000,
-        "notes": "Gemini 3 Pro Preview",
+        "notes": "Not GA; superseded by gemini-3.1-pro-preview",
+        "deprecated": true,
         "pricingTiers": [
           {
             "metric": "context_tokens",
@@ -382,28 +465,22 @@
             "cache": 0.4
           }
         ]
-      },
-      {
-        "id": "gemini-3-flash-preview",
-        "input": 0.5,
-        "output": 3,
-        "cache": 0.05,
-        "contextWindow": 2000000,
-        "notes": "Preview of Gemini 3 Flash"
       },
       {
         "id": "gemini-2.0-flash",
         "input": 0.1,
         "output": 0.4,
         "contextWindow": 2000000,
-        "notes": "Gemini 2.0 Flash"
+        "notes": "Gemini 2.0 Flash - shut down 2026-06-01",
+        "deprecated": true
       },
       {
         "id": "gemini-2.0-flash-lite",
         "input": 0.075,
         "output": 0.3,
         "contextWindow": 2000000,
-        "notes": "Gemini 2.0 Flash Lite (no caching)"
+        "notes": "Gemini 2.0 Flash Lite - shut down 2026-06-01",
+        "deprecated": true
       }
     ]
   },
@@ -411,39 +488,81 @@
     "endpoint": "https://api.mistral.ai/v1",
     "models": [
       {
+        "id": "mistral-large-latest",
+        "input": 0.5,
+        "output": 1.5,
+        "notes": "Mistral Large 3 (now cheaper than Medium); context window not verified"
+      },
+      {
+        "id": "mistral-medium-latest",
+        "input": 1.5,
+        "output": 7.5,
+        "notes": "Mistral Medium 3.5; context window not verified"
+      },
+      {
+        "id": "mistral-small-latest",
+        "input": 0.15,
+        "output": 0.6,
+        "notes": "Mistral Small 4; context window not verified"
+      },
+      {
+        "id": "magistral-medium-latest",
+        "input": 2,
+        "output": 5,
+        "notes": "Magistral Medium reasoning model"
+      },
+      {
+        "id": "codestral-latest",
+        "input": 0.3,
+        "output": 0.9,
+        "notes": "Codestral code-specialized model (latest)"
+      },
+      {
+        "id": "open-mixtral-8x7b",
+        "input": 0.7,
+        "output": 0.7,
+        "contextWindow": 32000,
+        "notes": "Mixtral 8x7B mixture-of-experts"
+      },
+      {
         "id": "mistral-small-3.1",
         "input": 0.1,
         "output": 0.3,
         "contextWindow": 128000,
-        "notes": "Small Mistral model"
+        "notes": "Superseded by mistral-small-latest",
+        "deprecated": true
       },
       {
         "id": "mistral-medium-3",
         "input": 0.4,
         "output": 2,
         "contextWindow": 128000,
-        "notes": "Medium‑sized Mistral model"
+        "notes": "Superseded by mistral-medium-latest",
+        "deprecated": true
       },
       {
         "id": "mistral-large-2",
         "input": 2,
         "output": 6,
         "contextWindow": 128000,
-        "notes": "Large Mistral model"
+        "notes": "Superseded by mistral-large-latest",
+        "deprecated": true
       },
       {
         "id": "codestral",
         "input": 1,
         "output": 3,
         "contextWindow": 256000,
-        "notes": "Mistral code‑specialized model"
+        "notes": "Superseded by codestral-latest",
+        "deprecated": true
       },
       {
         "id": "mixtral-8x7b",
         "input": 0.7,
         "output": 0.7,
         "contextWindow": 32000,
-        "notes": "Mixture‑of‑experts Mistral model"
+        "notes": "Use open-mixtral-8x7b instead",
+        "deprecated": true
       }
     ]
   },
@@ -451,53 +570,57 @@
     "endpoint": "https://api.cohere.com/v2",
     "models": [
       {
-        "id": "command",
-        "input": 1,
-        "output": 2,
-        "contextWindow": 128000,
-        "notes": "Original Command model"
-      },
-      {
-        "id": "command-light",
-        "input": 0.3,
-        "output": 0.6,
-        "contextWindow": 128000,
-        "notes": "Lightweight Command variant"
-      },
-      {
-        "id": "command-r-03-2024",
-        "input": 0.5,
-        "output": 1.5,
-        "contextWindow": 128000,
-        "notes": "Command R (March 2024)"
-      },
-      {
-        "id": "command-r-plus-0824",
+        "id": "command-a",
         "input": 2.5,
         "output": 10,
-        "contextWindow": 128000,
-        "notes": "Command R+ (August 2024)"
+        "contextWindow": 256000,
+        "notes": "Agentic and multilingual model (served as command-a-plus-05-2026)"
       },
       {
         "id": "command-r",
         "input": 0.15,
         "output": 0.6,
         "contextWindow": 128000,
-        "notes": "Current Command R"
+        "notes": "Current Command R (08-2024 refresh)"
       },
       {
         "id": "command-r7b",
         "input": 0.0375,
         "output": 0.15,
         "contextWindow": 128000,
-        "notes": "Edge‑optimized 7B model"
+        "notes": "Edge-optimized 7B model; price not published on a live page"
       },
       {
-        "id": "command-a",
+        "id": "command-r-plus-0824",
         "input": 2.5,
         "output": 10,
         "contextWindow": 128000,
-        "notes": "Agentic and multilingual model"
+        "notes": "Command R+ (August 2024) - legacy",
+        "deprecated": true
+      },
+      {
+        "id": "command-r-03-2024",
+        "input": 0.5,
+        "output": 1.5,
+        "contextWindow": 128000,
+        "notes": "Command R (March 2024) - legacy",
+        "deprecated": true
+      },
+      {
+        "id": "command",
+        "input": 1,
+        "output": 2,
+        "contextWindow": 128000,
+        "notes": "Original Command model - legacy",
+        "deprecated": true
+      },
+      {
+        "id": "command-light",
+        "input": 0.3,
+        "output": 0.6,
+        "contextWindow": 128000,
+        "notes": "Lightweight Command variant - legacy",
+        "deprecated": true
       }
     ]
   },
@@ -505,12 +628,29 @@
     "endpoint": "https://api.x.ai/v1",
     "models": [
       {
+        "id": "grok-4.3",
+        "input": 1.25,
+        "output": 2.5,
+        "cache": 0.2,
+        "contextWindow": 1000000,
+        "notes": "Grok 4.3 - current flagship"
+      },
+      {
+        "id": "grok-build-0.1",
+        "input": 1,
+        "output": 2,
+        "cache": 0.2,
+        "contextWindow": 256000,
+        "notes": "Grok Build 0.1 - coding model"
+      },
+      {
         "id": "grok-4.1-fast",
         "input": 0.2,
         "output": 0.5,
         "cache": 0.1,
         "contextWindow": 2000000,
-        "notes": "Grok fast reasoning model with 2M context"
+        "notes": "Retired",
+        "deprecated": true
       },
       {
         "id": "grok-4",
@@ -518,7 +658,8 @@
         "output": 15,
         "cache": 0.75,
         "contextWindow": 256000,
-        "notes": "Flagship Grok 4 model"
+        "notes": "Retired",
+        "deprecated": true
       },
       {
         "id": "grok-3",
@@ -526,20 +667,36 @@
         "output": 10,
         "cache": 0.5,
         "contextWindow": 128000,
-        "notes": "Previous generation Grok"
+        "notes": "Retired",
+        "deprecated": true
       },
       {
         "id": "grok-3-mini",
         "input": 0.1,
         "output": 0.3,
         "contextWindow": 128000,
-        "notes": "Compact Grok model"
+        "notes": "Retired",
+        "deprecated": true
       }
     ]
   },
   "ollama": {
     "endpoint": "http://localhost:11434/v1",
     "models": [
+      {
+        "id": "llama3.3",
+        "input": 0,
+        "output": 0,
+        "contextWindow": 128000,
+        "notes": "Meta Llama 3.3"
+      },
+      {
+        "id": "qwen3",
+        "input": 0,
+        "output": 0,
+        "contextWindow": 128000,
+        "notes": "Alibaba Qwen 3"
+      },
       {
         "id": "llama3.2",
         "input": 0,
@@ -602,7 +759,9 @@
         "output": 0,
         "contextWindow": 8192,
         "notes": "Nomic embedding model for Ollama",
-        "capabilities": { "embedding": true }
+        "capabilities": {
+          "embedding": true
+        }
       },
       {
         "id": "mxbai-embed-large",
@@ -610,7 +769,9 @@
         "output": 0,
         "contextWindow": 512,
         "notes": "MixedBread large embedding model for Ollama",
-        "capabilities": { "embedding": true }
+        "capabilities": {
+          "embedding": true
+        }
       },
       {
         "id": "all-minilm",
@@ -618,7 +779,9 @@
         "output": 0,
         "contextWindow": 512,
         "notes": "all-MiniLM embedding model for Ollama",
-        "capabilities": { "embedding": true }
+        "capabilities": {
+          "embedding": true
+        }
       }
     ]
   },
@@ -626,26 +789,81 @@
     "endpoint": "https://api.deepseek.com/v1",
     "models": [
       {
+        "id": "deepseek-v4-flash",
+        "input": 0.14,
+        "output": 0.28,
+        "cache": 0.0028,
+        "contextWindow": 1000000,
+        "notes": "DeepSeek V4 Flash"
+      },
+      {
+        "id": "deepseek-v4-pro",
+        "input": 0.435,
+        "output": 0.87,
+        "cache": 0.003625,
+        "contextWindow": 1000000,
+        "notes": "DeepSeek V4 Pro"
+      },
+      {
         "id": "deepseek-chat",
-        "input": 0.27,
-        "output": 1.1,
-        "cache": 0.07,
-        "contextWindow": 64000,
-        "notes": "DeepSeek V3 chat model"
+        "input": 0.14,
+        "output": 0.28,
+        "cache": 0.0028,
+        "contextWindow": 1000000,
+        "notes": "Retires 2026-07-24; aliases deepseek-v4-flash non-thinking mode",
+        "deprecated": true
       },
       {
         "id": "deepseek-reasoner",
-        "input": 0.55,
-        "output": 2.19,
-        "cache": 0.14,
-        "contextWindow": 64000,
-        "notes": "DeepSeek R1 reasoning model"
+        "input": 0.14,
+        "output": 0.28,
+        "cache": 0.0028,
+        "contextWindow": 1000000,
+        "notes": "Retires 2026-07-24; aliases deepseek-v4-flash thinking mode",
+        "deprecated": true
       }
     ]
   },
   "groq": {
     "endpoint": "https://api.groq.com/openai/v1",
     "models": [
+      {
+        "id": "openai/gpt-oss-120b",
+        "input": 0.15,
+        "output": 0.6,
+        "cache": 0.075,
+        "contextWindow": 128000,
+        "notes": "GPT-OSS 120B on Groq"
+      },
+      {
+        "id": "openai/gpt-oss-20b",
+        "input": 0.075,
+        "output": 0.3,
+        "cache": 0.0375,
+        "contextWindow": 128000,
+        "notes": "GPT-OSS 20B on Groq"
+      },
+      {
+        "id": "moonshotai/kimi-k2-instruct-0905",
+        "input": 1,
+        "output": 3,
+        "cache": 0.5,
+        "notes": "Kimi K2 Instruct on Groq"
+      },
+      {
+        "id": "meta-llama/llama-4-scout-17b-16e-instruct",
+        "input": 0.11,
+        "output": 0.34,
+        "contextWindow": 128000,
+        "notes": "Llama 4 Scout 17B on Groq"
+      },
+      {
+        "id": "qwen/qwen3-32b",
+        "input": 0.29,
+        "output": 0.59,
+        "contextWindow": 131000,
+        "notes": "Qwen3 32B on Groq"
+      },
       {
         "id": "llama-3.3-70b-versatile",
         "input": 0.59,
@@ -665,21 +883,24 @@
         "input": 0.24,
         "output": 0.24,
         "contextWindow": 32768,
-        "notes": "Mixtral 8x7B on Groq"
+        "notes": "Removed from Groq lineup",
+        "deprecated": true
       },
       {
         "id": "gemma2-9b-it",
         "input": 0.2,
         "output": 0.2,
         "contextWindow": 8192,
-        "notes": "Gemma 2 9B IT on Groq"
+        "notes": "Removed from Groq lineup",
+        "deprecated": true
       },
       {
         "id": "deepseek-r1-distill-llama-70b",
         "input": 0.75,
         "output": 0.99,
         "contextWindow": 128000,
-        "notes": "DeepSeek R1 distilled 70B on Groq"
+        "notes": "Removed from Groq lineup",
+        "deprecated": true
       }
     ]
   },
@@ -687,11 +908,18 @@
     "endpoint": "https://api.together.xyz/v1",
     "models": [
       {
+        "id": "Qwen/Qwen3-235B-A22B-fp8-tput",
+        "input": 0.2,
+        "output": 0.6,
+        "contextWindow": 41000,
+        "notes": "Qwen3 235B MoE on Together"
+      },
+      {
         "id": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
         "input": 0.88,
         "output": 0.88,
         "contextWindow": 131072,
-        "notes": "Llama 3.3 70B Instruct Turbo"
+        "notes": "Llama 3.3 70B Instruct Turbo (list price may have moved to ~1.04)"
       },
       {
         "id": "meta-llama/Llama-3.1-8B-Instruct-Turbo",
@@ -712,14 +940,8 @@
         "input": 7,
         "output": 7,
         "contextWindow": 163840,
-        "notes": "DeepSeek R1 on Together"
-      },
-      {
-        "id": "Qwen/Qwen3-235B-A22B-fp8-tbo",
-        "input": 0.2,
-        "output": 0.6,
-        "contextWindow": 41000,
-        "notes": "Qwen3 235B MoE on Together"
+        "notes": "No longer available on Together Serverless API",
+        "deprecated": true
       }
     ]
   },
@@ -731,28 +953,81 @@
         "input": 1,
         "output": 1,
         "contextWindow": 127000,
-        "notes": "Perplexity Sonar (search-augmented)"
+        "notes": "Perplexity Sonar (search-augmented); per-request search fees apply"
       },
       {
         "id": "sonar-pro",
         "input": 3,
         "output": 15,
         "contextWindow": 200000,
-        "notes": "Perplexity Sonar Pro"
-      },
-      {
-        "id": "sonar-reasoning",
-        "input": 1,
-        "output": 5,
-        "contextWindow": 127000,
-        "notes": "Perplexity Sonar Reasoning"
+        "notes": "Perplexity Sonar Pro; per-request search fees apply"
       },
       {
         "id": "sonar-reasoning-pro",
         "input": 2,
         "output": 8,
         "contextWindow": 127000,
-        "notes": "Perplexity Sonar Reasoning Pro"
+        "notes": "Perplexity Sonar Reasoning Pro; per-request search fees apply"
+      },
+      {
+        "id": "sonar-deep-research",
+        "input": 2,
+        "output": 8,
+        "contextWindow": 127000,
+        "notes": "Perplexity deep research; per-request citation/reasoning/search fees apply"
+      },
+      {
+        "id": "sonar-reasoning",
+        "input": 1,
+        "output": 5,
+        "contextWindow": 127000,
+        "notes": "Removed from Perplexity lineup",
+        "deprecated": true
+      }
+    ]
+  },
+  "fireworks": {
+    "endpoint": "https://api.fireworks.ai/inference/v1",
+    "models": [
+      {
+        "id": "accounts/fireworks/models/deepseek-v4-pro",
+        "input": 1.74,
+        "output": 3.48,
+        "cache": 0.145,
+        "notes": "DeepSeek V4 Pro on Fireworks"
+      },
+      {
+        "id": "accounts/fireworks/models/kimi-k2-instruct-0905",
+        "input": 0.95,
+        "output": 4,
+        "cache": 0.16,
+        "notes": "Kimi K2.6 on Fireworks (verify exact slug against Fireworks model list)"
+      },
+      {
+        "id": "accounts/fireworks/models/gpt-oss-120b",
+        "input": 0.15,
+        "output": 0.6,
+        "cache": 0.015,
+        "notes": "GPT-OSS 120B on Fireworks"
+      },
+      {
+        "id": "accounts/fireworks/models/gpt-oss-20b",
+        "input": 0.07,
+        "output": 0.3,
+        "cache": 0.007,
+        "notes": "GPT-OSS 20B on Fireworks"
+      }
+    ]
+  },
+  "cerebras": {
+    "endpoint": "https://api.cerebras.ai/v1",
+    "models": [
+      {
+        "id": "gpt-oss-120b",
+        "input": 0.35,
+        "output": 0.75,
+        "contextWindow": 131000,
+        "notes": "GPT-OSS 120B on Cerebras (~3000 tok/s)"
       }
     ]
   },

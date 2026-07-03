@@ -25,13 +25,29 @@ https://raw.githubusercontent.com/Inebrio/Routerly-Providers/main/
 
 If `index.json` is missing (404), fall back to `providers.json` directly.
 
-### Adding a new version or updating the catalog
+### Updating the catalog (default path)
 
-1. Create `providers/providers.YYYYMMDDHHMMSS.json` with the new catalog content.
-2. Compute its SHA-256: `shasum -a 256 providers/providers.YYYYMMDDHHMMSS.json`
-3. Update `index.json`:
-   - Add or update version/channel entries using semver ranges (same syntax as `package.json`).
-   - Add an entry in `providers` with `createdAt`, `updatedAt`, and the checksum.
+Catalog files are **mutable**: the normal way to update prices, add models, or add
+providers is to edit the resolved file in place, then refresh its checksum.
+
+1. Edit `providers/providers.YYYYMMDDHHMMSS.json` (the file the current channel/version resolves to).
+2. Recompute its SHA-256: `shasum -a 256 providers/providers.YYYYMMDDHHMMSS.json`
+3. In `index.json`, set the new `checksum.sha256` for that file and bump its `updatedAt`.
+
+No new file, no channel/version repointing needed. This is what routine price and model
+updates should do.
+
+### Cutting a new versioned file (only when needed)
+
+Create a separate timestamped file only when you need a **distinct catalog for a different
+Routerly version range** (for example a breaking schema change that older Routerly builds
+must not receive):
+
+1. Copy the current file to `providers/providers.YYYYMMDDHHMMSS.json` and edit it.
+2. Compute its SHA-256.
+3. In `index.json`: point the relevant version/channel at the new file and add a `providers`
+   registry entry with `createdAt`, `updatedAt`, and the checksum. Keep the old file so older
+   version ranges keep resolving to it.
 
 Version ranges work exactly like npm/Composer:
 
@@ -42,10 +58,9 @@ Version ranges work exactly like npm/Composer:
 }
 ```
 
-`^0.3.0` covers `0.3.0`, `0.3.1`, `0.3.5`, etc. — no need to list each explicitly.
+`^0.3.0` covers `0.3.0`, `0.3.1`, `0.3.5`, etc. No need to list each explicitly.
 
 Resolution: evaluate all ranges against the Routerly version, pick the most specific match.
-Old files stay in the repo for rollback — just update `index.json` to repoint.
 
 ---
 
@@ -54,7 +69,7 @@ Old files stay in the repo for rollback — just update `index.json` to repoint.
 ```
 index.json                # Version/channel → file mapping + checksum registry.
 providers/
-  providers.YYYYMMDDHHMMSS.json  # Immutable catalog snapshots (UTC timestamp).
+  providers.YYYYMMDDHHMMSS.json  # Catalog file (mutable; UTC timestamp in the name).
 SCHEMA.md                 # Field reference + pricing source URLs
 CLAUDE.md                 # This file
 .github/
@@ -142,6 +157,8 @@ Never rename or remove an existing key — operators' project configs reference 
 | `groq` | Groq |
 | `together` | Together AI |
 | `perplexity` | Perplexity |
+| `fireworks` | Fireworks AI |
+| `cerebras` | Cerebras |
 | `custom` | User-defined endpoint |
 | `azure-openai` | Azure OpenAI |
 | `bedrock` | AWS Bedrock |
