@@ -25,32 +25,59 @@ https://raw.githubusercontent.com/Inebrio/Routerly-Providers/main/
 
 If `index.json` is missing (404), fall back to `providers.json` directly.
 
-### Adding a new version
+### Adding a new version or updating the catalog
 
-Just add an entry to `index.json`. Multiple versions can point to the same file — no duplication needed:
+1. Create `providers/providers.YYYYMMDDHHMMSS.json` with the new catalog content.
+2. Compute its SHA-256: `shasum -a 256 providers/providers.YYYYMMDDHHMMSS.json`
+3. Update `index.json`:
+   - Add or update version/channel entries pointing to the new file.
+   - Add an entry in `providers` with `createdAt`, `updatedAt`, and the checksum.
+   - Multiple versions can point to the same file — zero duplication.
 
 ```json
 "versions": {
-  "0.3.1": "providers.json",
-  "0.3.0": "providers.json",
-  "0.3":   "providers.json"
+  "0.4.0": "providers/providers.20260901120000.json",
+  "0.3.1": "providers/providers.20260703170500.json",
+  "0.3.0": "providers/providers.20260703170500.json"
 }
 ```
+
+Old files stay in the repo for rollback — just update `index.json` to repoint.
 
 ---
 
 ## Directory structure
 
 ```
-index.json                # Version/channel → file mapping. Routerly reads this first.
-providers.json            # Stable catalog (default).
-providers-latest.json     # Latest/edge additions (empty = use stable).
+index.json                # Version/channel → file mapping + checksum registry.
+providers/
+  providers.YYYYMMDDHHMMSS.json  # Immutable catalog snapshots (UTC timestamp).
 SCHEMA.md                 # Field reference + pricing source URLs
 CLAUDE.md                 # This file
 .github/
   workflows/
     validate.yml          # CI: validates all JSON files on push/PR
 ```
+
+### index.json structure
+
+```json
+{
+  "schemaVersion": 1,
+  "default": "stable",
+  "channels": { "stable": "providers/providers.YYYYMMDDHHMMSS.json" },
+  "versions": { "0.3.0": "providers/providers.YYYYMMDDHHMMSS.json" },
+  "providers": {
+    "providers/providers.YYYYMMDDHHMMSS.json": {
+      "createdAt": "2026-07-03T17:05:00Z",
+      "updatedAt": "2026-07-03T17:05:00Z",
+      "checksum": { "sha256": "<hex>" }
+    }
+  }
+}
+```
+
+`providers` acts as an integrity registry — Routerly can verify the downloaded file against the checksum before using it.
 
 ---
 
