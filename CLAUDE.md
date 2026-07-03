@@ -8,58 +8,49 @@ No git clone, no database — just JSON files served by GitHub.
 
 ## Fetch mechanism
 
-Routerly resolves the catalog by fetching files in order from most specific to least specific,
-merging each layer on top of the previous (earlier = higher priority). The base URL for each
-configured repo is its GitHub raw content root, e.g.:
+Routerly fetches `index.json` first, resolves the right file for its version/channel, then
+fetches that single file. No layering, no merging — one file per resolution.
+
+The base URL for each configured repo is its GitHub raw content root, e.g.:
 
 ```
 https://raw.githubusercontent.com/Inebrio/Routerly-Providers/main/
 ```
 
-### Resolution order (most specific first)
+### Resolution
 
-For Routerly version `X.Y.Z` on channel `C`:
+1. Fetch `index.json`
+2. Look up the Routerly version (`X.Y.Z` → `X.Y` → `X`) then the channel, then `default`
+3. Fetch the file at the resolved path
 
-| Priority | URL path | Example |
-|----------|----------|---------|
-| 1 (highest) | `versions/providers-X.Y.Z.json` | `versions/providers-0.3.0.json` |
-| 2 | `versions/providers-X.Y.json` | `versions/providers-0.3.json` |
-| 3 | `versions/providers-X.json` | `versions/providers-0.json` |
-| 4 | `channels/providers-C.json` | `channels/providers-stable.json` |
-| 5 (lowest) | `providers.json` | `providers.json` |
+If `index.json` is missing (404), fall back to `providers.json` directly.
 
-Files that return HTTP 404 are silently skipped. `providers.json` is always fetched.
-The merge result is: layer 1 wins over layer 2 wins over … wins over layer 5.
+### Adding a new version
 
-### Merge rules
+Just add an entry to `index.json`. Multiple versions can point to the same file — no duplication needed:
 
-- Provider key not present in higher layer → inherited from lower layer.
-- Provider key present in higher layer → models merged by `id`. Higher layer's model wins on conflict; missing IDs are added from lower layer.
-- `endpoint` override: higher layer wins if present and non-empty.
+```json
+"versions": {
+  "0.3.1": "providers.json",
+  "0.3.0": "providers.json",
+  "0.3":   "providers.json"
+}
+```
 
 ---
 
 ## Directory structure
 
 ```
-providers.json            # Stable base catalog. Always fetched.
-versions/
-  providers-X.Y.Z.json   # Exact patch override  (e.g. providers-0.3.0.json)
-  providers-X.Y.json     # Minor override        (e.g. providers-0.3.json)
-  providers-X.json       # Major override        (e.g. providers-0.json)
-channels/
-  providers-stable.json  # Stable channel override
-  providers-latest.json  # Latest/edge channel override
-  providers-beta.json    # Beta channel override
+index.json                # Version/channel → file mapping. Routerly reads this first.
+providers.json            # Stable catalog (default).
+providers-latest.json     # Latest/edge additions (empty = use stable).
 SCHEMA.md                 # Field reference + pricing source URLs
 CLAUDE.md                 # This file
 .github/
   workflows/
     validate.yml          # CI: validates all JSON files on push/PR
 ```
-
-**Keep version and channel files minimal** — only include providers/models that genuinely
-differ from `providers.json`. Empty `{}` is valid and means "use base catalog for this layer".
 
 ---
 
@@ -135,10 +126,8 @@ implement the adapter — the key here only affects the UI (Discover, ModelForm 
 
 1. Check the official pricing page (see `SCHEMA.md` for URLs).
 2. Convert to USD per 1M tokens.
-3. Edit the model entry in `providers.json`.
-4. If the change should only apply to a specific version/channel, edit the appropriate
-   file in `versions/` or `channels/` instead.
-5. Never delete a model — set `"deprecated": true` to hide it from new project creation
+3. Edit the model entry in `providers.json` (or the file that channel/version resolves to).
+4. Never delete a model — set `"deprecated": true` to hide it from new project creation
    while keeping backward compatibility for existing configs.
 
 ---
