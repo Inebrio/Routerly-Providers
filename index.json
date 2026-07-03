@@ -2,12 +2,21 @@
   "schemaVersion": 1,
   "default": "stable",
   "channels": {
-    "stable": "providers.json",
-    "latest": "providers-latest.json"
+    "stable": "providers/providers.20260703170500.json",
+    "latest": "providers/providers.20260703170500.json"
   },
   "versions": {
-    "0.3.0": "providers.json",
-    "0.3": "providers.json",
-    "0": "providers.json"
+    "0.3.0": "providers/providers.20260703170500.json",
+    "0.3": "providers/providers.20260703170500.json",
+    "0": "providers/providers.20260703170500.json"
+  },
+  "providers": {
+    "providers/providers.20260703170500.json": {
+      "createdAt": "2026-07-03T17:05:00Z",
+      "updatedAt": "2026-07-03T17:05:00Z",
+      "checksum": {
+        "sha256": "414c0f390c7fa3122ad3a622bc4cc55ee36d91bd9e6f45fd7e49cc8a38f8b179"
+      }
+    }
   }
 }
