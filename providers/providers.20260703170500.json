@@ -11,6 +11,13 @@
         "notes": "GPT-5.5 - current frontier model for complex coding and research"
       },
       {
+        "id": "gpt-5.5-pro",
+        "input": 30,
+        "output": 180,
+        "contextWindow": 400000,
+        "notes": "GPT-5.5 Pro - extended-reasoning variant (no cached-input price on the official page)"
+      },
+      {
         "id": "gpt-5.4",
         "input": 2.5,
         "output": 15,
@@ -19,12 +26,35 @@
         "notes": "GPT-5.4"
       },
       {
+        "id": "gpt-5.4-pro",
+        "input": 30,
+        "output": 180,
+        "contextWindow": 400000,
+        "notes": "GPT-5.4 Pro - extended-reasoning variant (no cached-input price on the official page)"
+      },
+      {
         "id": "gpt-5.4-mini",
         "input": 0.75,
         "output": 4.5,
         "cache": 0.075,
         "contextWindow": 400000,
         "notes": "GPT-5.4 Mini"
+      },
+      {
+        "id": "gpt-5.4-nano",
+        "input": 0.2,
+        "output": 1.25,
+        "cache": 0.02,
+        "contextWindow": 400000,
+        "notes": "Ultra-compact GPT-5.4 variant"
+      },
+      {
+        "id": "gpt-5.3-codex",
+        "input": 1.75,
+        "output": 14,
+        "cache": 0.175,
+        "contextWindow": 400000,
+        "notes": "GPT-5.3 Codex - coding-specialized; context window follows GPT-5 family (not separately verified)"
       },
       {
         "id": "gpt-5.2",
@@ -192,6 +222,15 @@
         "notes": "Claude Fable 5 - most capable model"
       },
       {
+        "id": "claude-mythos-5",
+        "input": 10,
+        "output": 50,
+        "cache": 1,
+        "cacheWrite": 12.5,
+        "contextWindow": 1000000,
+        "notes": "Claude Mythos 5 - frontier tier, limited availability (glasswing)"
+      },
+      {
         "id": "claude-opus-4-8",
         "input": 5,
         "output": 25,
@@ -216,16 +255,7 @@
         "cache": 0.5,
         "cacheWrite": 6.25,
         "contextWindow": 1000000,
-        "notes": "Claude Opus 4.6",
-        "pricingTiers": [
-          {
-            "metric": "context_tokens",
-            "above": 200000,
-            "input": 10,
-            "output": 37.5,
-            "cache": 1.5
-          }
-        ]
+        "notes": "Claude Opus 4.6 - full 1M context at standard pricing (no long-context surcharge per official pricing)"
       },
       {
         "id": "claude-opus-4-5",
