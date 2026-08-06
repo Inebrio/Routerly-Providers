@@ -25,8 +25,21 @@
 | `contextWindow` | number | No | Maximum context size in tokens. |
 | `notes` | string | No | Human-readable description. Shown in the Routerly dashboard. |
 | `deprecated` | boolean | No | If true, hidden from new project creation. Existing configs still work. |
-| `capabilities` | object | No | Capability flags. Currently only `{ "embedding": true }`. |
+| `capabilities` | object | No | Capability flags. See table below. |
+| `stripParams` | string[] | No | Request body parameter names to remove before forwarding to this model (e.g. `["temperature"]` for models that reject it). Only list params the model explicitly rejects with a 400. |
 | `pricingTiers` | PricingTier[] | No | Tiered pricing overrides. |
+
+## ModelCapabilities
+
+All flags are optional booleans. Omitting a flag means unknown / not relevant.
+
+| Flag | Description |
+|------|-------------|
+| `embedding` | Model produces embedding vectors (not chat completions). |
+| `thinking` | Model supports extended/chain-of-thought reasoning (Anthropic `thinking` blocks, OpenAI `reasoning_effort`). |
+| `vision` | Model accepts image inputs in the messages array. |
+| `functionCalling` | Model supports tool/function-call protocol. |
+| `json` | Model supports strict JSON output mode. |
 
 ## PricingTier
 

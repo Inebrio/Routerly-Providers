@@ -8,7 +8,10 @@
         "output": 30,
         "cache": 0.5,
         "contextWindow": 400000,
-        "notes": "GPT-5.5 - current frontier model for complex coding and research"
+        "notes": "GPT-5.5 - current frontier model for complex coding and research",
+        "capabilities": {
+          "vision": true
+        }
       },
       {
         "id": "gpt-5.5-pro",
@@ -23,7 +26,10 @@
         "output": 15,
         "cache": 0.25,
         "contextWindow": 400000,
-        "notes": "GPT-5.4"
+        "notes": "GPT-5.4",
+        "capabilities": {
+          "vision": true
+        }
       },
       {
         "id": "gpt-5.4-pro",
@@ -38,7 +44,10 @@
         "output": 4.5,
         "cache": 0.075,
         "contextWindow": 400000,
-        "notes": "GPT-5.4 Mini"
+        "notes": "GPT-5.4 Mini",
+        "capabilities": {
+          "vision": true
+        }
       },
       {
         "id": "gpt-5.4-nano",
@@ -46,7 +55,10 @@
         "output": 1.25,
         "cache": 0.02,
         "contextWindow": 400000,
-        "notes": "Ultra-compact GPT-5.4 variant"
+        "notes": "Ultra-compact GPT-5.4 variant",
+        "capabilities": {
+          "vision": true
+        }
       },
       {
         "id": "gpt-5.3-codex",
@@ -54,7 +66,10 @@
         "output": 14,
         "cache": 0.175,
         "contextWindow": 400000,
-        "notes": "GPT-5.3 Codex - coding-specialized; context window follows GPT-5 family (not separately verified)"
+        "notes": "GPT-5.3 Codex - coding-specialized; context window follows GPT-5 family (not separately verified)",
+        "capabilities": {
+          "vision": true
+        }
       },
       {
         "id": "gpt-5.2",
@@ -62,7 +77,10 @@
         "output": 14,
         "cache": 0.175,
         "contextWindow": 400000,
-        "notes": "GPT-5.2 (previous frontier)"
+        "notes": "GPT-5.2 (previous frontier)",
+        "capabilities": {
+          "vision": true
+        }
       },
       {
         "id": "gpt-5.1",
@@ -70,7 +88,10 @@
         "output": 10,
         "cache": 0.125,
         "contextWindow": 400000,
-        "notes": "GPT-5.1"
+        "notes": "GPT-5.1",
+        "capabilities": {
+          "vision": true
+        }
       },
       {
         "id": "gpt-5",
@@ -78,7 +99,10 @@
         "output": 10,
         "cache": 0.125,
         "contextWindow": 400000,
-        "notes": "Base GPT-5 model"
+        "notes": "Base GPT-5 model",
+        "capabilities": {
+          "vision": true
+        }
       },
       {
         "id": "gpt-5-mini",
@@ -86,7 +110,13 @@
         "output": 2,
         "cache": 0.025,
         "contextWindow": 400000,
-        "notes": "Smaller GPT-5 variant for cost-sensitive tasks"
+        "notes": "Smaller GPT-5 variant for cost-sensitive tasks",
+        "stripParams": [
+          "temperature"
+        ],
+        "capabilities": {
+          "vision": true
+        }
       },
       {
         "id": "gpt-5-nano",
@@ -94,7 +124,13 @@
         "output": 0.4,
         "cache": 0.005,
         "contextWindow": 400000,
-        "notes": "Ultra-compact GPT-5 variant"
+        "notes": "Ultra-compact GPT-5 variant",
+        "stripParams": [
+          "temperature"
+        ],
+        "capabilities": {
+          "vision": true
+        }
       },
       {
         "id": "gpt-4.1",
@@ -102,7 +138,10 @@
         "output": 8,
         "cache": 0.5,
         "contextWindow": 1047576,
-        "notes": "GPT-4.1 text model"
+        "notes": "GPT-4.1 text model",
+        "capabilities": {
+          "vision": true
+        }
       },
       {
         "id": "gpt-4.1-mini",
@@ -110,7 +149,10 @@
         "output": 1.6,
         "cache": 0.1,
         "contextWindow": 1047576,
-        "notes": "Smaller GPT-4.1 variant"
+        "notes": "Smaller GPT-4.1 variant",
+        "capabilities": {
+          "vision": true
+        }
       },
       {
         "id": "gpt-4.1-nano",
@@ -118,7 +160,10 @@
         "output": 0.4,
         "cache": 0.025,
         "contextWindow": 1047576,
-        "notes": "Ultra-compact GPT-4.1 variant"
+        "notes": "Ultra-compact GPT-4.1 variant",
+        "capabilities": {
+          "vision": true
+        }
       },
       {
         "id": "gpt-4o",
@@ -126,7 +171,10 @@
         "output": 10,
         "cache": 1.25,
         "contextWindow": 128000,
-        "notes": "GPT-4o (Omni) multimodal model"
+        "notes": "GPT-4o (Omni) multimodal model",
+        "capabilities": {
+          "vision": true
+        }
       },
       {
         "id": "gpt-4o-mini",
@@ -134,7 +182,10 @@
         "output": 0.6,
         "cache": 0.075,
         "contextWindow": 128000,
-        "notes": "Mini variant of GPT-4o"
+        "notes": "Mini variant of GPT-4o",
+        "capabilities": {
+          "vision": true
+        }
       },
       {
         "id": "gpt-realtime",
@@ -219,7 +270,11 @@
         "cache": 1,
         "cacheWrite": 12.5,
         "contextWindow": 1000000,
-        "notes": "Claude Fable 5 - most capable model"
+        "notes": "Claude Fable 5 - most capable model",
+        "capabilities": {
+          "thinking": true,
+          "vision": true
+        }
       },
       {
         "id": "claude-mythos-5",
@@ -228,7 +283,11 @@
         "cache": 1,
         "cacheWrite": 12.5,
         "contextWindow": 1000000,
-        "notes": "Claude Mythos 5 - frontier tier, limited availability (glasswing)"
+        "notes": "Claude Mythos 5 - frontier tier, limited availability (glasswing)",
+        "capabilities": {
+          "thinking": true,
+          "vision": true
+        }
       },
       {
         "id": "claude-opus-4-8",
@@ -237,7 +296,11 @@
         "cache": 0.5,
         "cacheWrite": 6.25,
         "contextWindow": 1000000,
-        "notes": "Claude Opus 4.8 - flagship model"
+        "notes": "Claude Opus 4.8 - flagship model",
+        "capabilities": {
+          "thinking": true,
+          "vision": true
+        }
       },
       {
         "id": "claude-opus-4-7",
@@ -246,7 +309,11 @@
         "cache": 0.5,
         "cacheWrite": 6.25,
         "contextWindow": 1000000,
-        "notes": "Claude Opus 4.7"
+        "notes": "Claude Opus 4.7",
+        "capabilities": {
+          "thinking": true,
+          "vision": true
+        }
       },
       {
         "id": "claude-opus-4-6",
@@ -255,7 +322,11 @@
         "cache": 0.5,
         "cacheWrite": 6.25,
         "contextWindow": 1000000,
-        "notes": "Claude Opus 4.6 - full 1M context at standard pricing (no long-context surcharge per official pricing)"
+        "notes": "Claude Opus 4.6 - full 1M context at standard pricing (no long-context surcharge per official pricing)",
+        "capabilities": {
+          "thinking": true,
+          "vision": true
+        }
       },
       {
         "id": "claude-opus-4-5",
@@ -264,7 +335,11 @@
         "cache": 0.5,
         "cacheWrite": 6.25,
         "contextWindow": 1000000,
-        "notes": "Claude Opus 4.5"
+        "notes": "Claude Opus 4.5",
+        "capabilities": {
+          "thinking": true,
+          "vision": true
+        }
       },
       {
         "id": "claude-sonnet-5",
@@ -273,7 +348,11 @@
         "cache": 0.3,
         "cacheWrite": 3.75,
         "contextWindow": 1000000,
-        "notes": "Claude Sonnet 5. Introductory pricing 2/10 input/output through 2026-08-31, then 3/15"
+        "notes": "Claude Sonnet 5. Introductory pricing 2/10 input/output through 2026-08-31, then 3/15",
+        "capabilities": {
+          "thinking": true,
+          "vision": true
+        }
       },
       {
         "id": "claude-sonnet-4-6",
@@ -282,7 +361,11 @@
         "cache": 0.3,
         "cacheWrite": 3.75,
         "contextWindow": 1000000,
-        "notes": "Claude Sonnet 4.6 - balanced speed and intelligence"
+        "notes": "Claude Sonnet 4.6 - balanced speed and intelligence",
+        "capabilities": {
+          "thinking": true,
+          "vision": true
+        }
       },
       {
         "id": "claude-sonnet-4-5",
@@ -300,7 +383,11 @@
             "output": 22.5,
             "cache": 0.6
           }
-        ]
+        ],
+        "capabilities": {
+          "thinking": true,
+          "vision": true
+        }
       },
       {
         "id": "claude-haiku-4-5",
@@ -309,7 +396,10 @@
         "cache": 0.1,
         "cacheWrite": 1.25,
         "contextWindow": 200000,
-        "notes": "Claude Haiku 4.5 - entry-level"
+        "notes": "Claude Haiku 4.5 - entry-level",
+        "capabilities": {
+          "vision": true
+        }
       },
       {
         "id": "claude-opus-4-1",
@@ -319,7 +409,11 @@
         "cacheWrite": 18.75,
         "contextWindow": 200000,
         "notes": "Legacy Opus model",
-        "deprecated": true
+        "deprecated": true,
+        "capabilities": {
+          "thinking": true,
+          "vision": true
+        }
       },
       {
         "id": "claude-sonnet-4-1",
@@ -329,7 +423,10 @@
         "cacheWrite": 3.75,
         "contextWindow": 200000,
         "notes": "Not present on official pricing; retained deprecated for backward compatibility",
-        "deprecated": true
+        "deprecated": true,
+        "capabilities": {
+          "vision": true
+        }
       }
     ]
   },
@@ -341,42 +438,65 @@
         "input": 0,
         "output": 0,
         "contextWindow": 1000000,
-        "notes": "Claude Fable 5 - most capable model"
+        "notes": "Claude Fable 5 - most capable model",
+        "capabilities": {
+          "thinking": true,
+          "vision": true
+        }
       },
       {
         "id": "claude-opus-4-8",
         "input": 0,
         "output": 0,
         "contextWindow": 1000000,
-        "notes": "Claude Opus 4.8 - flagship model"
+        "notes": "Claude Opus 4.8 - flagship model",
+        "capabilities": {
+          "thinking": true,
+          "vision": true
+        }
       },
       {
         "id": "claude-sonnet-5",
         "input": 0,
         "output": 0,
         "contextWindow": 1000000,
-        "notes": "Claude Sonnet 5"
+        "notes": "Claude Sonnet 5",
+        "capabilities": {
+          "thinking": true,
+          "vision": true
+        }
       },
       {
         "id": "claude-sonnet-4-6",
         "input": 0,
         "output": 0,
         "contextWindow": 1000000,
-        "notes": "Claude Sonnet 4.6 - balanced speed and intelligence"
+        "notes": "Claude Sonnet 4.6 - balanced speed and intelligence",
+        "capabilities": {
+          "thinking": true,
+          "vision": true
+        }
       },
       {
         "id": "claude-sonnet-4-5",
         "input": 0,
         "output": 0,
         "contextWindow": 200000,
-        "notes": "Claude Sonnet 4.5"
+        "notes": "Claude Sonnet 4.5",
+        "capabilities": {
+          "thinking": true,
+          "vision": true
+        }
       },
       {
         "id": "claude-haiku-4-5",
         "input": 0,
         "output": 0,
         "contextWindow": 200000,
-        "notes": "Claude Haiku 4.5 - entry-level"
+        "notes": "Claude Haiku 4.5 - entry-level",
+        "capabilities": {
+          "vision": true
+        }
       }
     ]
   },
@@ -387,19 +507,28 @@
         "id": "gpt-5.5",
         "input": 0,
         "output": 0,
-        "notes": "GPT-5.5 - frontier model for complex coding and research (ChatGPT Plus/Pro)"
+        "notes": "GPT-5.5 - frontier model for complex coding and research (ChatGPT Plus/Pro)",
+        "capabilities": {
+          "vision": true
+        }
       },
       {
         "id": "gpt-5.4",
         "input": 0,
         "output": 0,
-        "notes": "GPT-5.4 - strong model for everyday coding (ChatGPT Plus/Pro)"
+        "notes": "GPT-5.4 - strong model for everyday coding (ChatGPT Plus/Pro)",
+        "capabilities": {
+          "vision": true
+        }
       },
       {
         "id": "gpt-5.4-mini",
         "input": 0,
         "output": 0,
-        "notes": "GPT-5.4-Mini - fast model for simpler coding tasks (ChatGPT Plus/Pro)"
+        "notes": "GPT-5.4-Mini - fast model for simpler coding tasks (ChatGPT Plus/Pro)",
+        "capabilities": {
+          "vision": true
+        }
       }
     ]
   },
@@ -946,10 +1075,10 @@
       },
       {
         "id": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
-        "input": 0.88,
-        "output": 0.88,
+        "input": 1.04,
+        "output": 1.04,
         "contextWindow": 131072,
-        "notes": "Llama 3.3 70B Instruct Turbo (list price may have moved to ~1.04)"
+        "notes": "Llama 3.3 70B Instruct Turbo"
       },
       {
         "id": "meta-llama/Llama-3.1-8B-Instruct-Turbo",
@@ -1074,21 +1203,30 @@
         "output": 15,
         "cache": 2.5,
         "contextWindow": 128000,
-        "notes": "GPT-4o via Azure OpenAI"
+        "notes": "GPT-4o via Azure OpenAI",
+        "capabilities": {
+          "vision": true
+        }
       },
       {
         "id": "gpt-4o-mini",
         "input": 0.165,
         "output": 0.66,
         "contextWindow": 128000,
-        "notes": "GPT-4o mini via Azure OpenAI"
+        "notes": "GPT-4o mini via Azure OpenAI",
+        "capabilities": {
+          "vision": true
+        }
       },
       {
         "id": "gpt-4-turbo",
         "input": 10,
         "output": 30,
         "contextWindow": 128000,
-        "notes": "GPT-4 Turbo via Azure OpenAI"
+        "notes": "GPT-4 Turbo via Azure OpenAI",
+        "capabilities": {
+          "vision": true
+        }
       }
     ]
   },
