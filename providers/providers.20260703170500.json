@@ -3,6 +3,61 @@
     "endpoint": "https://api.openai.com/v1",
     "models": [
       {
+        "id": "o3-mini",
+        "input": 1.1,
+        "output": 4.4,
+        "cache": 0.55,
+        "contextWindow": 200000,
+        "notes": "o3-mini reasoning model"
+      },
+      {
+        "id": "gpt-5-pro",
+        "input": 15,
+        "output": 120,
+        "contextWindow": 400000,
+        "notes": "GPT-5 Pro - extended-reasoning variant (no cached-input price on the official page)"
+      },
+      {
+        "id": "gpt-5.2-pro",
+        "input": 21,
+        "output": 168,
+        "contextWindow": 400000,
+        "notes": "GPT-5.2 Pro - extended-reasoning variant (no cached-input price on the official page)"
+      },
+      {
+        "id": "gpt-5.6-cyber",
+        "input": 12.5,
+        "output": 75,
+        "cache": 1.25,
+        "cacheWrite": 15.625,
+        "contextWindow": 400000,
+        "notes": "GPT-5.6 Cyber - Daybreak program variant (gpt-daybreak-red-latest alias); no long-context tier",
+        "capabilities": {
+          "vision": true
+        }
+      },
+      {
+        "id": "gpt-6-astra",
+        "input": 10,
+        "output": 50,
+        "cache": 1,
+        "cacheWrite": 12.5,
+        "contextWindow": 400000,
+        "notes": "GPT-6 Astra - new top-tier flagship, above GPT-5.6 Sol",
+        "capabilities": {
+          "vision": true
+        },
+        "pricingTiers": [
+          {
+            "metric": "context_tokens",
+            "above": 272000,
+            "input": 20,
+            "output": 75,
+            "cache": 2
+          }
+        ]
+      },
+      {
         "id": "gpt-realtime-2.1-mini",
         "input": 0.6,
         "output": 2.4,
@@ -42,7 +97,16 @@
         "notes": "GPT-5.6 Luna - compact variant",
         "capabilities": {
           "vision": true
-        }
+        },
+        "pricingTiers": [
+          {
+            "metric": "context_tokens",
+            "above": 272000,
+            "input": 0.4,
+            "output": 1.8,
+            "cache": 0.04
+          }
+        ]
       },
       {
         "id": "gpt-5.6-terra",
@@ -54,19 +118,37 @@
         "notes": "GPT-5.6 Terra",
         "capabilities": {
           "vision": true
-        }
+        },
+        "pricingTiers": [
+          {
+            "metric": "context_tokens",
+            "above": 272000,
+            "input": 4,
+            "output": 18,
+            "cache": 0.4
+          }
+        ]
       },
       {
         "id": "gpt-5.6-sol",
-        "input": 5,
-        "output": 30,
-        "cache": 0.5,
-        "cacheWrite": 6.25,
+        "input": 4,
+        "output": 20,
+        "cache": 0.4,
+        "cacheWrite": 5,
         "contextWindow": 400000,
-        "notes": "GPT-5.6 Sol - new flagship",
+        "notes": "GPT-5.6 Sol - new flagship; promotional pricing (was $5/$30) in effect at least through 2026-11-21 per official pricing page",
         "capabilities": {
           "vision": true
-        }
+        },
+        "pricingTiers": [
+          {
+            "metric": "context_tokens",
+            "above": 272000,
+            "input": 8,
+            "output": 30,
+            "cache": 0.8
+          }
+        ]
       },
       {
         "id": "gpt-5.5",
@@ -77,14 +159,31 @@
         "notes": "GPT-5.5 - current frontier model for complex coding and research",
         "capabilities": {
           "vision": true
-        }
+        },
+        "pricingTiers": [
+          {
+            "metric": "context_tokens",
+            "above": 272000,
+            "input": 10,
+            "output": 45,
+            "cache": 1
+          }
+        ]
       },
       {
         "id": "gpt-5.5-pro",
         "input": 30,
         "output": 180,
         "contextWindow": 400000,
-        "notes": "GPT-5.5 Pro - extended-reasoning variant (no cached-input price on the official page)"
+        "notes": "GPT-5.5 Pro - extended-reasoning variant (no cached-input price on the official page)",
+        "pricingTiers": [
+          {
+            "metric": "context_tokens",
+            "above": 272000,
+            "input": 60,
+            "output": 270
+          }
+        ]
       },
       {
         "id": "gpt-5.4",
@@ -95,14 +194,31 @@
         "notes": "GPT-5.4",
         "capabilities": {
           "vision": true
-        }
+        },
+        "pricingTiers": [
+          {
+            "metric": "context_tokens",
+            "above": 272000,
+            "input": 5,
+            "output": 22.5,
+            "cache": 0.5
+          }
+        ]
       },
       {
         "id": "gpt-5.4-pro",
         "input": 30,
         "output": 180,
         "contextWindow": 400000,
-        "notes": "GPT-5.4 Pro - extended-reasoning variant (no cached-input price on the official page)"
+        "notes": "GPT-5.4 Pro - extended-reasoning variant (no cached-input price on the official page)",
+        "pricingTiers": [
+          {
+            "metric": "context_tokens",
+            "above": 272000,
+            "input": 60,
+            "output": 270
+          }
+        ]
       },
       {
         "id": "gpt-5.4-mini",
@@ -330,6 +446,32 @@
     "endpoint": "https://api.anthropic.com",
     "models": [
       {
+        "id": "claude-mythos-5-1",
+        "input": 10,
+        "output": 50,
+        "cache": 0.25,
+        "cacheWrite": 12.5,
+        "contextWindow": 1000000,
+        "notes": "Claude Mythos 5.1 - frontier tier, limited availability; cache hits priced at 0.025x base input (non-standard)",
+        "capabilities": {
+          "thinking": true,
+          "vision": true
+        }
+      },
+      {
+        "id": "claude-fable-5-1",
+        "input": 10,
+        "output": 50,
+        "cache": 0.25,
+        "cacheWrite": 12.5,
+        "contextWindow": 1000000,
+        "notes": "Claude Fable 5.1 - cache hits priced at 0.025x base input (non-standard; all other Claude models use 0.1x)",
+        "capabilities": {
+          "thinking": true,
+          "vision": true
+        }
+      },
+      {
         "id": "claude-opus-5",
         "input": 5,
         "output": 25,
@@ -513,6 +655,17 @@
     "endpoint": "https://api.anthropic.com",
     "models": [
       {
+        "id": "claude-fable-5-1",
+        "input": 0,
+        "output": 0,
+        "contextWindow": 1000000,
+        "notes": "Claude Fable 5.1",
+        "capabilities": {
+          "thinking": true,
+          "vision": true
+        }
+      },
+      {
         "id": "claude-opus-5",
         "input": 0,
         "output": 0,
@@ -626,6 +779,20 @@
     "endpoint": "https://generativelanguage.googleapis.com/v1beta/openai/",
     "models": [
       {
+        "id": "gemini-3.7-flash",
+        "input": 0.75,
+        "output": 3.75,
+        "cache": 0.075,
+        "notes": "Gemini 3.7 Flash - high-speed everyday coding/agentic model; intro price through 2026-12-31, rises to $1.50/$7.50/$0.15 on 2027-01-01; context window not verified"
+      },
+      {
+        "id": "gemini-3.8-flash",
+        "input": 0.75,
+        "output": 3.75,
+        "cache": 0.075,
+        "notes": "Gemini 3.8 Flash - most intelligent Flash model (long-horizon engineering, autonomous agents); intro price through 2026-12-31, rises to $1.50/$7.50/$0.15 on 2027-01-01; context window not verified"
+      },
+      {
         "id": "gemini-3.5-flash-lite",
         "input": 0.3,
         "output": 2.5,
@@ -634,10 +801,10 @@
       },
       {
         "id": "gemini-3.6-flash",
-        "input": 1.5,
-        "output": 7.5,
-        "cache": 0.15,
-        "notes": "Gemini 3.6 Flash - new flagship (output includes thinking); context window not verified"
+        "input": 0.75,
+        "output": 3.75,
+        "cache": 0.075,
+        "notes": "Gemini 3.6 Flash - now previous-generation (superseded by 3.7/3.8 Flash); intro price through 2026-12-31, rises to $1.50/$7.50/$0.15 on 2027-01-01 (output includes thinking); context window not verified"
       },
       {
         "id": "gemini-3.5-flash",
@@ -751,22 +918,59 @@
     "endpoint": "https://api.mistral.ai/v1",
     "models": [
       {
+        "id": "mistral-embed",
+        "input": 0.1,
+        "output": 0,
+        "notes": "Mistral Embed - semantic embedding model",
+        "capabilities": {
+          "embedding": true
+        }
+      },
+      {
+        "id": "ministral-14b-latest",
+        "input": 0.2,
+        "output": 0.2,
+        "notes": "Ministral 3 (14B) - edge-optimized lightweight model"
+      },
+      {
+        "id": "ministral-8b-latest",
+        "input": 0.15,
+        "output": 0.15,
+        "notes": "Ministral 3 (8B) - edge-optimized lightweight model"
+      },
+      {
+        "id": "ministral-3b-latest",
+        "input": 0.1,
+        "output": 0.1,
+        "notes": "Ministral 3 (3B) - edge-optimized lightweight model"
+      },
+      {
+        "id": "zai-glm-5-2",
+        "input": 1.4,
+        "output": 4.4,
+        "cache": 0.14,
+        "notes": "GLM 5.2 - third-party model served on Mistral's platform, specializing in long-context agentic workflows and coding"
+      },
+      {
         "id": "magistral-small-latest",
         "input": 0.5,
         "output": 1.5,
-        "notes": "Magistral Small reasoning model"
+        "notes": "Magistral Small reasoning model",
+        "deprecated": true
       },
       {
         "id": "devstral-small-latest",
         "input": 0.1,
         "output": 0.3,
-        "notes": "Devstral Small 2 - lightweight coding agent model"
+        "notes": "Devstral Small 2 - lightweight coding agent model",
+        "deprecated": true
       },
       {
         "id": "devstral-medium-latest",
         "input": 0.4,
         "output": 2,
-        "notes": "Devstral 2 - open-weights agentic coding model"
+        "notes": "Devstral 2 - open-weights agentic coding model",
+        "deprecated": true
       },
       {
         "id": "mistral-large-latest",
@@ -790,7 +994,8 @@
         "id": "magistral-medium-latest",
         "input": 2,
         "output": 5,
-        "notes": "Magistral Medium reasoning model"
+        "notes": "Magistral Medium reasoning model",
+        "deprecated": true
       },
       {
         "id": "codestral-latest",
@@ -803,7 +1008,8 @@
         "input": 0.7,
         "output": 0.7,
         "contextWindow": 32000,
-        "notes": "Mixtral 8x7B mixture-of-experts"
+        "notes": "Mixtral 8x7B mixture-of-experts",
+        "deprecated": true
       },
       {
         "id": "mistral-small-3.1",
@@ -851,18 +1057,40 @@
     "endpoint": "https://api.cohere.com/v2",
     "models": [
       {
-        "id": "command-a",
+        "id": "command-r-plus-08-2024",
         "input": 2.5,
         "output": 10,
-        "contextWindow": 256000,
-        "notes": "Agentic and multilingual model (served as command-a-plus-05-2026)"
+        "contextWindow": 128000,
+        "notes": "Command R+ (August 2024), live per official docs; catalog's separate 'command-r-plus-0824' id is kept deprecated for back-compat"
       },
       {
-        "id": "command-r",
+        "id": "command-r7b-12-2024",
+        "input": 0.0375,
+        "output": 0.15,
+        "contextWindow": 128000,
+        "notes": "Edge-optimized 7B model, Dec 2024 release (dated id confirmed live on official docs)"
+      },
+      {
+        "id": "command-r-08-2024",
         "input": 0.15,
         "output": 0.6,
         "contextWindow": 128000,
-        "notes": "Current Command R (08-2024 refresh)"
+        "notes": "Current live Command R (Aug 2024 release); the bare 'command-r' id is a deprecated alias for the older command-r-03-2024"
+      },
+      {
+        "id": "command-a",
+        "input": 0,
+        "output": 0,
+        "contextWindow": 256000,
+        "notes": "Served as command-a-plus-05-2026; free via API and open-weights (Apache 2.0) per official pricing page as of 2026-09"
+      },
+      {
+        "id": "command-r",
+        "input": 0.5,
+        "output": 1.5,
+        "contextWindow": 128000,
+        "notes": "Deprecated bare alias for command-r-03-2024 (retired Sept 15, 2025 per official docs); use command-r-08-2024 for the current live Command R",
+        "deprecated": true
       },
       {
         "id": "command-r7b",
@@ -1105,6 +1333,17 @@
     "endpoint": "https://api.deepseek.com/v1",
     "models": [
       {
+        "id": "deepseek-v4-flash-vision-exp",
+        "input": 0.22,
+        "output": 0.66,
+        "cache": 0.007,
+        "contextWindow": 1000000,
+        "notes": "DeepSeek V4 Flash Vision (experimental) - off-peak rate shown, same as deepseek-v4-flash; peak hours (01:00-04:00, 06:00-10:00 UTC) bill at 2x",
+        "capabilities": {
+          "vision": true
+        }
+      },
+      {
         "id": "deepseek-v4-flash",
         "input": 0.22,
         "output": 0.66,
@@ -1144,6 +1383,20 @@
     "endpoint": "https://api.groq.com/openai/v1",
     "models": [
       {
+        "id": "qwen/qwen3.8-27b",
+        "input": 0.8,
+        "output": 4,
+        "contextWindow": 131042,
+        "notes": "Qwen3.8 27B on Groq"
+      },
+      {
+        "id": "qwen/qwen3.6-27b",
+        "input": 0.6,
+        "output": 3,
+        "contextWindow": 131072,
+        "notes": "Qwen3.6 27B on Groq - recommended replacement for llama-3.3-70b-versatile"
+      },
+      {
         "id": "openai/gpt-oss-120b",
         "input": 0.15,
         "output": 0.6,
@@ -1164,35 +1417,40 @@
         "input": 1,
         "output": 3,
         "cache": 0.5,
-        "notes": "Kimi K2 Instruct on Groq"
+        "notes": "Kimi K2 Instruct on Groq",
+        "deprecated": true
       },
       {
         "id": "meta-llama/llama-4-scout-17b-16e-instruct",
         "input": 0.11,
         "output": 0.34,
         "contextWindow": 128000,
-        "notes": "Llama 4 Scout 17B on Groq"
+        "notes": "Llama 4 Scout 17B on Groq",
+        "deprecated": true
       },
       {
         "id": "qwen/qwen3-32b",
         "input": 0.29,
         "output": 0.59,
         "contextWindow": 131000,
-        "notes": "Qwen3 32B on Groq"
+        "notes": "Qwen3 32B on Groq",
+        "deprecated": true
       },
       {
         "id": "llama-3.3-70b-versatile",
         "input": 0.59,
         "output": 0.79,
         "contextWindow": 128000,
-        "notes": "Llama 3.3 70B on Groq"
+        "notes": "Llama 3.3 70B on Groq",
+        "deprecated": true
       },
       {
         "id": "llama-3.1-8b-instant",
         "input": 0.05,
         "output": 0.08,
         "contextWindow": 128000,
-        "notes": "Llama 3.1 8B instant on Groq"
+        "notes": "Llama 3.1 8B instant on Groq",
+        "deprecated": true
       },
       {
         "id": "mixtral-8x7b-32768",
@@ -1242,14 +1500,16 @@
         "input": 0.18,
         "output": 0.18,
         "contextWindow": 131072,
-        "notes": "Llama 3.1 8B Instruct Turbo"
+        "notes": "Llama 3.1 8B Instruct Turbo",
+        "deprecated": true
       },
       {
         "id": "meta-llama/Llama-3.1-405B-Instruct-Turbo",
         "input": 3.5,
         "output": 3.5,
         "contextWindow": 130815,
-        "notes": "Llama 3.1 405B Instruct Turbo"
+        "notes": "Llama 3.1 405B Instruct Turbo",
+        "deprecated": true
       },
       {
         "id": "deepseek-ai/DeepSeek-R1",
