@@ -1333,6 +1333,17 @@
     "endpoint": "https://api.deepseek.com/v1",
     "models": [
       {
+        "id": "deepseek-flash",
+        "input": 0.15,
+        "output": 0.6,
+        "cache": 0.003,
+        "contextWindow": 1000000,
+        "notes": "DeepSeek Flash (DeepSeek-V4.1-Flash) - off-peak rate shown; peak hours (01:00-04:00, 06:00-10:00 UTC) bill at 2x. Replaces deepseek-v4-flash and deepseek-v4-flash-vision-exp, now retired and auto-routed here at this price",
+        "capabilities": {
+          "vision": true
+        }
+      },
+      {
         "id": "deepseek-v4-flash-vision-exp",
         "input": 0.22,
         "output": 0.66,
@@ -1341,7 +1352,8 @@
         "notes": "DeepSeek V4 Flash Vision (experimental) - off-peak rate shown, same as deepseek-v4-flash; peak hours (01:00-04:00, 06:00-10:00 UTC) bill at 2x",
         "capabilities": {
           "vision": true
-        }
+        },
+        "deprecated": true
       },
       {
         "id": "deepseek-v4-flash",
@@ -1349,7 +1361,8 @@
         "output": 0.66,
         "cache": 0.007,
         "contextWindow": 1000000,
-        "notes": "DeepSeek V4 Flash - off-peak rate shown; peak hours (01:00-04:00, 06:00-10:00 UTC) bill at 2x"
+        "notes": "DeepSeek V4 Flash - off-peak rate shown; peak hours (01:00-04:00, 06:00-10:00 UTC) bill at 2x",
+        "deprecated": true
       },
       {
         "id": "deepseek-v4-pro",
@@ -1664,12 +1677,13 @@
         "input": 0.25,
         "output": 1.25,
         "contextWindow": 200000,
-        "notes": "Claude 3 Haiku on AWS Bedrock"
+        "notes": "Claude 3 Haiku on AWS Bedrock",
+        "deprecated": true
       },
       {
         "id": "meta.llama3-70b-instruct-v1:0",
-        "input": 0.99,
-        "output": 0.99,
+        "input": 2.65,
+        "output": 3.5,
         "contextWindow": 8192,
         "notes": "Llama 3 70B Instruct on AWS Bedrock"
       }
