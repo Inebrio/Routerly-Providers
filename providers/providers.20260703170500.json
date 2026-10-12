@@ -489,10 +489,30 @@
     "endpoint": "https://api.anthropic.com",
     "models": [
       {
+        "id": "claude-haiku-5-5",
+        "input": 0.1,
+        "output": 0.5,
+        "cache": 0.01,
+        "cacheWrite": 0.125,
+        "notes": "Claude Haiku 5.5 - entry-level; tiered pricing above 100k context tokens (input $0.50/output $2.50/cache $0.05 per official pricing page)",
+        "capabilities": {
+          "vision": true
+        },
+        "pricingTiers": [
+          {
+            "metric": "context_tokens",
+            "above": 100000,
+            "input": 0.5,
+            "output": 2.5,
+            "cache": 0.05
+          }
+        ]
+      },
+      {
         "id": "claude-sonnet-5-5",
         "input": 2,
         "output": 10,
-        "cache": 0.2,
+        "cache": 0.1,
         "cacheWrite": 2.5,
         "notes": "Claude Sonnet 5.5"
       },
@@ -877,7 +897,8 @@
         "input": 1.5,
         "output": 9,
         "cache": 0.15,
-        "notes": "Gemini 3.5 Flash - current flagship (output includes thinking); context window not verified"
+        "notes": "Gemini 3.5 Flash - no longer listed on official ai.google.dev/pricing as of 2026-10-12; superseded by 3.6/3.7/3.8 Flash family (all at $0.75/$3.75)",
+        "deprecated": true
       },
       {
         "id": "gemini-3.1-pro-preview",
@@ -1340,7 +1361,16 @@
         "output": 2.5,
         "cache": 0.2,
         "contextWindow": 1000000,
-        "notes": "Grok 4.3 - still listed as current/active on official xAI pricing page as of 2026-09-21"
+        "notes": "Grok 4.3 - base rate <200k context tokens; now has a long-context tier per official xAI pricing page as of 2026-10-12 (previously flat-rate)",
+        "pricingTiers": [
+          {
+            "metric": "context_tokens",
+            "above": 200000,
+            "input": 2.5,
+            "output": 5,
+            "cache": 0.4
+          }
+        ]
       },
       {
         "id": "grok-build-0.1",
@@ -1348,7 +1378,16 @@
         "output": 2,
         "cache": 0.2,
         "contextWindow": 256000,
-        "notes": "Grok Build 0.1 - coding model; still listed as current/active on official xAI pricing page as of 2026-09-21"
+        "notes": "Grok Build 0.1 - coding model; base rate <200k context tokens; now has a long-context tier per official xAI pricing page as of 2026-10-12 (previously flat-rate)",
+        "pricingTiers": [
+          {
+            "metric": "context_tokens",
+            "above": 200000,
+            "input": 2,
+            "output": 4,
+            "cache": 0.4
+          }
+        ]
       },
       {
         "id": "grok-4.1-fast",
