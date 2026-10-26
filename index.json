@@ -12,9 +12,9 @@
   "providers": {
     "providers/providers.20260703170500.json": {
       "createdAt": "2026-07-03T17:05:00Z",
-      "updatedAt": "2026-10-19T04:16:11Z",
+      "updatedAt": "2026-10-26T05:16:56Z",
       "checksum": {
-        "sha256": "2e0410d95f0d4fcfd2d72f9503acc0634280039c83ead4763ada5e89c5b076f7"
+        "sha256": "55d01ae95a64bebae4d66a053f020ea28f70374e6b6d677701c99e71e89dddc0"
       }
     }
   }

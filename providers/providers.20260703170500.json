@@ -3,6 +3,47 @@
     "endpoint": "https://api.openai.com/v1",
     "models": [
       {
+        "id": "gpt-realtime-1.5",
+        "input": 4,
+        "output": 16,
+        "cache": 0.4,
+        "contextWindow": 32000,
+        "notes": "GPT Realtime 1.5 - text-modality token rate, matches legacy gpt-realtime"
+      },
+      {
+        "id": "gpt-realtime-2",
+        "input": 4,
+        "output": 24,
+        "cache": 0.4,
+        "contextWindow": 32000,
+        "notes": "GPT Realtime 2 - text-modality token rate, matches gpt-realtime-2.1"
+      },
+      {
+        "id": "gpt-audio-1.5",
+        "input": 2.5,
+        "output": 10,
+        "notes": "GPT Audio 1.5 - text-modality token rate shown (audio modality priced separately at $32/$64 per 1M)"
+      },
+      {
+        "id": "gpt-audio-mini",
+        "input": 0.6,
+        "output": 2.4,
+        "notes": "GPT Audio Mini - text-modality token rate shown (audio modality priced separately at $10/$20 per 1M)"
+      },
+      {
+        "id": "gpt-audio",
+        "input": 2.5,
+        "output": 10,
+        "notes": "GPT Audio - text-modality token rate shown (audio modality priced separately at $32/$64 per 1M, not representable here)"
+      },
+      {
+        "id": "gpt-rosalind-discovery",
+        "input": 5,
+        "output": 25,
+        "cache": 0.5,
+        "notes": "GPT Rosalind Discovery - life sciences research model, same price tier as gpt-rosalind-research"
+      },
+      {
         "id": "gpt-6.1-sol",
         "input": 2,
         "output": 10,
@@ -555,11 +596,12 @@
         "cache": 0.25,
         "cacheWrite": 12.5,
         "contextWindow": 1000000,
-        "notes": "Claude Mythos 5.1 - frontier tier, limited availability; cache hits priced at 0.025x base input (non-standard)",
+        "notes": "Claude Mythos 5.1 - frontier tier, limited availability; cache hits priced at 0.025x base input (non-standard). No longer listed on official pricing page as of 2026-10-26 (only Fable 5.1, identical pricing, remains)",
         "capabilities": {
           "thinking": true,
           "vision": true
-        }
+        },
+        "deprecated": true
       },
       {
         "id": "claude-fable-5-1",
@@ -607,11 +649,12 @@
         "cache": 1,
         "cacheWrite": 12.5,
         "contextWindow": 1000000,
-        "notes": "Claude Mythos 5 - frontier tier, limited availability (glasswing)",
+        "notes": "Claude Mythos 5 - frontier tier, limited availability (glasswing). No longer listed on official pricing page as of 2026-10-26 (only Fable 5, identical pricing, remains)",
         "capabilities": {
           "thinking": true,
           "vision": true
-        }
+        },
+        "deprecated": true
       },
       {
         "id": "claude-opus-4-8",
@@ -749,6 +792,27 @@
     "endpoint": "https://api.anthropic.com",
     "models": [
       {
+        "id": "claude-haiku-5-5",
+        "input": 0,
+        "output": 0,
+        "contextWindow": 200000,
+        "notes": "Claude Haiku 5.5 - entry-level",
+        "capabilities": {
+          "vision": true
+        }
+      },
+      {
+        "id": "claude-sonnet-5-5",
+        "input": 0,
+        "output": 0,
+        "contextWindow": 1000000,
+        "notes": "Claude Sonnet 5.5",
+        "capabilities": {
+          "thinking": true,
+          "vision": true
+        }
+      },
+      {
         "id": "claude-opus-5-5",
         "input": 0,
         "output": 0,
@@ -884,6 +948,21 @@
     "endpoint": "https://generativelanguage.googleapis.com/v1beta/openai/",
     "models": [
       {
+        "id": "gemini-embedding-2",
+        "input": 0.2,
+        "output": 0,
+        "notes": "Gemini Embedding 2 - first multimodal embedding model; text rate shown (image $0.45, audio $6.50, video $12.00 per 1M also listed); context window not published",
+        "capabilities": {
+          "embedding": true
+        }
+      },
+      {
+        "id": "gemini-omni-1.1-flash",
+        "input": 1.5,
+        "output": 9,
+        "notes": "Gemini Omni Flash - GA on paid tier; input covers text/image/video/audio; video output billed separately at $17.50; no caching price listed; context window not published on official page"
+      },
+      {
         "id": "gemini-4-argon",
         "input": 2,
         "output": 10,
@@ -896,7 +975,8 @@
         "input": 0.75,
         "output": 3.75,
         "cache": 0.075,
-        "notes": "Gemini 3.7 Flash - high-speed everyday coding/agentic model; intro price through 2026-12-31, rises to $1.50/$7.50/$0.15 on 2027-01-01; context window not verified"
+        "notes": "Gemini 3.7 Flash - high-speed everyday coding/agentic model; intro price through 2026-12-31, rises to $1.50/$7.50/$0.15 on 2027-01-01; context window not verified",
+        "deprecated": true
       },
       {
         "id": "gemini-3.8-flash",
@@ -1032,6 +1112,22 @@
     "endpoint": "https://api.mistral.ai/v1",
     "models": [
       {
+        "id": "mistral-large-4",
+        "input": 1.36,
+        "output": 4.18,
+        "cache": 0.14,
+        "contextWindow": 1000000,
+        "notes": "Mistral Large 4 - public preview (2026-10-06), open-weight MoE successor to Large 3; mistral-large-latest still resolves to Large 3"
+      },
+      {
+        "id": "zai-glm-5-3-flash",
+        "input": 0.15,
+        "output": 0.5,
+        "cache": 0.03,
+        "contextWindow": 1000000,
+        "notes": "GLM 5.3 Flash - third-party Z.ai model hosted on Mistral's platform, agentic/visual coding"
+      },
+      {
         "id": "codestral-embed",
         "input": 0.15,
         "output": 0,
@@ -1044,7 +1140,8 @@
         "id": "zai-glm-5-3",
         "input": 1.4,
         "output": 4.4,
-        "notes": "GLM 5.3 - third-party model served on Mistral's platform, listed alongside GLM 5.2; cache price not published"
+        "notes": "GLM 5.3 - third-party model served on Mistral's platform, listed alongside GLM 5.2; cache price not published",
+        "cache": 0.14
       },
       {
         "id": "mistral-embed",
@@ -1078,7 +1175,8 @@
         "input": 1.4,
         "output": 4.4,
         "cache": 0.14,
-        "notes": "GLM 5.2 - third-party model served on Mistral's platform, specializing in long-context agentic workflows and coding"
+        "notes": "GLM 5.2 - third-party model served on Mistral's platform, specializing in long-context agentic workflows and coding",
+        "deprecated": true
       },
       {
         "id": "magistral-small-latest",
@@ -1217,21 +1315,24 @@
         "input": 0.0375,
         "output": 0.15,
         "contextWindow": 128000,
-        "notes": "Edge-optimized 7B model, Dec 2024 release (dated id confirmed live on official docs)"
+        "notes": "Edge-optimized 7B model, Dec 2024 release. No longer in cohere.com/pricing's per-token table as of 2026-10-26 (page now split between legacy per-token list and Model Vault instance pricing)",
+        "deprecated": true
       },
       {
         "id": "command-r-08-2024",
         "input": 0.15,
         "output": 0.6,
         "contextWindow": 128000,
-        "notes": "Current live Command R (Aug 2024 release); the bare 'command-r' id is a deprecated alias for the older command-r-03-2024"
+        "notes": "Command R (Aug 2024 release); the bare 'command-r' id is a deprecated alias for the older command-r-03-2024. No longer in cohere.com/pricing's per-token table as of 2026-10-26 (page now split between legacy per-token list and Model Vault instance pricing)",
+        "deprecated": true
       },
       {
         "id": "command-a",
         "input": 0,
         "output": 0,
         "contextWindow": 256000,
-        "notes": "Served as command-a-plus-05-2026; free via API and open-weights (Apache 2.0) per official pricing page as of 2026-09"
+        "notes": "Served as command-a-plus-05-2026; was free via API and open-weights (Apache 2.0) per official pricing page as of 2026-09. Absent entirely from cohere.com/pricing as of 2026-10-26 (page restructured around Model Vault instance pricing + a legacy per-token list); $0 price unconfirmed on current page, kept as last-known value",
+        "deprecated": true
       },
       {
         "id": "command-r",
@@ -1246,7 +1347,8 @@
         "input": 0.0375,
         "output": 0.15,
         "contextWindow": 128000,
-        "notes": "Edge-optimized 7B model; price not published on a live page"
+        "notes": "Edge-optimized 7B model; price not published on a live page. No longer in cohere.com/pricing's per-token table as of 2026-10-26 (page now split between legacy per-token list and Model Vault instance pricing)",
+        "deprecated": true
       },
       {
         "id": "command-r-plus-0824",
@@ -1741,7 +1843,8 @@
         "input": 1.04,
         "output": 1.04,
         "contextWindow": 131072,
-        "notes": "Llama 3.3 70B Instruct Turbo"
+        "notes": "Llama 3.3 70B Instruct Turbo",
+        "deprecated": true
       },
       {
         "id": "meta-llama/Llama-3.1-8B-Instruct-Turbo",
@@ -1774,31 +1877,34 @@
     "models": [
       {
         "id": "sonar",
-        "input": 1,
-        "output": 1,
+        "input": 0.25,
+        "output": 2.5,
         "contextWindow": 127000,
-        "notes": "Perplexity Sonar (search-augmented); per-request search fees apply"
+        "notes": "Perplexity Sonar - repriced from $1/$1 after Sonar Chat Completions sunset (ended 2026-09-27); now served as perplexity/sonar via the Agent API. per-request search fees apply"
       },
       {
         "id": "sonar-pro",
         "input": 3,
         "output": 15,
         "contextWindow": 200000,
-        "notes": "Perplexity Sonar Pro; per-request search fees apply"
+        "notes": "Perplexity Sonar Pro; per-request search fees apply. Retired: Sonar Chat Completions support ended 2026-09-27, not on Agent/Orchestrator API pricing pages",
+        "deprecated": true
       },
       {
         "id": "sonar-reasoning-pro",
         "input": 2,
         "output": 8,
         "contextWindow": 127000,
-        "notes": "Perplexity Sonar Reasoning Pro; per-request search fees apply"
+        "notes": "Perplexity Sonar Reasoning Pro; per-request search fees apply. Retired: Sonar Chat Completions support ended 2026-09-27, not on Agent/Orchestrator API pricing pages",
+        "deprecated": true
       },
       {
         "id": "sonar-deep-research",
         "input": 2,
         "output": 8,
         "contextWindow": 127000,
-        "notes": "Perplexity deep research; per-request citation/reasoning/search fees apply"
+        "notes": "Perplexity deep research; per-request citation/reasoning/search fees apply. Retired: Sonar Chat Completions support ended 2026-09-27, not on Agent/Orchestrator API pricing pages",
+        "deprecated": true
       },
       {
         "id": "sonar-reasoning",
@@ -1899,6 +2005,40 @@
     "endpoint": "",
     "models": [
       {
+        "id": "anthropic.claude-fable-5-1",
+        "input": 10,
+        "output": 50,
+        "cache": 0.25,
+        "cacheWrite": 12.5,
+        "contextWindow": 1000000,
+        "notes": "Claude Fable 5.1 on AWS Bedrock (US East Ohio baseline tier), GA, new top-tier Claude model line",
+        "capabilities": {
+          "thinking": true,
+          "vision": true
+        }
+      },
+      {
+        "id": "anthropic.claude-haiku-5-5",
+        "input": 0.1,
+        "output": 0.5,
+        "cache": 0.01,
+        "cacheWrite": 0.125,
+        "contextWindow": 1000000,
+        "notes": "Claude Haiku 5.5 on AWS Bedrock (US East Ohio baseline tier). Tiered pricing above 100k context tokens per official page",
+        "capabilities": {
+          "vision": true
+        },
+        "pricingTiers": [
+          {
+            "metric": "context_tokens",
+            "above": 100000,
+            "input": 0.5,
+            "output": 2.5,
+            "cache": 0.05
+          }
+        ]
+      },
+      {
         "id": "anthropic.claude-opus-5-5",
         "input": 4,
         "output": 20,
@@ -1950,6 +2090,87 @@
   "vertex": {
     "endpoint": "",
     "models": [
+      {
+        "id": "google/gemini-4-argon-preview",
+        "input": 2,
+        "output": 10,
+        "cache": 0.1,
+        "notes": "Gemini 4 Argon Preview via Vertex AI. Preview through 2026-11-30, global pricing (non-global 2.20/11.00); GA 'Gemini 4 Argon' from 2026-12-01 at 4.00/20.00/cache 0.20."
+      },
+      {
+        "id": "google/gemini-3.8-flash",
+        "input": 0.75,
+        "output": 3.75,
+        "cache": 0.075,
+        "notes": "Gemini 3.8 Flash via Vertex AI. Launch promo through 2026-12-31, global pricing (non-global 0.825/4.125); standard price from 2027-01-01 is 1.50/7.50."
+      },
+      {
+        "id": "google/gemini-3.1-flash-lite",
+        "input": 0.25,
+        "output": 1.5,
+        "cache": 0.025,
+        "notes": "Gemini 3.1 Flash Lite via Vertex AI, GA, global text/image/video pricing (audio input 0.50; non-global 0.275/1.65)."
+      },
+      {
+        "id": "google/gemini-3.5-flash-lite",
+        "input": 0.3,
+        "output": 2.5,
+        "cache": 0.03,
+        "notes": "Gemini 3.5 Flash Lite via Vertex AI, GA, global pricing (non-global 0.33/2.75)."
+      },
+      {
+        "id": "google/gemini-3.5-flash",
+        "input": 1.5,
+        "output": 9,
+        "cache": 0.15,
+        "notes": "Gemini 3.5 Flash via Vertex AI, GA, global pricing (non-global 1.65/9.90)."
+      },
+      {
+        "id": "google/gemini-3.1-pro-preview",
+        "input": 2,
+        "output": 12,
+        "cache": 0.2,
+        "notes": "Gemini 3.1 Pro Preview via Vertex AI, global endpoint. >200k-token tier: input 4.00/output 18.00/cache 0.40.",
+        "pricingTiers": [
+          {
+            "metric": "context_tokens",
+            "above": 200000,
+            "input": 4,
+            "output": 18,
+            "cache": 0.4
+          }
+        ]
+      },
+      {
+        "id": "google/gemini-2.5-flash-lite",
+        "input": 0.1,
+        "output": 0.4,
+        "cache": 0.01,
+        "notes": "Gemini 2.5 Flash Lite via Vertex AI, GA. Audio input 0.30."
+      },
+      {
+        "id": "google/gemini-2.5-flash",
+        "input": 0.3,
+        "output": 2.5,
+        "cache": 0.03,
+        "notes": "Gemini 2.5 Flash via Vertex AI, GA. Audio input 1.00 (<=200k, drops to 0.30 above)."
+      },
+      {
+        "id": "google/gemini-2.5-pro",
+        "input": 1.25,
+        "output": 10,
+        "cache": 0.125,
+        "notes": "Gemini 2.5 Pro via Vertex AI, GA. >200k-token tier: input 2.50/output 15.00/cache 0.25. No context-window figure on pricing page.",
+        "pricingTiers": [
+          {
+            "metric": "context_tokens",
+            "above": 200000,
+            "input": 2.5,
+            "output": 15,
+            "cache": 0.25
+          }
+        ]
+      },
       {
         "id": "google/gemini-2.0-flash-001",
         "input": 0.15,
