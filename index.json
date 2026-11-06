@@ -2,12 +2,12 @@
   "schemaVersion": 1,
   "default": "stable",
   "channels": {
-    "stable": "providers/providers.20260703170500.json",
-    "latest": "providers/providers.20260703170500.json",
-    "next": "providers/providers.20260703170500.json"
+    "stable": "providers/providers.20261106142125.json",
+    "latest": "providers/providers.20261106142125.json",
+    "next": "providers/providers.20261106142125.json"
   },
   "versions": {
-    "^0.3.0": "providers/providers.20260703170500.json"
+    ">=0.3.0": "providers/providers.20261106142125.json"
   },
   "providers": {
     "providers/providers.20260703170500.json": {
@@ -16,6 +16,16 @@
       "checksum": {
         "sha256": "55d01ae95a64bebae4d66a053f020ea28f70374e6b6d677701c99e71e89dddc0"
       }
+    },
+    "providers/providers.20261106142125.json": {
+      "createdAt": "2026-11-06T14:21:24Z",
+      "updatedAt": "2026-11-06T14:21:24Z",
+      "checksum": {
+        "sha256": "0187ada4e2a748001024b12914a4dd6657759c00ad8446d264ff22c6cb3e274b"
+      },
+      "profile": "p1",
+      "range": ">=0.3.0",
+      "tags": "v0.3.0..v0.6.0"
     }
   }
 }
