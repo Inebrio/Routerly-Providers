@@ -3,6 +3,32 @@
     "endpoint": "https://api.openai.com/v1",
     "models": [
       {
+        "id": "gpt-6-astra-law",
+        "input": 10,
+        "output": 50,
+        "cache": 1,
+        "notes": "GPT-6 Astra for Law - legal model configuration; promotional pricing in effect at least through 2026-12-31 per official pricing page"
+      },
+      {
+        "id": "gpt-6-rosalind",
+        "input": 15,
+        "output": 75,
+        "cache": 1.5,
+        "cacheWrite": 18.75,
+        "notes": "GPT-6 Rosalind - new life sciences flagship, above gpt-rosalind-research/gpt-rosalind-discovery; access limited to approved internal research via trusted-access program"
+      },
+      {
+        "id": "gpt-6-cyber",
+        "input": 20,
+        "output": 100,
+        "cache": 2,
+        "cacheWrite": 25,
+        "notes": "GPT-6 Cyber - new Daybreak program flagship, supersedes gpt-5.6-cyber; 12h cacheWrite $50 not representable in this schema (30m rate shown); contextWindow not stated on official pricing page",
+        "capabilities": {
+          "vision": true
+        }
+      },
+      {
         "id": "gpt-realtime-1.5",
         "input": 4,
         "output": 16,
@@ -66,11 +92,20 @@
         "output": 0.5,
         "cache": 0.01,
         "contextWindow": 400000,
-        "notes": "GPT-6 Luna - compact GPT-6 family model; context window inferred from GPT-6 family (not separately verified)",
+        "notes": "GPT-6 Luna - compact GPT-6 family model; context window inferred from GPT-6 family (not separately verified); long-context (>272K) tier also carries cacheWrite $0.25 (not representable in pricingTiers schema)",
         "capabilities": {
           "vision": true
         },
-        "cacheWrite": 0.125
+        "cacheWrite": 0.125,
+        "pricingTiers": [
+          {
+            "metric": "context_tokens",
+            "above": 272000,
+            "input": 0.2,
+            "output": 0.75,
+            "cache": 0.02
+          }
+        ]
       },
       {
         "id": "gpt-6-sol",
@@ -78,11 +113,20 @@
         "output": 10,
         "cache": 0.2,
         "contextWindow": 400000,
-        "notes": "GPT-6 Sol - new GPT-6 family model alongside gpt-6-astra; context window inferred from GPT-6 family (not separately verified)",
+        "notes": "GPT-6 Sol - new GPT-6 family model alongside gpt-6-astra; context window inferred from GPT-6 family (not separately verified); long-context (>272K) tier also carries cacheWrite $5 (not representable in pricingTiers schema)",
         "capabilities": {
           "vision": true
         },
-        "cacheWrite": 2.5
+        "cacheWrite": 2.5,
+        "pricingTiers": [
+          {
+            "metric": "context_tokens",
+            "above": 272000,
+            "input": 4,
+            "output": 15,
+            "cache": 0.4
+          }
+        ]
       },
       {
         "id": "gpt-5-search-api",
@@ -137,7 +181,8 @@
         "notes": "GPT-5.6 Cyber - Daybreak program variant (gpt-daybreak-red-latest alias); no long-context tier",
         "capabilities": {
           "vision": true
-        }
+        },
+        "deprecated": true
       },
       {
         "id": "gpt-6-astra",
@@ -539,8 +584,8 @@
       },
       {
         "id": "gpt-6.1-terra",
-        "input": 1.0,
-        "output": 5.0,
+        "input": 1,
+        "output": 5,
         "cache": 0.05,
         "cacheWrite": 1.25
       }
@@ -549,6 +594,34 @@
   "anthropic": {
     "endpoint": "https://api.anthropic.com",
     "models": [
+      {
+        "id": "claude-sonnet-4",
+        "input": 3,
+        "output": 15,
+        "cache": 0.3,
+        "cacheWrite": 3.75,
+        "contextWindow": 200000,
+        "notes": "Claude Sonnet 4 - legacy, same pricing as Sonnet 4.5/4.6 per official pricing page",
+        "deprecated": true,
+        "capabilities": {
+          "thinking": true,
+          "vision": true
+        }
+      },
+      {
+        "id": "claude-opus-4",
+        "input": 15,
+        "output": 75,
+        "cache": 1.5,
+        "cacheWrite": 18.75,
+        "contextWindow": 200000,
+        "notes": "Claude Opus 4 - legacy, same pricing as Opus 4.1 per official pricing page",
+        "deprecated": true,
+        "capabilities": {
+          "thinking": true,
+          "vision": true
+        }
+      },
       {
         "id": "claude-haiku-5-5",
         "input": 0.1,
@@ -957,6 +1030,12 @@
     "endpoint": "https://generativelanguage.googleapis.com/v1beta/openai/",
     "models": [
       {
+        "id": "gemini-omni-1.2-flash",
+        "input": 1.5,
+        "output": 9,
+        "notes": "Gemini Omni 1.2 Flash - next-gen video generation/editing model, GA; input covers text/image/video; text output rate shown, video output billed separately at $12/1M (5,792 tokens/sec of 720p); supersedes gemini-omni-1.1-flash (auto-routed here since 2026-12-03); context window not published"
+      },
+      {
         "id": "gemini-embedding-2",
         "input": 0.2,
         "output": 0,
@@ -969,7 +1048,8 @@
         "id": "gemini-omni-1.1-flash",
         "input": 1.5,
         "output": 9,
-        "notes": "Gemini Omni Flash - GA on paid tier; input covers text/image/video/audio; video output billed separately at $17.50; no caching price listed; context window not published on official page"
+        "notes": "Gemini Omni Flash - GA on paid tier; input covers text/image/video/audio; video output billed separately at $17.50; no caching price listed; context window not published on official page",
+        "deprecated": true
       },
       {
         "id": "gemini-4-argon",
@@ -1063,7 +1143,8 @@
             "output": 15,
             "cache": 0.25
           }
-        ]
+        ],
+        "deprecated": true
       },
       {
         "id": "gemini-2.5-flash",
@@ -1071,7 +1152,8 @@
         "output": 2.5,
         "cache": 0.03,
         "contextWindow": 2000000,
-        "notes": "Fast inference version of Gemini 2.5"
+        "notes": "Fast inference version of Gemini 2.5",
+        "deprecated": true
       },
       {
         "id": "gemini-2.5-flash-lite",
@@ -1212,13 +1294,15 @@
         "id": "mistral-large-latest",
         "input": 0.5,
         "output": 1.5,
-        "notes": "Mistral Large 3 (now cheaper than Medium); context window not verified"
+        "notes": "Mistral Large 3 (now cheaper than Medium); context window not verified",
+        "deprecated": true
       },
       {
         "id": "mistral-medium-latest",
         "input": 1.5,
         "output": 7.5,
-        "notes": "Mistral Medium 3.5; context window not verified"
+        "notes": "Mistral Medium 3.5; context window not verified",
+        "deprecated": true
       },
       {
         "id": "mistral-small-latest",
@@ -1902,7 +1986,7 @@
       {
         "id": "Qwen/Qwen3.6-Plus",
         "input": 0.5,
-        "output": 3.0,
+        "output": 3,
         "contextWindow": 1000000
       },
       {
@@ -1960,15 +2044,15 @@
       },
       {
         "id": "moonshotai/Kimi-K3",
-        "input": 3.0,
-        "output": 15.0,
+        "input": 3,
+        "output": 15,
         "cache": 0.3,
         "contextWindow": 1048576
       },
       {
         "id": "moonshotai/Kimi-K3.1-Pro",
-        "input": 2.0,
-        "output": 10.0,
+        "input": 2,
+        "output": 10,
         "cache": 0.2,
         "contextWindow": 1048576
       },
