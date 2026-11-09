@@ -153,6 +153,7 @@ Never rename or remove an existing key — operators' project configs reference 
 | `cohere` | Cohere |
 | `xai` | xAI (Grok) |
 | `ollama` | Ollama (local) |
+| `ollama-cloud` | Ollama Cloud (ollama.com, Bearer API key) |
 | `deepseek` | DeepSeek |
 | `groq` | Groq |
 | `together` | Together AI |

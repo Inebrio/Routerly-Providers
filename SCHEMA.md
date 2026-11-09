@@ -89,3 +89,4 @@ derived flags, values without a source, and sources without a value. Deprecated 
 | Perplexity | https://docs.perplexity.ai/guides/pricing |
 | AWS Bedrock | https://aws.amazon.com/bedrock/pricing |
 | Google Vertex | https://cloud.google.com/vertex-ai/generative-ai/pricing |
+| Ollama Cloud | https://ollama.com/api/tags (models, capabilities); prices: https://ollama.com/pricing (plans only, no per-token rates) |
