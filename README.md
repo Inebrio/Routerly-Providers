@@ -176,6 +176,7 @@ service must also implement the matching adapter for the provider to work at run
 | `fireworks` | Fireworks AI |
 | `cerebras` | Cerebras |
 | `ollama` | Ollama (local) |
+| `ollama-cloud` | Ollama Cloud (ollama.com, Bearer API key) |
 | `custom` | User-defined endpoint |
 | `azure-openai` | Azure OpenAI |
 | `bedrock` | AWS Bedrock |

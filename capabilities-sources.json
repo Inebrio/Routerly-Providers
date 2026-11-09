@@ -2694,5 +2694,377 @@
         "checked": "2026-11-09"
       }
     }
+  },
+  "ollama-cloud": {
+    "beam": {
+      "thinking": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      }
+    },
+    "deepseek-v4-pro:0813": {
+      "thinking": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      }
+    },
+    "deepseek-v4.1-flash": {
+      "thinking": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      }
+    },
+    "deepseek-v4.1-flash:1017": {
+      "thinking": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      }
+    },
+    "gemma4:31b": {
+      "thinking": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      }
+    },
+    "glm-5.2": {
+      "thinking": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      }
+    },
+    "glm-5.3": {
+      "thinking": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      }
+    },
+    "glm-5.3-flash": {
+      "thinking": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-oss:120b": {
+      "thinking": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-oss:20b": {
+      "thinking": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      }
+    },
+    "kimi-k2.6": {
+      "thinking": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      }
+    },
+    "kimi-k2.7-code": {
+      "thinking": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      }
+    },
+    "kimi-k3": {
+      "thinking": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      }
+    },
+    "kimi-k3.1-pro": {
+      "thinking": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      }
+    },
+    "mimo-v2.6-flash": {
+      "thinking": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      }
+    },
+    "mimo-v2.6-pro": {
+      "thinking": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      }
+    },
+    "minimax-m2.7": {
+      "thinking": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      }
+    },
+    "minimax-m3": {
+      "thinking": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      }
+    },
+    "minimax-m3.1-flash": {
+      "thinking": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      }
+    },
+    "mistral-large-3:675b": {
+      "vision": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      }
+    },
+    "mistral-large-4": {
+      "thinking": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      }
+    },
+    "muse-spark-open": {
+      "thinking": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      }
+    },
+    "nemotron-3-nano:30b": {
+      "thinking": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      }
+    },
+    "nemotron-3-super": {
+      "thinking": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      }
+    },
+    "nemotron-3-ultra": {
+      "thinking": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://ollama.com/api/tags",
+        "checked": "2026-11-09"
+      }
+    }
   }
 }
