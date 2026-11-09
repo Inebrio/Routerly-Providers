@@ -31,15 +31,35 @@
 
 ## ModelCapabilities
 
-All flags are optional booleans. Omitting a flag means unknown / not relevant.
+All flags are optional booleans. **An absent flag means unknown, never "false"**: a flag is written
+only when an official source (provider documentation, model card, pricing or models page) states it
+for that exact model, and every written value (true or false) must have an entry in
+`capabilities-sources.json` (see below). Never infer a flag from the model name or from a sibling model.
 
 | Flag | Description |
 |------|-------------|
-| `embedding` | Model produces embedding vectors (not chat completions). |
-| `thinking` | Model supports extended/chain-of-thought reasoning (Anthropic `thinking` blocks, OpenAI `reasoning_effort`). |
+| `embedding` | Model produces embedding vectors (not chat completions). Written as `true` for embedding models. |
+| `thinking` | Model supports extended/chain-of-thought reasoning (Anthropic `thinking` blocks, OpenAI `reasoning_effort`, reasoning-only models). |
 | `vision` | Model accepts image inputs in the messages array. |
-| `functionCalling` | Model supports tool/function-call protocol. |
-| `json` | Model supports strict JSON output mode. |
+| `functionCalling` | Model supports the tool/function-call protocol (this is the "tools" capability; the catalog uses the name Routerly reads). |
+| `json` | Model supports JSON mode or structured outputs (`response_format` `json_object` / `json_schema` or the provider equivalent). |
+| `decision` | Decision model (answers predefined questions, cannot serve chat). Routerly derives it from the provider: the catalog does not declare it, and the check fails if a model does. |
+
+Adding a flag: add the row here (the first column is read by the catalog tooling), then fill it per
+model with sources. Routerly versions that do not read a flag receive catalog files without it.
+
+## capabilities-sources.json
+
+Sidecar file, not read by Routerly. One entry per declared capability value:
+
+```json
+{ "<providerKey>": { "<modelId>": { "<flag>": { "value": true, "source": "https://…", "checked": "YYYY-MM-DD" } } } }
+```
+
+`value` must equal the value in the catalog, `source` is the https page that states it, `checked`
+is the date it was read. Check everything with `node scripts/check-capabilities.mjs [catalog.json] [sources.json]`
+(defaults: the `stable` file of `index.json`); it fails on unknown flags, non-boolean values,
+derived flags, values without a source, and sources without a value. Deprecated models are exempt from the missing-source rule.
 
 ## PricingTier
 

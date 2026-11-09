@@ -25,7 +25,10 @@
         "cacheWrite": 25,
         "notes": "GPT-6 Cyber - new Daybreak program flagship, supersedes gpt-5.6-cyber; 12h cacheWrite $50 not representable in this schema (30m rate shown); contextWindow not stated on official pricing page",
         "capabilities": {
-          "vision": true
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
         }
       },
       {
@@ -34,7 +37,10 @@
         "output": 16,
         "cache": 0.4,
         "contextWindow": 32000,
-        "notes": "GPT Realtime 1.5 - text-modality token rate, matches legacy gpt-realtime"
+        "notes": "GPT Realtime 1.5 - text-modality token rate, matches legacy gpt-realtime",
+        "capabilities": {
+          "functionCalling": true
+        }
       },
       {
         "id": "gpt-realtime-2",
@@ -42,25 +48,39 @@
         "output": 24,
         "cache": 0.4,
         "contextWindow": 32000,
-        "notes": "GPT Realtime 2 - text-modality token rate, matches gpt-realtime-2.1"
+        "notes": "GPT Realtime 2 - text-modality token rate, matches gpt-realtime-2.1",
+        "capabilities": {
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true
+        }
       },
       {
         "id": "gpt-audio-1.5",
         "input": 2.5,
         "output": 10,
-        "notes": "GPT Audio 1.5 - text-modality token rate shown (audio modality priced separately at $32/$64 per 1M)"
+        "notes": "GPT Audio 1.5 - text-modality token rate shown (audio modality priced separately at $32/$64 per 1M)",
+        "capabilities": {
+          "functionCalling": true
+        }
       },
       {
         "id": "gpt-audio-mini",
         "input": 0.6,
         "output": 2.4,
-        "notes": "GPT Audio Mini - text-modality token rate shown (audio modality priced separately at $10/$20 per 1M)"
+        "notes": "GPT Audio Mini - text-modality token rate shown (audio modality priced separately at $10/$20 per 1M)",
+        "capabilities": {
+          "functionCalling": true
+        }
       },
       {
         "id": "gpt-audio",
         "input": 2.5,
         "output": 10,
-        "notes": "GPT Audio - text-modality token rate shown (audio modality priced separately at $32/$64 per 1M, not representable here)"
+        "notes": "GPT Audio - text-modality token rate shown (audio modality priced separately at $32/$64 per 1M, not representable here)",
+        "capabilities": {
+          "functionCalling": true
+        }
       },
       {
         "id": "gpt-rosalind-discovery",
@@ -84,7 +104,13 @@
             "output": 15,
             "cache": 0.2
           }
-        ]
+        ],
+        "capabilities": {
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "gpt-6-luna",
@@ -94,7 +120,10 @@
         "contextWindow": 400000,
         "notes": "GPT-6 Luna - compact GPT-6 family model; context window inferred from GPT-6 family (not separately verified); long-context (>272K) tier also carries cacheWrite $0.25 (not representable in pricingTiers schema)",
         "capabilities": {
-          "vision": true
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
         },
         "cacheWrite": 0.125,
         "pricingTiers": [
@@ -115,7 +144,10 @@
         "contextWindow": 400000,
         "notes": "GPT-6 Sol - new GPT-6 family model alongside gpt-6-astra; context window inferred from GPT-6 family (not separately verified); long-context (>272K) tier also carries cacheWrite $5 (not representable in pricingTiers schema)",
         "capabilities": {
-          "vision": true
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
         },
         "cacheWrite": 2.5,
         "pricingTiers": [
@@ -147,7 +179,12 @@
         "input": 5,
         "output": 30,
         "cache": 0.5,
-        "notes": "Alias tracking OpenAI's latest chat-completion frontier model"
+        "notes": "Alias tracking OpenAI's latest chat-completion frontier model",
+        "capabilities": {
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "o3-mini",
@@ -155,21 +192,38 @@
         "output": 4.4,
         "cache": 0.55,
         "contextWindow": 200000,
-        "notes": "o3-mini reasoning model"
+        "notes": "o3-mini reasoning model",
+        "capabilities": {
+          "thinking": true,
+          "vision": false,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "gpt-5-pro",
         "input": 15,
         "output": 120,
         "contextWindow": 400000,
-        "notes": "GPT-5 Pro - extended-reasoning variant (no cached-input price on the official page)"
+        "notes": "GPT-5 Pro - extended-reasoning variant (no cached-input price on the official page)",
+        "capabilities": {
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "gpt-5.2-pro",
         "input": 21,
         "output": 168,
         "contextWindow": 400000,
-        "notes": "GPT-5.2 Pro - extended-reasoning variant (no cached-input price on the official page)"
+        "notes": "GPT-5.2 Pro - extended-reasoning variant (no cached-input price on the official page)",
+        "capabilities": {
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true
+        }
       },
       {
         "id": "gpt-5.6-cyber",
@@ -193,7 +247,10 @@
         "contextWindow": 400000,
         "notes": "GPT-6 Astra - new top-tier flagship, above GPT-5.6 Sol; long-context (>272K) tier also carries cacheWrite $25 (not representable in pricingTiers schema)",
         "capabilities": {
-          "vision": true
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
         },
         "pricingTiers": [
           {
@@ -211,7 +268,12 @@
         "output": 2.4,
         "cache": 0.06,
         "contextWindow": 32000,
-        "notes": "GPT Realtime 2.1 Mini - newer versioned realtime model, coexists with unversioned gpt-realtime-mini (text token price)"
+        "notes": "GPT Realtime 2.1 Mini - newer versioned realtime model, coexists with unversioned gpt-realtime-mini (text token price)",
+        "capabilities": {
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true
+        }
       },
       {
         "id": "gpt-realtime-2.1",
@@ -219,21 +281,38 @@
         "output": 24,
         "cache": 0.4,
         "contextWindow": 32000,
-        "notes": "GPT Realtime 2.1 - newer versioned realtime model, coexists with unversioned gpt-realtime (text token price)"
+        "notes": "GPT Realtime 2.1 - newer versioned realtime model, coexists with unversioned gpt-realtime (text token price)",
+        "capabilities": {
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true
+        }
       },
       {
         "id": "o1-pro",
         "input": 150,
         "output": 600,
         "contextWindow": 200000,
-        "notes": "o1 Pro - extended-reasoning variant of o1 (no cached-input price on official page)"
+        "notes": "o1 Pro - extended-reasoning variant of o1 (no cached-input price on official page)",
+        "capabilities": {
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "o3-pro",
         "input": 20,
         "output": 80,
         "contextWindow": 200000,
-        "notes": "o3 Pro - extended-reasoning variant of o3 (no cached-input price on official page)"
+        "notes": "o3 Pro - extended-reasoning variant of o3 (no cached-input price on official page)",
+        "capabilities": {
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "gpt-5.6-luna",
@@ -244,7 +323,10 @@
         "contextWindow": 400000,
         "notes": "GPT-5.6 Luna - compact variant; long-context (>272K) tier also carries cacheWrite $0.50 (not representable in pricingTiers schema)",
         "capabilities": {
-          "vision": true
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
         },
         "pricingTiers": [
           {
@@ -265,7 +347,10 @@
         "contextWindow": 400000,
         "notes": "GPT-5.6 Terra; long-context (>272K) tier also carries cacheWrite $5 (not representable in pricingTiers schema)",
         "capabilities": {
-          "vision": true
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
         },
         "pricingTiers": [
           {
@@ -286,7 +371,10 @@
         "contextWindow": 400000,
         "notes": "GPT-5.6 Sol - new flagship; promotional pricing (was $5/$30) in effect at least through 2026-11-21 per official pricing page; long-context (>272K) tier also carries cacheWrite $10 (not representable in pricingTiers schema)",
         "capabilities": {
-          "vision": true
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
         },
         "pricingTiers": [
           {
@@ -306,7 +394,10 @@
         "contextWindow": 400000,
         "notes": "GPT-5.5 - current frontier model for complex coding and research",
         "capabilities": {
-          "vision": true
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
         },
         "pricingTiers": [
           {
@@ -331,7 +422,13 @@
             "input": 60,
             "output": 270
           }
-        ]
+        ],
+        "capabilities": {
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "gpt-5.4",
@@ -341,7 +438,10 @@
         "contextWindow": 400000,
         "notes": "GPT-5.4",
         "capabilities": {
-          "vision": true
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
         },
         "pricingTiers": [
           {
@@ -366,7 +466,12 @@
             "input": 60,
             "output": 270
           }
-        ]
+        ],
+        "capabilities": {
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true
+        }
       },
       {
         "id": "gpt-5.4-mini",
@@ -376,7 +481,10 @@
         "contextWindow": 400000,
         "notes": "GPT-5.4 Mini",
         "capabilities": {
-          "vision": true
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
         }
       },
       {
@@ -387,7 +495,10 @@
         "contextWindow": 400000,
         "notes": "Ultra-compact GPT-5.4 variant",
         "capabilities": {
-          "vision": true
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
         }
       },
       {
@@ -398,7 +509,10 @@
         "contextWindow": 400000,
         "notes": "GPT-5.3 Codex - coding-specialized; context window follows GPT-5 family (not separately verified)",
         "capabilities": {
-          "vision": true
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
         }
       },
       {
@@ -409,7 +523,10 @@
         "contextWindow": 400000,
         "notes": "GPT-5.2 (previous frontier)",
         "capabilities": {
-          "vision": true
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
         }
       },
       {
@@ -420,7 +537,10 @@
         "contextWindow": 400000,
         "notes": "GPT-5.1",
         "capabilities": {
-          "vision": true
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
         }
       },
       {
@@ -431,7 +551,10 @@
         "contextWindow": 400000,
         "notes": "Base GPT-5 model",
         "capabilities": {
-          "vision": true
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
         }
       },
       {
@@ -442,7 +565,10 @@
         "contextWindow": 400000,
         "notes": "Smaller GPT-5 variant for cost-sensitive tasks",
         "capabilities": {
-          "vision": true
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
         }
       },
       {
@@ -453,7 +579,10 @@
         "contextWindow": 400000,
         "notes": "Ultra-compact GPT-5 variant",
         "capabilities": {
-          "vision": true
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
         }
       },
       {
@@ -464,7 +593,9 @@
         "contextWindow": 1047576,
         "notes": "GPT-4.1 text model",
         "capabilities": {
-          "vision": true
+          "vision": true,
+          "functionCalling": true,
+          "json": true
         }
       },
       {
@@ -475,7 +606,9 @@
         "contextWindow": 1047576,
         "notes": "Smaller GPT-4.1 variant",
         "capabilities": {
-          "vision": true
+          "vision": true,
+          "functionCalling": true,
+          "json": true
         }
       },
       {
@@ -486,7 +619,9 @@
         "contextWindow": 1047576,
         "notes": "Ultra-compact GPT-4.1 variant",
         "capabilities": {
-          "vision": true
+          "vision": true,
+          "functionCalling": true,
+          "json": true
         }
       },
       {
@@ -497,7 +632,9 @@
         "contextWindow": 128000,
         "notes": "GPT-4o (Omni) multimodal model",
         "capabilities": {
-          "vision": true
+          "vision": true,
+          "functionCalling": true,
+          "json": true
         }
       },
       {
@@ -508,7 +645,9 @@
         "contextWindow": 128000,
         "notes": "Mini variant of GPT-4o",
         "capabilities": {
-          "vision": true
+          "vision": true,
+          "functionCalling": true,
+          "json": true
         }
       },
       {
@@ -517,7 +656,11 @@
         "output": 16,
         "cache": 0.4,
         "contextWindow": 32000,
-        "notes": "Low-latency GPT model for streaming (text token price)"
+        "notes": "Low-latency GPT model for streaming (text token price)",
+        "capabilities": {
+          "vision": true,
+          "functionCalling": true
+        }
       },
       {
         "id": "gpt-realtime-mini",
@@ -525,7 +668,11 @@
         "output": 2.4,
         "cache": 0.06,
         "contextWindow": 32000,
-        "notes": "Compact realtime model (text token price; not verified on live page)"
+        "notes": "Compact realtime model (text token price; not verified on live page)",
+        "capabilities": {
+          "vision": true,
+          "functionCalling": true
+        }
       },
       {
         "id": "o3",
@@ -533,7 +680,13 @@
         "output": 8,
         "cache": 0.5,
         "contextWindow": 200000,
-        "notes": "Reasoning model (o3)"
+        "notes": "Reasoning model (o3)",
+        "capabilities": {
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "o4-mini",
@@ -541,7 +694,13 @@
         "output": 4.4,
         "cache": 0.275,
         "contextWindow": 200000,
-        "notes": "Reinforcement-tuned mini model"
+        "notes": "Reinforcement-tuned mini model",
+        "capabilities": {
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "o1",
@@ -559,7 +718,8 @@
         "contextWindow": 8191,
         "notes": "OpenAI embedding model (3072-dim)",
         "capabilities": {
-          "embedding": true
+          "embedding": true,
+          "vision": false
         }
       },
       {
@@ -569,7 +729,8 @@
         "contextWindow": 8191,
         "notes": "OpenAI embedding model (1536-dim, fastest)",
         "capabilities": {
-          "embedding": true
+          "embedding": true,
+          "vision": false
         }
       },
       {
@@ -579,7 +740,8 @@
         "contextWindow": 8191,
         "notes": "OpenAI legacy embedding model",
         "capabilities": {
-          "embedding": true
+          "embedding": true,
+          "vision": false
         }
       },
       {
@@ -587,7 +749,13 @@
         "input": 1,
         "output": 5,
         "cache": 0.05,
-        "cacheWrite": 1.25
+        "cacheWrite": 1.25,
+        "capabilities": {
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       }
     ]
   },
@@ -630,8 +798,10 @@
         "cacheWrite": 0.125,
         "notes": "Claude Haiku 5.5 - entry-level; tiered pricing above 100k context tokens (input $0.50/output $2.50/cache $0.05 per official pricing page)",
         "capabilities": {
+          "thinking": true,
           "vision": true,
-          "thinking": true
+          "functionCalling": true,
+          "json": true
         },
         "pricingTiers": [
           {
@@ -653,7 +823,9 @@
         "notes": "Claude Sonnet 5.5",
         "capabilities": {
           "thinking": true,
-          "vision": true
+          "vision": true,
+          "functionCalling": true,
+          "json": true
         },
         "contextWindow": 1000000
       },
@@ -667,7 +839,9 @@
         "notes": "Claude Opus 5.5 - new flagship, supersedes Opus 5",
         "capabilities": {
           "thinking": true,
-          "vision": true
+          "vision": true,
+          "functionCalling": true,
+          "json": true
         }
       },
       {
@@ -694,7 +868,9 @@
         "notes": "Claude Fable 5.1 - cache hits priced at 0.025x base input (non-standard; all other Claude models use 0.1x)",
         "capabilities": {
           "thinking": true,
-          "vision": true
+          "vision": true,
+          "functionCalling": true,
+          "json": true
         }
       },
       {
@@ -707,7 +883,8 @@
         "notes": "Claude Opus 5 - new flagship, supersedes Opus 4.8",
         "capabilities": {
           "thinking": true,
-          "vision": true
+          "vision": true,
+          "json": true
         }
       },
       {
@@ -720,7 +897,8 @@
         "notes": "Claude Fable 5 - most capable model",
         "capabilities": {
           "thinking": true,
-          "vision": true
+          "vision": true,
+          "json": true
         }
       },
       {
@@ -747,7 +925,8 @@
         "notes": "Claude Opus 4.8 - flagship model",
         "capabilities": {
           "thinking": true,
-          "vision": true
+          "vision": true,
+          "json": true
         }
       },
       {
@@ -760,7 +939,8 @@
         "notes": "Claude Opus 4.7",
         "capabilities": {
           "thinking": true,
-          "vision": true
+          "vision": true,
+          "json": true
         }
       },
       {
@@ -773,7 +953,8 @@
         "notes": "Claude Opus 4.6 - full 1M context at standard pricing (no long-context surcharge per official pricing)",
         "capabilities": {
           "thinking": true,
-          "vision": true
+          "vision": true,
+          "json": true
         }
       },
       {
@@ -786,7 +967,8 @@
         "notes": "Claude Opus 4.5",
         "capabilities": {
           "thinking": true,
-          "vision": true
+          "vision": true,
+          "json": true
         }
       },
       {
@@ -799,7 +981,8 @@
         "notes": "Claude Sonnet 5. $2/$10 input/output is now the standard price permanently (planned 2026-09-01 increase to $3/$15 cancelled per official pricing page)",
         "capabilities": {
           "thinking": true,
-          "vision": true
+          "vision": true,
+          "json": true
         }
       },
       {
@@ -812,7 +995,8 @@
         "notes": "Claude Sonnet 4.6 - balanced speed and intelligence",
         "capabilities": {
           "thinking": true,
-          "vision": true
+          "vision": true,
+          "json": true
         }
       },
       {
@@ -825,7 +1009,8 @@
         "notes": "Sonnet 4.5 - long-context (>200k) tier no longer shown on official pricing page as of 2026-09-21; flat rate now",
         "capabilities": {
           "thinking": true,
-          "vision": true
+          "vision": true,
+          "json": true
         }
       },
       {
@@ -837,7 +1022,9 @@
         "contextWindow": 200000,
         "notes": "Claude Haiku 4.5 - entry-level",
         "capabilities": {
-          "vision": true
+          "thinking": true,
+          "vision": true,
+          "json": true
         }
       },
       {
@@ -879,8 +1066,10 @@
         "contextWindow": 1000000,
         "notes": "Claude Haiku 5.5 - entry-level",
         "capabilities": {
+          "thinking": true,
           "vision": true,
-          "thinking": true
+          "functionCalling": true,
+          "json": true
         }
       },
       {
@@ -891,7 +1080,9 @@
         "notes": "Claude Sonnet 5.5",
         "capabilities": {
           "thinking": true,
-          "vision": true
+          "vision": true,
+          "functionCalling": true,
+          "json": true
         }
       },
       {
@@ -902,7 +1093,9 @@
         "notes": "Claude Opus 5.5 - new flagship",
         "capabilities": {
           "thinking": true,
-          "vision": true
+          "vision": true,
+          "functionCalling": true,
+          "json": true
         }
       },
       {
@@ -913,7 +1106,9 @@
         "notes": "Claude Fable 5.1",
         "capabilities": {
           "thinking": true,
-          "vision": true
+          "vision": true,
+          "functionCalling": true,
+          "json": true
         }
       },
       {
@@ -924,7 +1119,8 @@
         "notes": "Claude Opus 5 - new flagship",
         "capabilities": {
           "thinking": true,
-          "vision": true
+          "vision": true,
+          "json": true
         }
       },
       {
@@ -935,7 +1131,8 @@
         "notes": "Claude Fable 5 - most capable model",
         "capabilities": {
           "thinking": true,
-          "vision": true
+          "vision": true,
+          "json": true
         }
       },
       {
@@ -946,7 +1143,8 @@
         "notes": "Claude Opus 4.8 - flagship model",
         "capabilities": {
           "thinking": true,
-          "vision": true
+          "vision": true,
+          "json": true
         }
       },
       {
@@ -957,7 +1155,8 @@
         "notes": "Claude Sonnet 5",
         "capabilities": {
           "thinking": true,
-          "vision": true
+          "vision": true,
+          "json": true
         }
       },
       {
@@ -968,7 +1167,8 @@
         "notes": "Claude Sonnet 4.6 - balanced speed and intelligence",
         "capabilities": {
           "thinking": true,
-          "vision": true
+          "vision": true,
+          "json": true
         }
       },
       {
@@ -979,7 +1179,8 @@
         "notes": "Claude Sonnet 4.5",
         "capabilities": {
           "thinking": true,
-          "vision": true
+          "vision": true,
+          "json": true
         }
       },
       {
@@ -989,7 +1190,9 @@
         "contextWindow": 200000,
         "notes": "Claude Haiku 4.5 - entry-level",
         "capabilities": {
-          "vision": true
+          "thinking": true,
+          "vision": true,
+          "json": true
         }
       }
     ]
@@ -1003,7 +1206,10 @@
         "output": 0,
         "notes": "GPT-5.5 - frontier model for complex coding and research (ChatGPT Plus/Pro)",
         "capabilities": {
-          "vision": true
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
         }
       },
       {
@@ -1012,7 +1218,10 @@
         "output": 0,
         "notes": "GPT-5.4 - strong model for everyday coding (ChatGPT Plus/Pro)",
         "capabilities": {
-          "vision": true
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
         }
       },
       {
@@ -1021,7 +1230,10 @@
         "output": 0,
         "notes": "GPT-5.4-Mini - fast model for simpler coding tasks (ChatGPT Plus/Pro)",
         "capabilities": {
-          "vision": true
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
         }
       }
     ]
@@ -1033,7 +1245,10 @@
         "id": "gemini-omni-1.2-flash",
         "input": 1.5,
         "output": 9,
-        "notes": "Gemini Omni 1.2 Flash - next-gen video generation/editing model, GA; input covers text/image/video; text output rate shown, video output billed separately at $12/1M (5,792 tokens/sec of 720p); supersedes gemini-omni-1.1-flash (auto-routed here since 2026-12-03); context window not published"
+        "notes": "Gemini Omni 1.2 Flash - next-gen video generation/editing model, GA; input covers text/image/video; text output rate shown, video output billed separately at $12/1M (5,792 tokens/sec of 720p); supersedes gemini-omni-1.1-flash (auto-routed here since 2026-12-03); context window not published",
+        "capabilities": {
+          "vision": true
+        }
       },
       {
         "id": "gemini-embedding-2",
@@ -1057,7 +1272,13 @@
         "output": 10,
         "cache": 0.1,
         "contextWindow": 1048576,
-        "notes": "Gemini 4 Argon - new flagship reasoning model, GA 2026-10-13. Intro pricing through 2026-11-30, rises to $4/$20/$0.20 on 2026-12-01 per official pricing page. Not on Free tier."
+        "notes": "Gemini 4 Argon - new flagship reasoning model, GA 2026-10-13. Intro pricing through 2026-11-30, rises to $4/$20/$0.20 on 2026-12-01 per official pricing page. Not on Free tier.",
+        "capabilities": {
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "gemini-3.7-flash",
@@ -1072,21 +1293,39 @@
         "input": 0.75,
         "output": 3.75,
         "cache": 0.075,
-        "notes": "Gemini 3.8 Flash - most intelligent Flash model (long-horizon engineering, autonomous agents); intro price through 2026-12-31, rises to $1.50/$7.50/$0.15 on 2027-01-01; context window not verified"
+        "notes": "Gemini 3.8 Flash - most intelligent Flash model (long-horizon engineering, autonomous agents); intro price through 2026-12-31, rises to $1.50/$7.50/$0.15 on 2027-01-01; context window not verified",
+        "capabilities": {
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "gemini-3.5-flash-lite",
         "input": 0.3,
         "output": 2.5,
         "cache": 0.03,
-        "notes": "Gemini 3.5 Flash-Lite - new GA cost-efficient model; context window not verified"
+        "notes": "Gemini 3.5 Flash-Lite - new GA cost-efficient model; context window not verified",
+        "capabilities": {
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "gemini-3.6-flash",
         "input": 0.75,
         "output": 3.75,
         "cache": 0.075,
-        "notes": "Gemini 3.6 Flash - now previous-generation (superseded by 3.7/3.8 Flash); intro price through 2026-12-31, rises to $1.50/$7.50/$0.15 on 2027-01-01 (output includes thinking); context window not verified"
+        "notes": "Gemini 3.6 Flash - now previous-generation (superseded by 3.7/3.8 Flash); intro price through 2026-12-31, rises to $1.50/$7.50/$0.15 on 2027-01-01 (output includes thinking); context window not verified",
+        "capabilities": {
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "gemini-3.5-flash",
@@ -1111,14 +1350,26 @@
             "output": 18,
             "cache": 0.4
           }
-        ]
+        ],
+        "capabilities": {
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "gemini-3.1-flash-lite",
         "input": 0.25,
         "output": 1.5,
         "cache": 0.025,
-        "notes": "Gemini 3.1 Flash Lite; context window not verified"
+        "notes": "Gemini 3.1 Flash Lite; context window not verified",
+        "capabilities": {
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "gemini-3-flash-preview",
@@ -1126,7 +1377,13 @@
         "output": 3,
         "cache": 0.05,
         "contextWindow": 2000000,
-        "notes": "Preview of Gemini 3 Flash"
+        "notes": "Preview of Gemini 3 Flash",
+        "capabilities": {
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "gemini-2.5-pro",
@@ -1161,7 +1418,13 @@
         "output": 0.4,
         "cache": 0.01,
         "contextWindow": 2000000,
-        "notes": "Lightweight version of Gemini 2.5 Flash"
+        "notes": "Lightweight version of Gemini 2.5 Flash",
+        "capabilities": {
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "gemini-3-pro-preview",
@@ -1208,7 +1471,12 @@
         "output": 2.1,
         "cache": 0.07,
         "contextWindow": 1000000,
-        "notes": "Mistral Large 4 - public preview (2026-10-06), open-weight MoE successor to Large 3; mistral-large-latest still resolves to Large 3"
+        "notes": "Mistral Large 4 - public preview (2026-10-06), open-weight MoE successor to Large 3; mistral-large-latest still resolves to Large 3",
+        "capabilities": {
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "zai-glm-5-3-flash",
@@ -1216,7 +1484,12 @@
         "output": 0.5,
         "cache": 0.03,
         "contextWindow": 1000000,
-        "notes": "GLM 5.3 Flash - third-party Z.ai model hosted on Mistral's platform, agentic/visual coding"
+        "notes": "GLM 5.3 Flash - third-party Z.ai model hosted on Mistral's platform, agentic/visual coding",
+        "capabilities": {
+          "thinking": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "codestral-embed",
@@ -1232,7 +1505,12 @@
         "input": 1.4,
         "output": 4.4,
         "notes": "GLM 5.3 - third-party model served on Mistral's platform, listed alongside GLM 5.2; cache price not published",
-        "cache": 0.14
+        "cache": 0.14,
+        "capabilities": {
+          "thinking": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "mistral-embed",
@@ -1247,19 +1525,34 @@
         "id": "ministral-14b-latest",
         "input": 0.2,
         "output": 0.2,
-        "notes": "Ministral 3 (14B) - edge-optimized lightweight model"
+        "notes": "Ministral 3 (14B) - edge-optimized lightweight model",
+        "capabilities": {
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "ministral-8b-latest",
         "input": 0.15,
         "output": 0.15,
-        "notes": "Ministral 3 (8B) - edge-optimized lightweight model"
+        "notes": "Ministral 3 (8B) - edge-optimized lightweight model",
+        "capabilities": {
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "ministral-3b-latest",
         "input": 0.1,
         "output": 0.1,
-        "notes": "Ministral 3 (3B) - edge-optimized lightweight model"
+        "notes": "Ministral 3 (3B) - edge-optimized lightweight model",
+        "capabilities": {
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "zai-glm-5-2",
@@ -1308,7 +1601,12 @@
         "id": "mistral-small-latest",
         "input": 0.15,
         "output": 0.6,
-        "notes": "Mistral Small 4; context window not verified"
+        "notes": "Mistral Small 4; context window not verified",
+        "capabilities": {
+          "thinking": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "magistral-medium-latest",
@@ -1321,7 +1619,11 @@
         "id": "codestral-latest",
         "input": 0.3,
         "output": 0.9,
-        "notes": "Codestral code-specialized model (latest)"
+        "notes": "Codestral code-specialized model (latest)",
+        "capabilities": {
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "open-mixtral-8x7b",
@@ -1401,7 +1703,10 @@
         "input": 2.5,
         "output": 10,
         "contextWindow": 128000,
-        "notes": "Command R+ (August 2024), live per official docs; catalog's separate 'command-r-plus-0824' id is kept deprecated for back-compat"
+        "notes": "Command R+ (August 2024), live per official docs; catalog's separate 'command-r-plus-0824' id is kept deprecated for back-compat",
+        "capabilities": {
+          "functionCalling": true
+        }
       },
       {
         "id": "command-r7b-12-2024",
@@ -1495,7 +1800,13 @@
             "cache": 1
           }
         ],
-        "contextWindow": 500000
+        "contextWindow": 500000,
+        "capabilities": {
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "grok-4.20-multi-agent-0309",
@@ -1512,7 +1823,13 @@
             "cache": 0.4
           }
         ],
-        "contextWindow": 1000000
+        "contextWindow": 1000000,
+        "capabilities": {
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "grok-4.20-0309-non-reasoning",
@@ -1529,7 +1846,13 @@
             "cache": 0.4
           }
         ],
-        "contextWindow": 1000000
+        "contextWindow": 1000000,
+        "capabilities": {
+          "thinking": false,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "grok-4.20-0309-reasoning",
@@ -1546,7 +1869,13 @@
             "cache": 0.4
           }
         ],
-        "contextWindow": 1000000
+        "contextWindow": 1000000,
+        "capabilities": {
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "grok-4.6",
@@ -1563,7 +1892,13 @@
             "cache": 1
           }
         ],
-        "contextWindow": 500000
+        "contextWindow": 500000,
+        "capabilities": {
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "grok-4.5",
@@ -1580,7 +1915,13 @@
             "output": 12,
             "cache": 0.6
           }
-        ]
+        ],
+        "capabilities": {
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "grok-4.3",
@@ -1597,7 +1938,13 @@
             "output": 5,
             "cache": 0.4
           }
-        ]
+        ],
+        "capabilities": {
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "grok-build-0.1",
@@ -1614,7 +1961,13 @@
             "output": 4,
             "cache": 0.4
           }
-        ]
+        ],
+        "capabilities": {
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "grok-4.1-fast",
@@ -1661,70 +2014,103 @@
         "input": 0,
         "output": 0,
         "contextWindow": 128000,
-        "notes": "Meta Llama 3.3"
+        "notes": "Meta Llama 3.3",
+        "capabilities": {
+          "functionCalling": true
+        }
       },
       {
         "id": "qwen3",
         "input": 0,
         "output": 0,
         "contextWindow": 128000,
-        "notes": "Alibaba Qwen 3"
+        "notes": "Alibaba Qwen 3",
+        "capabilities": {
+          "thinking": true,
+          "functionCalling": true
+        }
       },
       {
         "id": "llama3.2",
         "input": 0,
         "output": 0,
         "contextWindow": 128000,
-        "notes": "Meta Llama 3.2"
+        "notes": "Meta Llama 3.2",
+        "capabilities": {
+          "functionCalling": true
+        }
       },
       {
         "id": "llama3.1",
         "input": 0,
         "output": 0,
         "contextWindow": 128000,
-        "notes": "Meta Llama 3.1"
+        "notes": "Meta Llama 3.1",
+        "capabilities": {
+          "functionCalling": true
+        }
       },
       {
         "id": "mistral",
         "input": 0,
         "output": 0,
         "contextWindow": 128000,
-        "notes": "Mistral 7B"
+        "notes": "Mistral 7B",
+        "capabilities": {
+          "functionCalling": true
+        }
       },
       {
         "id": "mixtral",
         "input": 0,
         "output": 0,
         "contextWindow": 32000,
-        "notes": "Mixtral 8x7B"
+        "notes": "Mixtral 8x7B",
+        "capabilities": {
+          "vision": false,
+          "functionCalling": true
+        }
       },
       {
         "id": "gemma2",
         "input": 0,
         "output": 0,
         "contextWindow": 8192,
-        "notes": "Google Gemma 2"
+        "notes": "Google Gemma 2",
+        "capabilities": {
+          "vision": false
+        }
       },
       {
         "id": "qwen2.5",
         "input": 0,
         "output": 0,
         "contextWindow": 128000,
-        "notes": "Alibaba Qwen 2.5"
+        "notes": "Alibaba Qwen 2.5",
+        "capabilities": {
+          "functionCalling": true
+        }
       },
       {
         "id": "deepseek-r1",
         "input": 0,
         "output": 0,
         "contextWindow": 128000,
-        "notes": "DeepSeek R1"
+        "notes": "DeepSeek R1",
+        "capabilities": {
+          "thinking": true,
+          "functionCalling": true
+        }
       },
       {
         "id": "phi4",
         "input": 0,
         "output": 0,
         "contextWindow": 16384,
-        "notes": "Microsoft Phi-4"
+        "notes": "Microsoft Phi-4",
+        "capabilities": {
+          "vision": false
+        }
       },
       {
         "id": "nomic-embed-text",
@@ -1769,7 +2155,7 @@
         "contextWindow": 1000000,
         "notes": "DeepSeek Flash (DeepSeek-V4.1-Flash) - off-peak rate shown; peak hours (01:00-04:00, 06:00-10:00 UTC) bill at 2x. Replaces deepseek-v4-flash and deepseek-v4-flash-vision-exp, now retired and auto-routed here at this price",
         "capabilities": {
-          "vision": true
+          "thinking": true
         }
       },
       {
@@ -1799,7 +2185,10 @@
         "output": 1.98,
         "cache": 0.022,
         "contextWindow": 1000000,
-        "notes": "DeepSeek V4 Pro - off-peak rate shown; peak hours (01:00-04:00, 06:00-10:00 UTC) bill at 2x"
+        "notes": "DeepSeek V4 Pro - off-peak rate shown; peak hours (01:00-04:00, 06:00-10:00 UTC) bill at 2x",
+        "capabilities": {
+          "thinking": true
+        }
       },
       {
         "id": "deepseek-chat",
@@ -1829,7 +2218,13 @@
         "input": 0.8,
         "output": 4,
         "contextWindow": 131042,
-        "notes": "Qwen3.8 27B on Groq"
+        "notes": "Qwen3.8 27B on Groq",
+        "capabilities": {
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "qwen/qwen3.6-27b",
@@ -1845,7 +2240,13 @@
         "output": 0.6,
         "cache": 0.075,
         "contextWindow": 128000,
-        "notes": "GPT-OSS 120B on Groq"
+        "notes": "GPT-OSS 120B on Groq",
+        "capabilities": {
+          "thinking": true,
+          "vision": false,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "openai/gpt-oss-20b",
@@ -1853,7 +2254,12 @@
         "output": 0.3,
         "cache": 0.0375,
         "contextWindow": 128000,
-        "notes": "GPT-OSS 20B on Groq"
+        "notes": "GPT-OSS 20B on Groq",
+        "capabilities": {
+          "thinking": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "moonshotai/kimi-k2-instruct-0905",
@@ -1929,7 +2335,11 @@
         "input": 0.15,
         "output": 0.6,
         "notes": "GPT-OSS 120B on Together (also served on Groq/Fireworks/Cerebras)",
-        "contextWindow": 131072
+        "contextWindow": 131072,
+        "capabilities": {
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "Qwen/Qwen3-235B-A22B-fp8-tput",
@@ -1975,121 +2385,197 @@
         "input": 0.15,
         "output": 0.6,
         "cache": 0.015,
-        "contextWindow": 1048576
+        "contextWindow": 1048576,
+        "capabilities": {
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "Qwen/Qwen3.5-9B",
         "input": 0.17,
         "output": 0.25,
-        "contextWindow": 262144
+        "contextWindow": 262144,
+        "capabilities": {
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "Qwen/Qwen3.6-Plus",
         "input": 0.5,
         "output": 3,
-        "contextWindow": 1000000
+        "contextWindow": 1000000,
+        "capabilities": {
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "Qwen/Qwen3.7-Max",
         "input": 2.5,
         "output": 7.5,
-        "cache": 0.5
+        "cache": 0.5,
+        "capabilities": {
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "Qwen/Qwen3.7-Plus",
         "input": 0.32,
         "output": 1.28,
-        "contextWindow": 1000000
+        "contextWindow": 1000000,
+        "capabilities": {
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "Qwen/Qwen3.8-Flash",
         "input": 0.15,
         "output": 0.47,
-        "contextWindow": 1000000
+        "contextWindow": 1000000,
+        "capabilities": {
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "deepseek-ai/DeepSeek-V4-Pro-0813",
         "input": 1.32,
         "output": 3.96,
         "cache": 0.13,
-        "contextWindow": 1048576
+        "contextWindow": 1048576,
+        "capabilities": {
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "deepseek-ai/DeepSeek-V4.1-Flash",
         "input": 0.3,
         "output": 1.2,
         "cache": 0.006,
-        "contextWindow": 1000000
+        "contextWindow": 1000000,
+        "capabilities": {
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
         "input": 0.3,
         "output": 1.2,
         "cache": 0.006,
-        "contextWindow": 1000000
+        "contextWindow": 1000000,
+        "capabilities": {
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "meta-models/Muse-Glimmer-30B",
         "input": 0.35,
         "output": 1.5,
         "cache": 0.04,
-        "contextWindow": 131072
+        "contextWindow": 131072,
+        "capabilities": {
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "meta-models/Muse-Spark-Open-816B-A42B",
         "input": 1.25,
         "output": 4.25,
         "cache": 0.15,
-        "contextWindow": 1048576
+        "contextWindow": 1048576,
+        "capabilities": {
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "moonshotai/Kimi-K3",
         "input": 3,
         "output": 15,
         "cache": 0.3,
-        "contextWindow": 1048576
+        "contextWindow": 1048576,
+        "capabilities": {
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "moonshotai/Kimi-K3.1-Pro",
         "input": 2,
         "output": 10,
         "cache": 0.2,
-        "contextWindow": 1048576
+        "contextWindow": 1048576,
+        "capabilities": {
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "nvidia/NVIDIA-Nemotron-3.5-Super-VL",
         "input": 0.15,
         "output": 0.5,
         "cache": 0.02,
-        "contextWindow": 262144
+        "contextWindow": 262144,
+        "capabilities": {
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "reflection/Beam-1.0-501B-A23B",
         "input": 0.4,
         "output": 1.2,
         "cache": 0.04,
-        "contextWindow": 1048576
+        "contextWindow": 1048576,
+        "capabilities": {
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "zai-org/GLM-5.2",
         "input": 1.4,
         "output": 4.4,
         "cache": 0.26,
-        "contextWindow": 1048575
+        "contextWindow": 1048575,
+        "capabilities": {
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "zai-org/GLM-5.3",
         "input": 1.4,
         "output": 4.4,
         "cache": 0.26,
-        "contextWindow": 1048575
+        "contextWindow": 1048575,
+        "capabilities": {
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "zai-org/GLM-5.3-Flash",
         "input": 0.15,
         "output": 0.5,
         "cache": 0.03,
-        "contextWindow": 1048575
+        "contextWindow": 1048575,
+        "capabilities": {
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "ricursive-ai/Ripple-65B-Preview",
@@ -2184,7 +2670,12 @@
         "input": 0.35,
         "output": 0.75,
         "contextWindow": 131000,
-        "notes": "GPT-OSS 120B on Cerebras (~3000 tok/s)"
+        "notes": "GPT-OSS 120B on Cerebras (~3000 tok/s)",
+        "capabilities": {
+          "thinking": true,
+          "functionCalling": true,
+          "json": true
+        }
       }
     ]
   },
@@ -2203,7 +2694,9 @@
         "contextWindow": 128000,
         "notes": "GPT-4o via Azure OpenAI",
         "capabilities": {
-          "vision": true
+          "vision": true,
+          "functionCalling": true,
+          "json": true
         }
       },
       {
@@ -2213,7 +2706,9 @@
         "contextWindow": 128000,
         "notes": "GPT-4o mini via Azure OpenAI",
         "capabilities": {
-          "vision": true
+          "vision": true,
+          "functionCalling": true,
+          "json": true
         }
       },
       {
@@ -2241,7 +2736,8 @@
         "notes": "Claude Fable 5.1 on AWS Bedrock (US East Ohio baseline tier), GA, new top-tier Claude model line",
         "capabilities": {
           "thinking": true,
-          "vision": true
+          "vision": true,
+          "json": true
         }
       },
       {
@@ -2253,7 +2749,10 @@
         "contextWindow": 1000000,
         "notes": "Claude Haiku 5.5 on AWS Bedrock (US East Ohio baseline tier). Tiered pricing above 100k context tokens per official page",
         "capabilities": {
-          "vision": true
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
         },
         "pricingTiers": [
           {
@@ -2275,7 +2774,9 @@
         "notes": "Claude Opus 5.5 on AWS Bedrock (US East Ohio baseline tier; Geo/in-region pricing ~10% higher). 1-hour cache-write rate $8.00 not representable in this schema (5-minute rate shown).",
         "capabilities": {
           "thinking": true,
-          "vision": true
+          "vision": true,
+          "functionCalling": true,
+          "json": true
         }
       },
       {
@@ -2285,7 +2786,13 @@
         "cache": 0.1,
         "cacheWrite": 2.5,
         "contextWindow": 1000000,
-        "notes": "Claude Sonnet 5.5 on AWS Bedrock (US East Ohio baseline tier; Geo/in-region pricing ~10% higher). 1-hour cache-write rate $4.00 not representable in this schema (5-minute rate shown). Also available via us./eu./au./global. cross-region inference-profile IDs."
+        "notes": "Claude Sonnet 5.5 on AWS Bedrock (US East Ohio baseline tier; Geo/in-region pricing ~10% higher). 1-hour cache-write rate $4.00 not representable in this schema (5-minute rate shown). Also available via us./eu./au./global. cross-region inference-profile IDs.",
+        "capabilities": {
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "anthropic.claude-3-5-sonnet-20241022-v2:0",
@@ -2322,35 +2829,65 @@
         "input": 2,
         "output": 10,
         "cache": 0.1,
-        "notes": "Gemini 4 Argon Preview via Vertex AI. Preview through 2026-11-30, global pricing (non-global 2.20/11.00); GA 'Gemini 4 Argon' from 2026-12-01 at 4.00/20.00/cache 0.20."
+        "notes": "Gemini 4 Argon Preview via Vertex AI. Preview through 2026-11-30, global pricing (non-global 2.20/11.00); GA 'Gemini 4 Argon' from 2026-12-01 at 4.00/20.00/cache 0.20.",
+        "capabilities": {
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "google/gemini-3.8-flash",
         "input": 0.75,
         "output": 3.75,
         "cache": 0.075,
-        "notes": "Gemini 3.8 Flash via Vertex AI. Launch promo through 2026-12-31, global pricing (non-global 0.825/4.125); standard price from 2027-01-01 is 1.50/7.50."
+        "notes": "Gemini 3.8 Flash via Vertex AI. Launch promo through 2026-12-31, global pricing (non-global 0.825/4.125); standard price from 2027-01-01 is 1.50/7.50.",
+        "capabilities": {
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "google/gemini-3.1-flash-lite",
         "input": 0.25,
         "output": 1.5,
         "cache": 0.025,
-        "notes": "Gemini 3.1 Flash Lite via Vertex AI, GA, global text/image/video pricing (audio input 0.50; non-global 0.275/1.65)."
+        "notes": "Gemini 3.1 Flash Lite via Vertex AI, GA, global text/image/video pricing (audio input 0.50; non-global 0.275/1.65).",
+        "capabilities": {
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "google/gemini-3.5-flash-lite",
         "input": 0.3,
         "output": 2.5,
         "cache": 0.03,
-        "notes": "Gemini 3.5 Flash Lite via Vertex AI, GA, global pricing (non-global 0.33/2.75)."
+        "notes": "Gemini 3.5 Flash Lite via Vertex AI, GA, global pricing (non-global 0.33/2.75).",
+        "capabilities": {
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "google/gemini-3.5-flash",
         "input": 1.5,
         "output": 9,
         "cache": 0.15,
-        "notes": "Gemini 3.5 Flash via Vertex AI, GA, global pricing (non-global 1.65/9.90)."
+        "notes": "Gemini 3.5 Flash via Vertex AI, GA, global pricing (non-global 1.65/9.90).",
+        "capabilities": {
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "google/gemini-3.1-pro-preview",
@@ -2366,21 +2903,39 @@
             "output": 18,
             "cache": 0.4
           }
-        ]
+        ],
+        "capabilities": {
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "google/gemini-2.5-flash-lite",
         "input": 0.1,
         "output": 0.4,
         "cache": 0.01,
-        "notes": "Gemini 2.5 Flash Lite via Vertex AI, GA. Audio input 0.30."
+        "notes": "Gemini 2.5 Flash Lite via Vertex AI, GA. Audio input 0.30.",
+        "capabilities": {
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "google/gemini-2.5-flash",
         "input": 0.3,
         "output": 2.5,
         "cache": 0.03,
-        "notes": "Gemini 2.5 Flash via Vertex AI, GA. Audio input 1.00 (<=200k, drops to 0.30 above)."
+        "notes": "Gemini 2.5 Flash via Vertex AI, GA. Audio input 1.00 (<=200k, drops to 0.30 above).",
+        "capabilities": {
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "google/gemini-2.5-pro",
@@ -2396,7 +2951,13 @@
             "output": 15,
             "cache": 0.25
           }
-        ]
+        ],
+        "capabilities": {
+          "thinking": true,
+          "vision": true,
+          "functionCalling": true,
+          "json": true
+        }
       },
       {
         "id": "google/gemini-2.0-flash-001",

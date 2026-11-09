@@ -39,6 +39,8 @@ https://raw.githubusercontent.com/Inebrio/Routerly-Providers/main/
 index.json                          Version/channel map + checksum registry
 providers/
   providers.YYYYMMDDHHMMSS.json      Catalog file (mutable; UTC timestamp in the name)
+capabilities-sources.json           Official source (URL + date) for every declared capability value
+scripts/check-capabilities.mjs      Capability check (flags, types, sources); also run by CI
 SCHEMA.md                           Full field reference + official pricing source URLs
 CLAUDE.md                           Instructions for AI agents editing this repo
 .github/workflows/validate.yml      CI: validates every JSON file on push and PR
@@ -137,7 +139,7 @@ The catalog root is `{ [providerKey]: ProviderEntry }`. Each provider has an `en
         "contextWindow": 128000,      // optional
         "notes": "GPT-4o multimodal", // shown in the dashboard (optional)
         "deprecated": false,          // hide from new projects, keep backward compat (optional)
-        "capabilities": { "embedding": false },
+        "capabilities": { "vision": true, "functionCalling": true, "json": true },
         "pricingTiers": [             // context-length tiered overrides (optional)
           { "metric": "context_tokens", "above": 200000, "input": 5.0, "output": 15.0 }
         ]
@@ -146,6 +148,8 @@ The catalog root is `{ [providerKey]: ProviderEntry }`. Each provider has an `en
   }
 }
 ```
+
+Capabilities: see `SCHEMA.md` (absent flag = unknown; each value needs a source in `capabilities-sources.json`).
 
 Minimum required fields: `id`, `input`, `output`. An empty catalog object `{}` is valid. See
 `SCHEMA.md` for the complete field reference and which fields are required.
@@ -188,6 +192,12 @@ Run the same check CI runs before pushing:
 find . -name "*.json" -not -path "./.git/*" | sort | while read -r f; do
   node -e "JSON.parse(require('fs').readFileSync(process.argv[1],'utf8')); process.stdout.write('ok  ' + process.argv[1] + '\n')" "$f"
 done
+```
+
+Capabilities (known flags, boolean values, an official source for every value):
+
+```bash
+node scripts/check-capabilities.mjs
 ```
 
 To confirm each catalog file matches the checksum registered in `index.json`:
