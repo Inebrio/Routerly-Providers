@@ -2,12 +2,12 @@
   "schemaVersion": 1,
   "default": "stable",
   "channels": {
-    "stable": "providers/providers.20261107050001.json",
-    "latest": "providers/providers.20261107050001.json",
-    "next": "providers/providers.20261107050001.json"
+    "stable": "providers/providers.20261109050004.json",
+    "latest": "providers/providers.20261109050004.json",
+    "next": "providers/providers.20261109050004.json"
   },
   "versions": {
-    ">=0.3.0": "providers/providers.20261107050001.json"
+    ">=0.3.0": "providers/providers.20261109050004.json"
   },
   "providers": {
     "providers/providers.20260703170500.json": {
@@ -36,6 +36,18 @@
       "profile": "p1",
       "range": ">=0.3.0",
       "tags": "v0.3.0..v0.6.0"
+    },
+    "providers/providers.20261109050004.json": {
+      "createdAt": "2026-11-09T05:00:03Z",
+      "updatedAt": "2026-11-09T05:00:03Z",
+      "checksum": {
+        "sha256": "e42d21f4a389ca38402184b587276884715381b908788b0ecf9afcfb3eaa8e7c"
+      },
+      "profile": "pf",
+      "range": ">=0.6.1-0",
+      "tags": "v0.3.0..v0.6.0",
+      "forVersion": "0.6.1",
+      "state": "preparato sul canale next, non ancora rilasciato"
     }
   }
 }
