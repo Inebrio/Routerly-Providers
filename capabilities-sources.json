@@ -1,0 +1,2698 @@
+{
+  "openai": {
+    "gpt-6-cyber": {
+      "thinking": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-6-cyber",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-6-cyber",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-6-cyber",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-6-cyber",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-realtime-1.5": {
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-realtime-1.5",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-realtime-2": {
+      "thinking": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-realtime-2",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-realtime-2",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-realtime-2",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-audio-1.5": {
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-audio-1.5",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-audio-mini": {
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-audio-mini",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-audio": {
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-audio",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-6.1-sol": {
+      "thinking": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-6-luna": {
+      "thinking": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-6-luna",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-6-luna",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-6-luna",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-6-luna",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-6-sol": {
+      "thinking": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-6-sol",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-6-sol",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-6-sol",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-6-sol",
+        "checked": "2026-11-09"
+      }
+    },
+    "chat-latest": {
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/chat-latest",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/chat-latest",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/chat-latest",
+        "checked": "2026-11-09"
+      }
+    },
+    "o3-mini": {
+      "thinking": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/o3-mini",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": false,
+        "source": "https://developers.openai.com/api/docs/models/o3-mini",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/o3-mini",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/o3-mini",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-5-pro": {
+      "thinking": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5-pro",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5-pro",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5-pro",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5-pro",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-5.2-pro": {
+      "thinking": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.2-pro",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.2-pro",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.2-pro",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-6-astra": {
+      "thinking": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-realtime-2.1-mini": {
+      "thinking": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-realtime-2.1-mini",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-realtime-2.1-mini",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-realtime-2.1-mini",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-realtime-2.1": {
+      "thinking": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-realtime-2.1",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-realtime-2.1",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-realtime-2.1",
+        "checked": "2026-11-09"
+      }
+    },
+    "o1-pro": {
+      "thinking": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/o1-pro",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/o1-pro",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/o1-pro",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/o1-pro",
+        "checked": "2026-11-09"
+      }
+    },
+    "o3-pro": {
+      "thinking": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/o3-pro",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/o3-pro",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/o3-pro",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/o3-pro",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-5.6-luna": {
+      "thinking": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.6-luna",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.6-luna",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.6-luna",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.6-luna",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-5.6-terra": {
+      "thinking": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.6-terra",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.6-terra",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.6-terra",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.6-terra",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-5.6-sol": {
+      "thinking": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-5.5": {
+      "thinking": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-5.5-pro": {
+      "thinking": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.5-pro",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.5-pro",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.5-pro",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.5-pro",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-5.4": {
+      "thinking": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-5.4-pro": {
+      "thinking": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4-pro",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4-pro",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4-pro",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-5.4-mini": {
+      "thinking": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-5.4-nano": {
+      "thinking": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4-nano",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4-nano",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4-nano",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4-nano",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-5.3-codex": {
+      "thinking": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.3-codex",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.3-codex",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.3-codex",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.3-codex",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-5.2": {
+      "thinking": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.2",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.2",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.2",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.2",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-5.1": {
+      "thinking": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.1",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.1",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.1",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.1",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-5": {
+      "thinking": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-5-mini": {
+      "thinking": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5-mini",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5-mini",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5-mini",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5-mini",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-5-nano": {
+      "thinking": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5-nano",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5-nano",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5-nano",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5-nano",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-4.1": {
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-4.1",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-4.1",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-4.1",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-4.1-mini": {
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-4.1-mini",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-4.1-mini",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-4.1-mini",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-4.1-nano": {
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-4.1-nano",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-4.1-nano",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-4.1-nano",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-4o": {
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-4o",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-4o",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-4o",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-4o-mini": {
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-realtime": {
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-realtime",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-realtime",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-realtime-mini": {
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-realtime-mini",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-realtime-mini",
+        "checked": "2026-11-09"
+      }
+    },
+    "o3": {
+      "thinking": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/o3",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/o3",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/o3",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/o3",
+        "checked": "2026-11-09"
+      }
+    },
+    "o4-mini": {
+      "thinking": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/o4-mini",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/o4-mini",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/o4-mini",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/o4-mini",
+        "checked": "2026-11-09"
+      }
+    },
+    "text-embedding-3-large": {
+      "embedding": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/text-embedding-3-large",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": false,
+        "source": "https://developers.openai.com/api/docs/models/text-embedding-3-large",
+        "checked": "2026-11-09"
+      }
+    },
+    "text-embedding-3-small": {
+      "embedding": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/text-embedding-3-small",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": false,
+        "source": "https://developers.openai.com/api/docs/models/text-embedding-3-small",
+        "checked": "2026-11-09"
+      }
+    },
+    "text-embedding-ada-002": {
+      "embedding": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/text-embedding-ada-002",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": false,
+        "source": "https://developers.openai.com/api/docs/models/text-embedding-ada-002",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-6.1-terra": {
+      "thinking": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-6.1-terra",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-6.1-terra",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-6.1-terra",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-6.1-terra",
+        "checked": "2026-11-09"
+      }
+    }
+  },
+  "anthropic": {
+    "claude-haiku-5-5": {
+      "thinking": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/about-claude/models/overview",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/about-claude/models/overview",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/about-claude/models/overview",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
+        "checked": "2026-11-09"
+      }
+    },
+    "claude-sonnet-5-5": {
+      "thinking": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/about-claude/models/overview",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/about-claude/models/overview",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/about-claude/models/overview",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
+        "checked": "2026-11-09"
+      }
+    },
+    "claude-opus-5-5": {
+      "thinking": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/about-claude/models/overview",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/about-claude/models/overview",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/about-claude/models/overview",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
+        "checked": "2026-11-09"
+      }
+    },
+    "claude-fable-5-1": {
+      "thinking": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/about-claude/models/overview",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/about-claude/models/overview",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/about-claude/models/overview",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
+        "checked": "2026-11-09"
+      }
+    },
+    "claude-opus-5": {
+      "thinking": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/models/opus-5/overview",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/models/opus-5/overview",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
+        "checked": "2026-11-09"
+      }
+    },
+    "claude-fable-5": {
+      "thinking": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/models/fable-5/overview",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/models/fable-5/overview",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
+        "checked": "2026-11-09"
+      }
+    },
+    "claude-opus-4-8": {
+      "thinking": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/models/opus-4-8/overview",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/models/opus-4-8/overview",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
+        "checked": "2026-11-09"
+      }
+    },
+    "claude-opus-4-7": {
+      "thinking": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/models/opus-4-7/overview",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/models/opus-4-7/overview",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
+        "checked": "2026-11-09"
+      }
+    },
+    "claude-opus-4-6": {
+      "thinking": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/models/opus-4-6/overview",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/models/opus-4-6/overview",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
+        "checked": "2026-11-09"
+      }
+    },
+    "claude-opus-4-5": {
+      "thinking": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/models/opus-4-5/overview",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/models/opus-4-5/overview",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
+        "checked": "2026-11-09"
+      }
+    },
+    "claude-sonnet-5": {
+      "thinking": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/models/sonnet-5/overview",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/models/sonnet-5/overview",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
+        "checked": "2026-11-09"
+      }
+    },
+    "claude-sonnet-4-6": {
+      "thinking": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/models/sonnet-4-6/overview",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/models/sonnet-4-6/overview",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
+        "checked": "2026-11-09"
+      }
+    },
+    "claude-sonnet-4-5": {
+      "thinking": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/models/sonnet-4-5/overview",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/models/sonnet-4-5/overview",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
+        "checked": "2026-11-09"
+      }
+    },
+    "claude-haiku-4-5": {
+      "thinking": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/models/haiku-4-5/overview",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/models/haiku-4-5/overview",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
+        "checked": "2026-11-09"
+      }
+    }
+  },
+  "anthropic-oauth": {
+    "claude-haiku-5-5": {
+      "thinking": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/about-claude/models/overview",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/about-claude/models/overview",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/about-claude/models/overview",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
+        "checked": "2026-11-09"
+      }
+    },
+    "claude-sonnet-5-5": {
+      "thinking": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/about-claude/models/overview",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/about-claude/models/overview",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/about-claude/models/overview",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
+        "checked": "2026-11-09"
+      }
+    },
+    "claude-opus-5-5": {
+      "thinking": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/about-claude/models/overview",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/about-claude/models/overview",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/about-claude/models/overview",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
+        "checked": "2026-11-09"
+      }
+    },
+    "claude-fable-5-1": {
+      "thinking": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/about-claude/models/overview",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/about-claude/models/overview",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/about-claude/models/overview",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
+        "checked": "2026-11-09"
+      }
+    },
+    "claude-opus-5": {
+      "thinking": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/models/opus-5/overview",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/models/opus-5/overview",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
+        "checked": "2026-11-09"
+      }
+    },
+    "claude-fable-5": {
+      "thinking": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/models/fable-5/overview",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/models/fable-5/overview",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
+        "checked": "2026-11-09"
+      }
+    },
+    "claude-opus-4-8": {
+      "thinking": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/models/opus-4-8/overview",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/models/opus-4-8/overview",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
+        "checked": "2026-11-09"
+      }
+    },
+    "claude-sonnet-5": {
+      "thinking": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/models/sonnet-5/overview",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/models/sonnet-5/overview",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
+        "checked": "2026-11-09"
+      }
+    },
+    "claude-sonnet-4-6": {
+      "thinking": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/models/sonnet-4-6/overview",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/models/sonnet-4-6/overview",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
+        "checked": "2026-11-09"
+      }
+    },
+    "claude-sonnet-4-5": {
+      "thinking": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/models/sonnet-4-5/overview",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/models/sonnet-4-5/overview",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
+        "checked": "2026-11-09"
+      }
+    },
+    "claude-haiku-4-5": {
+      "thinking": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/models/haiku-4-5/overview",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/models/haiku-4-5/overview",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
+        "checked": "2026-11-09"
+      }
+    }
+  },
+  "openai-oauth": {
+    "gpt-5.5": {
+      "thinking": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-5.4": {
+      "thinking": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-5.4-mini": {
+      "thinking": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+        "checked": "2026-11-09"
+      }
+    }
+  },
+  "gemini": {
+    "gemini-omni-1.2-flash": {
+      "vision": {
+        "value": true,
+        "source": "https://aistudio.google.com/docs/models/gemini-omni-flash",
+        "checked": "2026-11-09"
+      }
+    },
+    "gemini-embedding-2": {
+      "embedding": {
+        "value": true,
+        "source": "https://aistudio.google.com/docs/models/gemini-embedding-2",
+        "checked": "2026-11-09"
+      }
+    },
+    "gemini-4-argon": {
+      "thinking": {
+        "value": true,
+        "source": "https://aistudio.google.com/docs/models/gemini-4-argon",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://aistudio.google.com/docs/models/gemini-4-argon",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://aistudio.google.com/docs/models/gemini-4-argon",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://aistudio.google.com/docs/models/gemini-4-argon",
+        "checked": "2026-11-09"
+      }
+    },
+    "gemini-3.8-flash": {
+      "thinking": {
+        "value": true,
+        "source": "https://aistudio.google.com/docs/models/gemini-3.8-flash",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://aistudio.google.com/docs/models/gemini-3.8-flash",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://aistudio.google.com/docs/models/gemini-3.8-flash",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://aistudio.google.com/docs/models/gemini-3.8-flash",
+        "checked": "2026-11-09"
+      }
+    },
+    "gemini-3.5-flash-lite": {
+      "thinking": {
+        "value": true,
+        "source": "https://aistudio.google.com/docs/models/gemini-3.5-flash-lite",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://aistudio.google.com/docs/models/gemini-3.5-flash-lite",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://aistudio.google.com/docs/models/gemini-3.5-flash-lite",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://aistudio.google.com/docs/models/gemini-3.5-flash-lite",
+        "checked": "2026-11-09"
+      }
+    },
+    "gemini-3.6-flash": {
+      "thinking": {
+        "value": true,
+        "source": "https://aistudio.google.com/docs/models/gemini-3.6-flash",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://aistudio.google.com/docs/models/gemini-3.6-flash",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://aistudio.google.com/docs/models/gemini-3.6-flash",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://aistudio.google.com/docs/models/gemini-3.6-flash",
+        "checked": "2026-11-09"
+      }
+    },
+    "gemini-3.1-pro-preview": {
+      "thinking": {
+        "value": true,
+        "source": "https://aistudio.google.com/docs/models/gemini-3.1-pro-preview",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://aistudio.google.com/docs/models/gemini-3.1-pro-preview",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://aistudio.google.com/docs/models/gemini-3.1-pro-preview",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://aistudio.google.com/docs/models/gemini-3.1-pro-preview",
+        "checked": "2026-11-09"
+      }
+    },
+    "gemini-3.1-flash-lite": {
+      "thinking": {
+        "value": true,
+        "source": "https://aistudio.google.com/docs/models/gemini-3.1-flash-lite",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://aistudio.google.com/docs/models/gemini-3.1-flash-lite",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://aistudio.google.com/docs/models/gemini-3.1-flash-lite",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://aistudio.google.com/docs/models/gemini-3.1-flash-lite",
+        "checked": "2026-11-09"
+      }
+    },
+    "gemini-3-flash-preview": {
+      "thinking": {
+        "value": true,
+        "source": "https://aistudio.google.com/docs/models/gemini-3-flash-preview",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://aistudio.google.com/docs/models/gemini-3-flash-preview",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://aistudio.google.com/docs/models/gemini-3-flash-preview",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://aistudio.google.com/docs/models/gemini-3-flash-preview",
+        "checked": "2026-11-09"
+      }
+    },
+    "gemini-2.5-flash-lite": {
+      "thinking": {
+        "value": true,
+        "source": "https://aistudio.google.com/docs/models/gemini-2.5-flash-lite",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://aistudio.google.com/docs/models/gemini-2.5-flash-lite",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://aistudio.google.com/docs/models/gemini-2.5-flash-lite",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://aistudio.google.com/docs/models/gemini-2.5-flash-lite",
+        "checked": "2026-11-09"
+      }
+    }
+  },
+  "mistral": {
+    "mistral-large-4": {
+      "vision": {
+        "value": true,
+        "source": "https://docs.mistral.ai/models/mistral-large-4-0",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.mistral.ai/models/mistral-large-4-0",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.mistral.ai/models/mistral-large-4-0",
+        "checked": "2026-11-09"
+      }
+    },
+    "zai-glm-5-3-flash": {
+      "thinking": {
+        "value": true,
+        "source": "https://docs.mistral.ai/models/zai-glm-5-3-flash",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.mistral.ai/models/zai-glm-5-3-flash",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.mistral.ai/models/zai-glm-5-3-flash",
+        "checked": "2026-11-09"
+      }
+    },
+    "codestral-embed": {
+      "embedding": {
+        "value": true,
+        "source": "https://docs.mistral.ai/models/codestral-embed-25-05",
+        "checked": "2026-11-09"
+      }
+    },
+    "zai-glm-5-3": {
+      "thinking": {
+        "value": true,
+        "source": "https://docs.mistral.ai/models/zai-glm-5-3",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.mistral.ai/models/zai-glm-5-3",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.mistral.ai/models/zai-glm-5-3",
+        "checked": "2026-11-09"
+      }
+    },
+    "mistral-embed": {
+      "embedding": {
+        "value": true,
+        "source": "https://docs.mistral.ai/models/mistral-embed-23-12",
+        "checked": "2026-11-09"
+      }
+    },
+    "ministral-14b-latest": {
+      "vision": {
+        "value": true,
+        "source": "https://docs.mistral.ai/models/overview",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.mistral.ai/models/ministral-3-14b-25-12",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.mistral.ai/models/ministral-3-14b-25-12",
+        "checked": "2026-11-09"
+      }
+    },
+    "ministral-8b-latest": {
+      "vision": {
+        "value": true,
+        "source": "https://docs.mistral.ai/models/ministral-3-8b-25-12",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.mistral.ai/models/ministral-3-8b-25-12",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.mistral.ai/models/ministral-3-8b-25-12",
+        "checked": "2026-11-09"
+      }
+    },
+    "ministral-3b-latest": {
+      "vision": {
+        "value": true,
+        "source": "https://docs.mistral.ai/models/ministral-3-3b-25-12",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.mistral.ai/models/ministral-3-3b-25-12",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.mistral.ai/models/ministral-3-3b-25-12",
+        "checked": "2026-11-09"
+      }
+    },
+    "mistral-small-latest": {
+      "thinking": {
+        "value": true,
+        "source": "https://docs.mistral.ai/models/mistral-small-4-0-26-03",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.mistral.ai/models/mistral-small-4-0-26-03",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.mistral.ai/models/mistral-small-4-0-26-03",
+        "checked": "2026-11-09"
+      }
+    },
+    "codestral-latest": {
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.mistral.ai/models/codestral-25-08",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.mistral.ai/models/codestral-25-08",
+        "checked": "2026-11-09"
+      }
+    }
+  },
+  "cohere": {
+    "command-r-plus-08-2024": {
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.cohere.com/docs/command-r-plus",
+        "checked": "2026-11-09"
+      }
+    }
+  },
+  "xai": {
+    "grok-4.7": {
+      "thinking": {
+        "value": true,
+        "source": "https://docs.x.ai/developers/models/grok-4.7",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://docs.x.ai/developers/models/grok-4.7",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.x.ai/developers/models/grok-4.7",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.x.ai/developers/models/grok-4.7",
+        "checked": "2026-11-09"
+      }
+    },
+    "grok-4.20-multi-agent-0309": {
+      "thinking": {
+        "value": true,
+        "source": "https://docs.x.ai/developers/models/grok-4.20-multi-agent-0309",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://docs.x.ai/developers/models/grok-4.20-multi-agent-0309",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.x.ai/developers/models/grok-4.20-multi-agent-0309",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.x.ai/developers/models/grok-4.20-multi-agent-0309",
+        "checked": "2026-11-09"
+      }
+    },
+    "grok-4.20-0309-non-reasoning": {
+      "thinking": {
+        "value": false,
+        "source": "https://docs.x.ai/developers/models/grok-4.20-0309-non-reasoning",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://docs.x.ai/developers/models/grok-4.20-0309-non-reasoning",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.x.ai/developers/models/grok-4.20-0309-non-reasoning",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.x.ai/developers/models/grok-4.20-0309-non-reasoning",
+        "checked": "2026-11-09"
+      }
+    },
+    "grok-4.20-0309-reasoning": {
+      "thinking": {
+        "value": true,
+        "source": "https://docs.x.ai/developers/models/grok-4.20-0309-reasoning",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://docs.x.ai/developers/models/grok-4.20-0309-reasoning",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.x.ai/developers/models/grok-4.20-0309-reasoning",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.x.ai/developers/models/grok-4.20-0309-reasoning",
+        "checked": "2026-11-09"
+      }
+    },
+    "grok-4.6": {
+      "thinking": {
+        "value": true,
+        "source": "https://docs.x.ai/developers/models/grok-4.6",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://docs.x.ai/developers/models/grok-4.6",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.x.ai/developers/models/grok-4.6",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.x.ai/developers/models/grok-4.6",
+        "checked": "2026-11-09"
+      }
+    },
+    "grok-4.5": {
+      "thinking": {
+        "value": true,
+        "source": "https://docs.x.ai/developers/models/grok-4.5",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://docs.x.ai/developers/models/grok-4.5",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.x.ai/developers/models/grok-4.5",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.x.ai/developers/models/grok-4.5",
+        "checked": "2026-11-09"
+      }
+    },
+    "grok-4.3": {
+      "thinking": {
+        "value": true,
+        "source": "https://docs.x.ai/developers/models/grok-4.3",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://docs.x.ai/developers/models/grok-4.3",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.x.ai/developers/models/grok-4.3",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.x.ai/developers/models/grok-4.3",
+        "checked": "2026-11-09"
+      }
+    },
+    "grok-build-0.1": {
+      "thinking": {
+        "value": true,
+        "source": "https://docs.x.ai/developers/models/grok-build-0.1",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://docs.x.ai/developers/models/grok-build-0.1",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.x.ai/developers/models/grok-build-0.1",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.x.ai/developers/models/grok-build-0.1",
+        "checked": "2026-11-09"
+      }
+    }
+  },
+  "ollama": {
+    "llama3.3": {
+      "functionCalling": {
+        "value": true,
+        "source": "https://ollama.com/library/llama3.3",
+        "checked": "2026-11-09"
+      }
+    },
+    "qwen3": {
+      "thinking": {
+        "value": true,
+        "source": "https://ollama.com/library/qwen3",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://ollama.com/library/qwen3",
+        "checked": "2026-11-09"
+      }
+    },
+    "llama3.2": {
+      "functionCalling": {
+        "value": true,
+        "source": "https://ollama.com/library/llama3.2",
+        "checked": "2026-11-09"
+      }
+    },
+    "llama3.1": {
+      "functionCalling": {
+        "value": true,
+        "source": "https://ollama.com/library/llama3.1",
+        "checked": "2026-11-09"
+      }
+    },
+    "mistral": {
+      "functionCalling": {
+        "value": true,
+        "source": "https://ollama.com/library/mistral",
+        "checked": "2026-11-09"
+      }
+    },
+    "mixtral": {
+      "vision": {
+        "value": false,
+        "source": "https://ollama.com/library/mixtral",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://ollama.com/library/mixtral",
+        "checked": "2026-11-09"
+      }
+    },
+    "gemma2": {
+      "vision": {
+        "value": false,
+        "source": "https://ollama.com/library/gemma2",
+        "checked": "2026-11-09"
+      }
+    },
+    "qwen2.5": {
+      "functionCalling": {
+        "value": true,
+        "source": "https://ollama.com/library/qwen2.5",
+        "checked": "2026-11-09"
+      }
+    },
+    "deepseek-r1": {
+      "thinking": {
+        "value": true,
+        "source": "https://ollama.com/library/deepseek-r1",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://ollama.com/library/deepseek-r1",
+        "checked": "2026-11-09"
+      }
+    },
+    "phi4": {
+      "vision": {
+        "value": false,
+        "source": "https://ollama.com/library/phi4",
+        "checked": "2026-11-09"
+      }
+    },
+    "nomic-embed-text": {
+      "embedding": {
+        "value": true,
+        "source": "https://ollama.com/library/nomic-embed-text",
+        "checked": "2026-11-09"
+      }
+    },
+    "mxbai-embed-large": {
+      "embedding": {
+        "value": true,
+        "source": "https://ollama.com/library/mxbai-embed-large",
+        "checked": "2026-11-09"
+      }
+    },
+    "all-minilm": {
+      "embedding": {
+        "value": true,
+        "source": "https://ollama.com/library/all-minilm",
+        "checked": "2026-11-09"
+      }
+    }
+  },
+  "deepseek": {
+    "deepseek-flash": {
+      "thinking": {
+        "value": true,
+        "source": "https://api-docs.deepseek.com/guides/thinking_mode",
+        "checked": "2026-11-09"
+      }
+    },
+    "deepseek-v4-pro": {
+      "thinking": {
+        "value": true,
+        "source": "https://api-docs.deepseek.com/guides/thinking_mode",
+        "checked": "2026-11-09"
+      }
+    }
+  },
+  "groq": {
+    "qwen/qwen3.8-27b": {
+      "thinking": {
+        "value": true,
+        "source": "https://console.groq.com/docs/model/qwen/qwen3.8-27b",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://console.groq.com/docs/model/qwen/qwen3.8-27b",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://console.groq.com/docs/model/qwen/qwen3.8-27b",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://console.groq.com/docs/model/qwen/qwen3.8-27b",
+        "checked": "2026-11-09"
+      }
+    },
+    "openai/gpt-oss-120b": {
+      "thinking": {
+        "value": true,
+        "source": "https://console.groq.com/docs/model/openai/gpt-oss-120b",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": false,
+        "source": "https://console.groq.com/docs/model/openai/gpt-oss-120b",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://console.groq.com/docs/model/openai/gpt-oss-120b",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://console.groq.com/docs/model/openai/gpt-oss-120b",
+        "checked": "2026-11-09"
+      }
+    },
+    "openai/gpt-oss-20b": {
+      "thinking": {
+        "value": true,
+        "source": "https://console.groq.com/docs/model/openai/gpt-oss-20b",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://console.groq.com/docs/model/openai/gpt-oss-20b",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://console.groq.com/docs/model/openai/gpt-oss-20b",
+        "checked": "2026-11-09"
+      }
+    }
+  },
+  "together": {
+    "gpt-oss-120b": {
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      }
+    },
+    "MiniMaxAI/MiniMax-M3.1-Flash": {
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      }
+    },
+    "Qwen/Qwen3.5-9B": {
+      "vision": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      }
+    },
+    "Qwen/Qwen3.6-Plus": {
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      }
+    },
+    "Qwen/Qwen3.7-Max": {
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      }
+    },
+    "Qwen/Qwen3.7-Plus": {
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      }
+    },
+    "Qwen/Qwen3.8-Flash": {
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      }
+    },
+    "deepseek-ai/DeepSeek-V4-Pro-0813": {
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      }
+    },
+    "deepseek-ai/DeepSeek-V4.1-Flash": {
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      }
+    },
+    "deepseek-ai/DeepSeek-V4.1-Flash-1017": {
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      }
+    },
+    "meta-models/Muse-Glimmer-30B": {
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      }
+    },
+    "meta-models/Muse-Spark-Open-816B-A42B": {
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      }
+    },
+    "moonshotai/Kimi-K3": {
+      "vision": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      }
+    },
+    "moonshotai/Kimi-K3.1-Pro": {
+      "vision": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      }
+    },
+    "nvidia/NVIDIA-Nemotron-3.5-Super-VL": {
+      "vision": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      }
+    },
+    "reflection/Beam-1.0-501B-A23B": {
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      }
+    },
+    "zai-org/GLM-5.2": {
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      }
+    },
+    "zai-org/GLM-5.3": {
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      }
+    },
+    "zai-org/GLM-5.3-Flash": {
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.together.ai/docs/serverless-models",
+        "checked": "2026-11-09"
+      }
+    }
+  },
+  "cerebras": {
+    "gpt-oss-120b": {
+      "thinking": {
+        "value": true,
+        "source": "https://inference-docs.cerebras.ai/models/openai-oss",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://inference-docs.cerebras.ai/models/openai-oss",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://inference-docs.cerebras.ai/models/openai-oss",
+        "checked": "2026-11-09"
+      }
+    }
+  },
+  "azure-openai": {
+    "gpt-4o": {
+      "vision": {
+        "value": true,
+        "source": "https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-models/concepts/models-sold-directly-by-azure",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-models/concepts/models-sold-directly-by-azure",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-models/concepts/models-sold-directly-by-azure",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-4o-mini": {
+      "vision": {
+        "value": true,
+        "source": "https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-models/concepts/models-sold-directly-by-azure",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-models/concepts/models-sold-directly-by-azure",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-models/concepts/models-sold-directly-by-azure",
+        "checked": "2026-11-09"
+      }
+    },
+    "gpt-4-turbo": {
+      "vision": {
+        "value": true,
+        "source": "https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-models/concepts/models-sold-directly-by-azure",
+        "checked": "2026-11-09"
+      }
+    }
+  },
+  "bedrock": {
+    "anthropic.claude-fable-5-1": {
+      "thinking": {
+        "value": true,
+        "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-fable-5-1.html",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-fable-5-1.html",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-fable-5-1.html",
+        "checked": "2026-11-09"
+      }
+    },
+    "anthropic.claude-haiku-5-5": {
+      "thinking": {
+        "value": true,
+        "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-haiku-5-5.html",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-haiku-5-5.html",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-haiku-5-5.html",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-haiku-5-5.html",
+        "checked": "2026-11-09"
+      }
+    },
+    "anthropic.claude-opus-5-5": {
+      "thinking": {
+        "value": true,
+        "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-opus-5-5.html",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-opus-5-5.html",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-opus-5-5.html",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-opus-5-5.html",
+        "checked": "2026-11-09"
+      }
+    },
+    "anthropic.claude-sonnet-5-5": {
+      "thinking": {
+        "value": true,
+        "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-sonnet-5-5.html",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-sonnet-5-5.html",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-sonnet-5-5.html",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-sonnet-5-5.html",
+        "checked": "2026-11-09"
+      }
+    }
+  },
+  "vertex": {
+    "google/gemini-4-argon-preview": {
+      "thinking": {
+        "value": true,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/4-argon",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/4-argon",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/4-argon",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/4-argon",
+        "checked": "2026-11-09"
+      }
+    },
+    "google/gemini-3.8-flash": {
+      "thinking": {
+        "value": true,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-8-flash",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-8-flash",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-8-flash",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-8-flash",
+        "checked": "2026-11-09"
+      }
+    },
+    "google/gemini-3.1-flash-lite": {
+      "thinking": {
+        "value": true,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-1-flash-lite",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-1-flash-lite",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-1-flash-lite",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-1-flash-lite",
+        "checked": "2026-11-09"
+      }
+    },
+    "google/gemini-3.5-flash-lite": {
+      "thinking": {
+        "value": true,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-5-flash-lite",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-5-flash-lite",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-5-flash-lite",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-5-flash-lite",
+        "checked": "2026-11-09"
+      }
+    },
+    "google/gemini-3.5-flash": {
+      "thinking": {
+        "value": true,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-5-flash",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-5-flash",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-5-flash",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-5-flash",
+        "checked": "2026-11-09"
+      }
+    },
+    "google/gemini-3.1-pro-preview": {
+      "thinking": {
+        "value": true,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-1-pro",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-1-pro",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-1-pro",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-1-pro",
+        "checked": "2026-11-09"
+      }
+    },
+    "google/gemini-2.5-flash-lite": {
+      "thinking": {
+        "value": true,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/2-5-flash-lite",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/2-5-flash-lite",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/2-5-flash-lite",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/2-5-flash-lite",
+        "checked": "2026-11-09"
+      }
+    },
+    "google/gemini-2.5-flash": {
+      "thinking": {
+        "value": true,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/2-5-flash",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/2-5-flash",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/2-5-flash",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/2-5-flash",
+        "checked": "2026-11-09"
+      }
+    },
+    "google/gemini-2.5-pro": {
+      "thinking": {
+        "value": true,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/2-5-pro",
+        "checked": "2026-11-09"
+      },
+      "vision": {
+        "value": true,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/2-5-pro",
+        "checked": "2026-11-09"
+      },
+      "functionCalling": {
+        "value": true,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/2-5-pro",
+        "checked": "2026-11-09"
+      },
+      "json": {
+        "value": true,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/2-5-pro",
+        "checked": "2026-11-09"
+      }
+    }
+  }
+}
