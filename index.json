@@ -39,9 +39,9 @@
     },
     "providers/providers.20261109050004.json": {
       "createdAt": "2026-11-09T05:00:03Z",
-      "updatedAt": "2026-11-09T05:16:02Z",
+      "updatedAt": "2026-11-16T05:11:37Z",
       "checksum": {
-        "sha256": "96b57bda64c17b58ae2edd965e977baaaf8cc4674bdaa2f6b321669c8aa640ac"
+        "sha256": "afcfe84edc140b70ab02f30e89072bd01fa029223e9f598ab125edb678345c83"
       },
       "profile": "pf",
       "range": ">=0.6.1-0",

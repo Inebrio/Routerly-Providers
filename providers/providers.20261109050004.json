@@ -1030,6 +1030,21 @@
     "endpoint": "https://generativelanguage.googleapis.com/v1beta/openai/",
     "models": [
       {
+        "id": "gemini-4-hydrogen",
+        "input": 1.5,
+        "output": 7.5,
+        "cache": 0.075,
+        "contextWindow": 1000000,
+        "notes": "Gemini 4 Hydrogen - new model on official pricing page (aistudio.google.com/docs/pricing), unified 1M-token context window, free tier available; contributor/invite-only preview tier priced at $0.75/$3.75/$0.0375"
+      },
+      {
+        "id": "gemini-4-carbon",
+        "input": 2,
+        "output": 10,
+        "cache": 0.1,
+        "notes": "Gemini 4 Carbon - new model on official pricing page (aistudio.google.com/docs/pricing), same price tier as gemini-4-argon; intro pricing through 2026-11-30, rises to $4/$20/$0.20 on 2026-12-01 per official page; implicit caching only, no free tier; context window not stated on official page"
+      },
+      {
         "id": "gemini-omni-1.2-flash",
         "input": 1.5,
         "output": 9,
