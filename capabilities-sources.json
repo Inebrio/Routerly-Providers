@@ -20,6 +20,11 @@
         "value": true,
         "source": "https://developers.openai.com/api/docs/models/gpt-6-cyber",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 1050000,
+        "source": "https://developers.openai.com/api/docs/models/gpt-6-cyber",
+        "checked": "2026-11-17"
       }
     },
     "gpt-realtime-1.5": {
@@ -51,6 +56,11 @@
         "value": true,
         "source": "https://developers.openai.com/api/docs/models/gpt-audio-1.5",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 128000,
+        "source": "https://developers.openai.com/api/docs/models/gpt-audio-1.5",
+        "checked": "2026-11-17"
       }
     },
     "gpt-audio-mini": {
@@ -58,6 +68,11 @@
         "value": true,
         "source": "https://developers.openai.com/api/docs/models/gpt-audio-mini",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 128000,
+        "source": "https://developers.openai.com/api/docs/models/gpt-audio-mini",
+        "checked": "2026-11-17"
       }
     },
     "gpt-audio": {
@@ -65,6 +80,11 @@
         "value": true,
         "source": "https://developers.openai.com/api/docs/models/gpt-audio",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 128000,
+        "source": "https://developers.openai.com/api/docs/models/gpt-audio",
+        "checked": "2026-11-17"
       }
     },
     "gpt-6.1-sol": {
@@ -87,6 +107,11 @@
         "value": true,
         "source": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 1050000,
+        "source": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+        "checked": "2026-11-17"
       }
     },
     "gpt-6-luna": {
@@ -148,6 +173,11 @@
         "value": true,
         "source": "https://developers.openai.com/api/docs/models/chat-latest",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 400000,
+        "source": "https://developers.openai.com/api/docs/models/chat-latest",
+        "checked": "2026-11-17"
       }
     },
     "o3-mini": {
@@ -845,6 +875,41 @@
         "value": true,
         "source": "https://developers.openai.com/api/docs/models/gpt-6.1-terra",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 1050000,
+        "source": "https://developers.openai.com/api/docs/models/gpt-6.1-terra",
+        "checked": "2026-11-17"
+      }
+    },
+    "gpt-6-astra-law": {
+      "contextWindow": {
+        "unavailable": "no official model page (404) and not on the OpenAI models index",
+        "checked": "2026-11-17"
+      }
+    },
+    "gpt-6-rosalind": {
+      "contextWindow": {
+        "unavailable": "no official model page (404); index links only the pricing page, no context",
+        "checked": "2026-11-17"
+      }
+    },
+    "gpt-rosalind-discovery": {
+      "contextWindow": {
+        "unavailable": "no official model page (404), not on the models index",
+        "checked": "2026-11-17"
+      }
+    },
+    "gpt-rosalind-research": {
+      "contextWindow": {
+        "unavailable": "no official model page (404); index links only the pricing page, no context",
+        "checked": "2026-11-17"
+      }
+    },
+    "gpt-5-search-api": {
+      "contextWindow": {
+        "unavailable": "no official model page (404), not on the models index",
+        "checked": "2026-11-17"
       }
     }
   },
@@ -869,6 +934,11 @@
         "value": true,
         "source": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 1000000,
+        "source": "https://api.anthropic.com/v1/models",
+        "checked": "2026-11-17"
       }
     },
     "claude-sonnet-5-5": {
@@ -891,6 +961,11 @@
         "value": true,
         "source": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 1000000,
+        "source": "https://api.anthropic.com/v1/models",
+        "checked": "2026-11-17"
       }
     },
     "claude-opus-5-5": {
@@ -913,6 +988,11 @@
         "value": true,
         "source": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 1000000,
+        "source": "https://api.anthropic.com/v1/models",
+        "checked": "2026-11-17"
       }
     },
     "claude-fable-5-1": {
@@ -1338,6 +1418,11 @@
         "value": true,
         "source": "https://developers.openai.com/api/docs/models/gpt-5.5",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 1050000,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.5",
+        "checked": "2026-11-17"
       }
     },
     "gpt-5.4": {
@@ -1360,6 +1445,11 @@
         "value": true,
         "source": "https://developers.openai.com/api/docs/models/gpt-5.4",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 1050000,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4",
+        "checked": "2026-11-17"
       }
     },
     "gpt-5.4-mini": {
@@ -1382,6 +1472,11 @@
         "value": true,
         "source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 400000,
+        "source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+        "checked": "2026-11-17"
       }
     }
   },
@@ -1391,6 +1486,10 @@
         "value": true,
         "source": "https://aistudio.google.com/docs/models/gemini-omni-flash",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "unavailable": "model page 404 and id absent from https://aistudio.google.com/docs/models",
+        "checked": "2026-11-17"
       }
     },
     "gemini-embedding-2": {
@@ -1442,6 +1541,11 @@
         "value": true,
         "source": "https://aistudio.google.com/docs/models/gemini-3.8-flash",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 1048576,
+        "source": "https://aistudio.google.com/docs/models/gemini-3.8-flash",
+        "checked": "2026-11-17"
       }
     },
     "gemini-3.5-flash-lite": {
@@ -1464,6 +1568,11 @@
         "value": true,
         "source": "https://aistudio.google.com/docs/models/gemini-3.5-flash-lite",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 1048576,
+        "source": "https://aistudio.google.com/docs/models/gemini-3.5-flash-lite",
+        "checked": "2026-11-17"
       }
     },
     "gemini-3.6-flash": {
@@ -1486,6 +1595,11 @@
         "value": true,
         "source": "https://aistudio.google.com/docs/models/gemini-3.6-flash",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 1048576,
+        "source": "https://aistudio.google.com/docs/models/gemini-3.6-flash",
+        "checked": "2026-11-17"
       }
     },
     "gemini-3.1-pro-preview": {
@@ -1530,6 +1644,11 @@
         "value": true,
         "source": "https://aistudio.google.com/docs/models/gemini-3.1-flash-lite",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 1048576,
+        "source": "https://aistudio.google.com/docs/models/gemini-3.1-flash-lite",
+        "checked": "2026-11-17"
       }
     },
     "gemini-3-flash-preview": {
@@ -1634,6 +1753,11 @@
         "value": true,
         "source": "https://docs.mistral.ai/models/zai-glm-5-3",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 1000000,
+        "source": "https://docs.mistral.ai/getting-started/models/models_overview/",
+        "checked": "2026-11-17"
       }
     },
     "mistral-embed": {
@@ -1658,6 +1782,10 @@
         "value": true,
         "source": "https://docs.mistral.ai/models/ministral-3-14b-25-12",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "unavailable": "alias not confirmed: dated page ministral-14b-2512 states 256k, no page names the -latest alias",
+        "checked": "2026-11-17"
       }
     },
     "ministral-8b-latest": {
@@ -1675,6 +1803,10 @@
         "value": true,
         "source": "https://docs.mistral.ai/models/ministral-3-8b-25-12",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "unavailable": "alias not confirmed: dated page ministral-8b-2512 states 256k, no page names the -latest alias",
+        "checked": "2026-11-17"
       }
     },
     "ministral-3b-latest": {
@@ -1692,6 +1824,10 @@
         "value": true,
         "source": "https://docs.mistral.ai/models/ministral-3-3b-25-12",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "unavailable": "alias not confirmed: dated page ministral-3b-2512 states 256k, no page names the -latest alias",
+        "checked": "2026-11-17"
       }
     },
     "mistral-small-latest": {
@@ -1709,6 +1845,10 @@
         "value": true,
         "source": "https://docs.mistral.ai/models/mistral-small-4-0-26-03",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "unavailable": "alias not confirmed: dated page mistral-small-2603 states 256k, no page names the -latest alias",
+        "checked": "2026-11-17"
       }
     },
     "codestral-latest": {
@@ -1721,6 +1861,10 @@
         "value": true,
         "source": "https://docs.mistral.ai/models/codestral-25-08",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "unavailable": "alias not confirmed: dated page codestral-2508 states 128k, no page names the -latest alias",
+        "checked": "2026-11-17"
       }
     }
   },
@@ -1730,6 +1874,20 @@
         "value": true,
         "source": "https://docs.cohere.com/docs/command-r-plus",
         "checked": "2026-11-09"
+      }
+    },
+    "aya-expanse-8b": {
+      "contextWindow": {
+        "value": 8000,
+        "source": "https://docs.cohere.com/docs/models",
+        "checked": "2026-11-17"
+      }
+    },
+    "aya-expanse-32b": {
+      "contextWindow": {
+        "value": 128000,
+        "source": "https://docs.cohere.com/docs/models",
+        "checked": "2026-11-17"
       }
     }
   },
@@ -2162,6 +2320,10 @@
         "value": true,
         "source": "https://docs.together.ai/docs/serverless-models",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "unavailable": "https://docs.together.ai/docs/serverless-models shows no context for it; model page 404",
+        "checked": "2026-11-17"
       }
     },
     "Qwen/Qwen3.7-Plus": {
@@ -2516,6 +2678,10 @@
         "value": true,
         "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/4-argon",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "unavailable": "official page lists gemini-4-argon (1048576) but not the -preview id; value not copied across ids",
+        "checked": "2026-11-17"
       }
     },
     "google/gemini-3.8-flash": {
@@ -2538,6 +2704,11 @@
         "value": true,
         "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-8-flash",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 1048576,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-8-flash.md.txt",
+        "checked": "2026-11-17"
       }
     },
     "google/gemini-3.1-flash-lite": {
@@ -2560,6 +2731,11 @@
         "value": true,
         "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-1-flash-lite",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 1048576,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-1-flash-lite.md.txt",
+        "checked": "2026-11-17"
       }
     },
     "google/gemini-3.5-flash-lite": {
@@ -2582,6 +2758,11 @@
         "value": true,
         "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-5-flash-lite",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 1048576,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-5-flash-lite.md.txt",
+        "checked": "2026-11-17"
       }
     },
     "google/gemini-3.5-flash": {
@@ -2604,6 +2785,11 @@
         "value": true,
         "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-5-flash",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 1048576,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-5-flash.md.txt",
+        "checked": "2026-11-17"
       }
     },
     "google/gemini-3.1-pro-preview": {
@@ -2626,6 +2812,11 @@
         "value": true,
         "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-1-pro",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 1048576,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-1-pro.md.txt",
+        "checked": "2026-11-17"
       }
     },
     "google/gemini-2.5-flash-lite": {
@@ -2648,6 +2839,11 @@
         "value": true,
         "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/2-5-flash-lite",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 1048576,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/2-5-flash-lite.md.txt",
+        "checked": "2026-11-17"
       }
     },
     "google/gemini-2.5-flash": {
@@ -2670,6 +2866,11 @@
         "value": true,
         "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/2-5-flash",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 1048576,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/2-5-flash.md.txt",
+        "checked": "2026-11-17"
       }
     },
     "google/gemini-2.5-pro": {
@@ -2692,6 +2893,11 @@
         "value": true,
         "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/2-5-pro",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 1048576,
+        "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/2-5-pro.md.txt",
+        "checked": "2026-11-17"
       }
     }
   },
@@ -2706,6 +2912,11 @@
         "value": true,
         "source": "https://ollama.com/api/tags",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 1000000,
+        "source": "https://ollama.com/search?c=cloud",
+        "checked": "2026-11-17"
       }
     },
     "deepseek-v4-pro:0813": {
@@ -2718,6 +2929,11 @@
         "value": true,
         "source": "https://ollama.com/api/tags",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 1000000,
+        "source": "https://ollama.com/library/deepseek-v4-pro/tags",
+        "checked": "2026-11-17"
       }
     },
     "deepseek-v4.1-flash": {
@@ -2735,6 +2951,11 @@
         "value": true,
         "source": "https://ollama.com/api/tags",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 1000000,
+        "source": "https://ollama.com/library/deepseek-v4.1-flash/tags",
+        "checked": "2026-11-17"
       }
     },
     "deepseek-v4.1-flash:1017": {
@@ -2752,6 +2973,11 @@
         "value": true,
         "source": "https://ollama.com/api/tags",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 1000000,
+        "source": "https://ollama.com/library/deepseek-v4.1-flash/tags",
+        "checked": "2026-11-17"
       }
     },
     "gemma4:31b": {
@@ -2769,6 +2995,11 @@
         "value": true,
         "source": "https://ollama.com/api/tags",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 256000,
+        "source": "https://ollama.com/library/gemma4/tags",
+        "checked": "2026-11-17"
       }
     },
     "glm-5.2": {
@@ -2781,6 +3012,11 @@
         "value": true,
         "source": "https://ollama.com/api/tags",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 1000000,
+        "source": "https://ollama.com/search?c=cloud",
+        "checked": "2026-11-17"
       }
     },
     "glm-5.3": {
@@ -2793,6 +3029,11 @@
         "value": true,
         "source": "https://ollama.com/api/tags",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 1000000,
+        "source": "https://ollama.com/search?c=cloud",
+        "checked": "2026-11-17"
       }
     },
     "glm-5.3-flash": {
@@ -2810,6 +3051,11 @@
         "value": true,
         "source": "https://ollama.com/api/tags",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 1000000,
+        "source": "https://ollama.com/search?c=cloud",
+        "checked": "2026-11-17"
       }
     },
     "gpt-oss:120b": {
@@ -2822,6 +3068,11 @@
         "value": true,
         "source": "https://ollama.com/api/tags",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 128000,
+        "source": "https://ollama.com/library/gpt-oss",
+        "checked": "2026-11-17"
       }
     },
     "gpt-oss:20b": {
@@ -2834,6 +3085,11 @@
         "value": true,
         "source": "https://ollama.com/api/tags",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 128000,
+        "source": "https://ollama.com/library/gpt-oss",
+        "checked": "2026-11-17"
       }
     },
     "kimi-k2.6": {
@@ -2851,6 +3107,11 @@
         "value": true,
         "source": "https://ollama.com/api/tags",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 256000,
+        "source": "https://ollama.com/library/kimi-k2.6",
+        "checked": "2026-11-17"
       }
     },
     "kimi-k2.7-code": {
@@ -2868,6 +3129,11 @@
         "value": true,
         "source": "https://ollama.com/api/tags",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 256000,
+        "source": "https://ollama.com/search?c=cloud",
+        "checked": "2026-11-17"
       }
     },
     "kimi-k3": {
@@ -2885,6 +3151,11 @@
         "value": true,
         "source": "https://ollama.com/api/tags",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 1000000,
+        "source": "https://ollama.com/search?c=cloud",
+        "checked": "2026-11-17"
       }
     },
     "kimi-k3.1-pro": {
@@ -2902,6 +3173,11 @@
         "value": true,
         "source": "https://ollama.com/api/tags",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 1000000,
+        "source": "https://ollama.com/search?c=cloud",
+        "checked": "2026-11-17"
       }
     },
     "mimo-v2.6-flash": {
@@ -2919,6 +3195,11 @@
         "value": true,
         "source": "https://ollama.com/api/tags",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 1000000,
+        "source": "https://ollama.com/library/mimo-v2.6-flash",
+        "checked": "2026-11-17"
       }
     },
     "mimo-v2.6-pro": {
@@ -2936,6 +3217,11 @@
         "value": true,
         "source": "https://ollama.com/api/tags",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 1000000,
+        "source": "https://ollama.com/search?c=cloud",
+        "checked": "2026-11-17"
       }
     },
     "minimax-m2.7": {
@@ -2948,6 +3234,10 @@
         "value": true,
         "source": "https://ollama.com/api/tags",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "unavailable": "library page states no context size; not in the cloud listing",
+        "checked": "2026-11-17"
       }
     },
     "minimax-m3": {
@@ -2965,6 +3255,11 @@
         "value": true,
         "source": "https://ollama.com/api/tags",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 500000,
+        "source": "https://ollama.com/search?c=cloud",
+        "checked": "2026-11-17"
       }
     },
     "minimax-m3.1-flash": {
@@ -2982,6 +3277,11 @@
         "value": true,
         "source": "https://ollama.com/api/tags",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 976000,
+        "source": "https://ollama.com/search?c=cloud",
+        "checked": "2026-11-17"
       }
     },
     "mistral-large-3:675b": {
@@ -2994,6 +3294,10 @@
         "value": true,
         "source": "https://ollama.com/api/tags",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "unavailable": "page states 256k for mistral-large-3 in general, not for the 675b-cloud tag; model retired 2026-11-09",
+        "checked": "2026-11-17"
       }
     },
     "mistral-large-4": {
@@ -3011,6 +3315,11 @@
         "value": true,
         "source": "https://ollama.com/api/tags",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 1000000,
+        "source": "https://ollama.com/search?c=cloud",
+        "checked": "2026-11-17"
       }
     },
     "muse-spark-open": {
@@ -3028,6 +3337,11 @@
         "value": true,
         "source": "https://ollama.com/api/tags",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 1000000,
+        "source": "https://ollama.com/search?c=cloud",
+        "checked": "2026-11-17"
       }
     },
     "nemotron-3-nano:30b": {
@@ -3040,6 +3354,10 @@
         "value": true,
         "source": "https://ollama.com/api/tags",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "unavailable": "page lists 1M for the local tag only, nothing for the cloud tag",
+        "checked": "2026-11-17"
       }
     },
     "nemotron-3-super": {
@@ -3052,6 +3370,11 @@
         "value": true,
         "source": "https://ollama.com/api/tags",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 256000,
+        "source": "https://ollama.com/search?c=cloud",
+        "checked": "2026-11-17"
       }
     },
     "nemotron-3-ultra": {
@@ -3064,6 +3387,41 @@
         "value": true,
         "source": "https://ollama.com/api/tags",
         "checked": "2026-11-09"
+      },
+      "contextWindow": {
+        "value": 256000,
+        "source": "https://ollama.com/search?c=cloud",
+        "checked": "2026-11-17"
+      }
+    }
+  },
+  "fireworks": {
+    "accounts/fireworks/models/deepseek-v4-pro": {
+      "contextWindow": {
+        "value": 1040000,
+        "source": "https://fireworks.ai/models/fireworks/deepseek-v4-pro",
+        "checked": "2026-11-17"
+      }
+    },
+    "accounts/fireworks/models/kimi-k2-instruct-0905": {
+      "contextWindow": {
+        "value": 262000,
+        "source": "https://fireworks.ai/models/fireworks/kimi-k2-instruct-0905",
+        "checked": "2026-11-17"
+      }
+    },
+    "accounts/fireworks/models/gpt-oss-120b": {
+      "contextWindow": {
+        "value": 131000,
+        "source": "https://fireworks.ai/models/fireworks/gpt-oss-120b",
+        "checked": "2026-11-17"
+      }
+    },
+    "accounts/fireworks/models/gpt-oss-20b": {
+      "contextWindow": {
+        "value": 131000,
+        "source": "https://fireworks.ai/models/fireworks/gpt-oss-20b",
+        "checked": "2026-11-17"
       }
     }
   }
