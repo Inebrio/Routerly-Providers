@@ -61,6 +61,16 @@ is the date it was read. Check everything with `node scripts/check-capabilities.
 (defaults: the `stable` file of `index.json`); it fails on unknown flags, non-boolean values,
 derived flags, values without a source, and sources without a value. Deprecated models are exempt from the missing-source rule.
 
+### contextWindow sources
+
+Every active chat model (not deprecated, not embedding) must carry `contextWindow` in the catalog. Its official source goes in the same sidecar under the key `contextWindow`:
+
+```json
+{ "<providerKey>": { "<modelId>": { "contextWindow": { "value": 1000000, "source": "https://…", "checked": "YYYY-MM-DD" } } } }
+```
+
+If no official page states the figure, leave `contextWindow` out and write `{ "unavailable": "<why>", "checked": "YYYY-MM-DD" }` instead; never copy the value of a sibling model or alias. The same script fails on a chat model with neither, on a value that differs from the source, and on a non-https source. Routerly treats a missing value as "unlimited" (policy `context`), so an `unavailable` entry is a known gap, not a fix.
+
 ## PricingTier
 
 | Field | Type | Required | Description |

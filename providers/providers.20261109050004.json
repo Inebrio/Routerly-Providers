@@ -29,7 +29,8 @@
           "vision": true,
           "functionCalling": true,
           "json": true
-        }
+        },
+        "contextWindow": 1050000
       },
       {
         "id": "gpt-realtime-1.5",
@@ -62,7 +63,8 @@
         "notes": "GPT Audio 1.5 - text-modality token rate shown (audio modality priced separately at $32/$64 per 1M)",
         "capabilities": {
           "functionCalling": true
-        }
+        },
+        "contextWindow": 128000
       },
       {
         "id": "gpt-audio-mini",
@@ -71,7 +73,8 @@
         "notes": "GPT Audio Mini - text-modality token rate shown (audio modality priced separately at $10/$20 per 1M)",
         "capabilities": {
           "functionCalling": true
-        }
+        },
+        "contextWindow": 128000
       },
       {
         "id": "gpt-audio",
@@ -80,7 +83,8 @@
         "notes": "GPT Audio - text-modality token rate shown (audio modality priced separately at $32/$64 per 1M, not representable here)",
         "capabilities": {
           "functionCalling": true
-        }
+        },
+        "contextWindow": 128000
       },
       {
         "id": "gpt-rosalind-discovery",
@@ -110,7 +114,8 @@
           "vision": true,
           "functionCalling": true,
           "json": true
-        }
+        },
+        "contextWindow": 1050000
       },
       {
         "id": "gpt-6-luna",
@@ -184,7 +189,8 @@
           "vision": true,
           "functionCalling": true,
           "json": true
-        }
+        },
+        "contextWindow": 400000
       },
       {
         "id": "o3-mini",
@@ -755,7 +761,8 @@
           "vision": true,
           "functionCalling": true,
           "json": true
-        }
+        },
+        "contextWindow": 1050000
       }
     ]
   },
@@ -1210,7 +1217,8 @@
           "vision": true,
           "functionCalling": true,
           "json": true
-        }
+        },
+        "contextWindow": 1050000
       },
       {
         "id": "gpt-5.4",
@@ -1222,7 +1230,8 @@
           "vision": true,
           "functionCalling": true,
           "json": true
-        }
+        },
+        "contextWindow": 1050000
       },
       {
         "id": "gpt-5.4-mini",
@@ -1234,7 +1243,8 @@
           "vision": true,
           "functionCalling": true,
           "json": true
-        }
+        },
+        "contextWindow": 400000
       }
     ]
   },
@@ -1299,7 +1309,8 @@
           "vision": true,
           "functionCalling": true,
           "json": true
-        }
+        },
+        "contextWindow": 1048576
       },
       {
         "id": "gemini-3.5-flash-lite",
@@ -1312,7 +1323,8 @@
           "vision": true,
           "functionCalling": true,
           "json": true
-        }
+        },
+        "contextWindow": 1048576
       },
       {
         "id": "gemini-3.6-flash",
@@ -1325,7 +1337,8 @@
           "vision": true,
           "functionCalling": true,
           "json": true
-        }
+        },
+        "contextWindow": 1048576
       },
       {
         "id": "gemini-3.5-flash",
@@ -1369,7 +1382,8 @@
           "vision": true,
           "functionCalling": true,
           "json": true
-        }
+        },
+        "contextWindow": 1048576
       },
       {
         "id": "gemini-3-flash-preview",
@@ -1510,7 +1524,8 @@
           "thinking": true,
           "functionCalling": true,
           "json": true
-        }
+        },
+        "contextWindow": 1000000
       },
       {
         "id": "mistral-embed",
@@ -1690,13 +1705,15 @@
         "id": "aya-expanse-8b",
         "input": 0.5,
         "output": 1.5,
-        "notes": "Aya Expanse 8B - Cohere's multilingual research model"
+        "notes": "Aya Expanse 8B - Cohere's multilingual research model",
+        "contextWindow": 8000
       },
       {
         "id": "aya-expanse-32b",
         "input": 0.5,
         "output": 1.5,
-        "notes": "Aya Expanse 32B - Cohere's multilingual research model"
+        "notes": "Aya Expanse 32B - Cohere's multilingual research model",
+        "contextWindow": 128000
       },
       {
         "id": "command-r-plus-08-2024",
@@ -2637,28 +2654,32 @@
         "input": 1.74,
         "output": 3.48,
         "cache": 0.145,
-        "notes": "DeepSeek V4 Pro on Fireworks"
+        "notes": "DeepSeek V4 Pro on Fireworks",
+        "contextWindow": 1040000
       },
       {
         "id": "accounts/fireworks/models/kimi-k2-instruct-0905",
         "input": 0.95,
         "output": 4,
         "cache": 0.16,
-        "notes": "Kimi K2.6 on Fireworks (verify exact slug against Fireworks model list)"
+        "notes": "Kimi K2.6 on Fireworks (verify exact slug against Fireworks model list)",
+        "contextWindow": 262000
       },
       {
         "id": "accounts/fireworks/models/gpt-oss-120b",
         "input": 0.15,
         "output": 0.6,
         "cache": 0.015,
-        "notes": "GPT-OSS 120B on Fireworks"
+        "notes": "GPT-OSS 120B on Fireworks",
+        "contextWindow": 131000
       },
       {
         "id": "accounts/fireworks/models/gpt-oss-20b",
         "input": 0.07,
         "output": 0.3,
         "cache": 0.007,
-        "notes": "GPT-OSS 20B on Fireworks"
+        "notes": "GPT-OSS 20B on Fireworks",
+        "contextWindow": 131000
       }
     ]
   },
@@ -2848,7 +2869,8 @@
           "vision": true,
           "functionCalling": true,
           "json": true
-        }
+        },
+        "contextWindow": 1048576
       },
       {
         "id": "google/gemini-3.1-flash-lite",
@@ -2861,7 +2883,8 @@
           "vision": true,
           "functionCalling": true,
           "json": true
-        }
+        },
+        "contextWindow": 1048576
       },
       {
         "id": "google/gemini-3.5-flash-lite",
@@ -2874,7 +2897,8 @@
           "vision": true,
           "functionCalling": true,
           "json": true
-        }
+        },
+        "contextWindow": 1048576
       },
       {
         "id": "google/gemini-3.5-flash",
@@ -2887,7 +2911,8 @@
           "vision": true,
           "functionCalling": true,
           "json": true
-        }
+        },
+        "contextWindow": 1048576
       },
       {
         "id": "google/gemini-3.1-pro-preview",
@@ -2909,7 +2934,8 @@
           "vision": true,
           "functionCalling": true,
           "json": true
-        }
+        },
+        "contextWindow": 1048576
       },
       {
         "id": "google/gemini-2.5-flash-lite",
@@ -2922,7 +2948,8 @@
           "vision": true,
           "functionCalling": true,
           "json": true
-        }
+        },
+        "contextWindow": 1048576
       },
       {
         "id": "google/gemini-2.5-flash",
@@ -2935,7 +2962,8 @@
           "vision": true,
           "functionCalling": true,
           "json": true
-        }
+        },
+        "contextWindow": 1048576
       },
       {
         "id": "google/gemini-2.5-pro",
@@ -2957,7 +2985,8 @@
           "vision": true,
           "functionCalling": true,
           "json": true
-        }
+        },
+        "contextWindow": 1048576
       },
       {
         "id": "google/gemini-2.0-flash-001",
@@ -2995,7 +3024,8 @@
         "capabilities": {
           "thinking": true,
           "functionCalling": true
-        }
+        },
+        "contextWindow": 1000000
       },
       {
         "id": "deepseek-v4-pro:0813",
@@ -3005,7 +3035,8 @@
         "capabilities": {
           "thinking": true,
           "functionCalling": true
-        }
+        },
+        "contextWindow": 1000000
       },
       {
         "id": "deepseek-v4.1-flash",
@@ -3016,7 +3047,8 @@
           "thinking": true,
           "vision": true,
           "functionCalling": true
-        }
+        },
+        "contextWindow": 1000000
       },
       {
         "id": "deepseek-v4.1-flash:1017",
@@ -3027,7 +3059,8 @@
           "thinking": true,
           "vision": true,
           "functionCalling": true
-        }
+        },
+        "contextWindow": 1000000
       },
       {
         "id": "gemma4:31b",
@@ -3038,7 +3071,8 @@
           "thinking": true,
           "vision": true,
           "functionCalling": true
-        }
+        },
+        "contextWindow": 256000
       },
       {
         "id": "glm-5.2",
@@ -3048,7 +3082,8 @@
         "capabilities": {
           "thinking": true,
           "functionCalling": true
-        }
+        },
+        "contextWindow": 1000000
       },
       {
         "id": "glm-5.3",
@@ -3058,7 +3093,8 @@
         "capabilities": {
           "thinking": true,
           "functionCalling": true
-        }
+        },
+        "contextWindow": 1000000
       },
       {
         "id": "glm-5.3-flash",
@@ -3069,7 +3105,8 @@
           "thinking": true,
           "vision": true,
           "functionCalling": true
-        }
+        },
+        "contextWindow": 1000000
       },
       {
         "id": "gpt-oss:120b",
@@ -3079,7 +3116,8 @@
         "capabilities": {
           "thinking": true,
           "functionCalling": true
-        }
+        },
+        "contextWindow": 128000
       },
       {
         "id": "gpt-oss:20b",
@@ -3089,7 +3127,8 @@
         "capabilities": {
           "thinking": true,
           "functionCalling": true
-        }
+        },
+        "contextWindow": 128000
       },
       {
         "id": "kimi-k2.6",
@@ -3100,7 +3139,8 @@
           "thinking": true,
           "vision": true,
           "functionCalling": true
-        }
+        },
+        "contextWindow": 256000
       },
       {
         "id": "kimi-k2.7-code",
@@ -3111,7 +3151,8 @@
           "thinking": true,
           "vision": true,
           "functionCalling": true
-        }
+        },
+        "contextWindow": 256000
       },
       {
         "id": "kimi-k3",
@@ -3122,7 +3163,8 @@
           "thinking": true,
           "vision": true,
           "functionCalling": true
-        }
+        },
+        "contextWindow": 1000000
       },
       {
         "id": "kimi-k3.1-pro",
@@ -3133,7 +3175,8 @@
           "thinking": true,
           "vision": true,
           "functionCalling": true
-        }
+        },
+        "contextWindow": 1000000
       },
       {
         "id": "mimo-v2.6-flash",
@@ -3144,7 +3187,8 @@
           "thinking": true,
           "vision": true,
           "functionCalling": true
-        }
+        },
+        "contextWindow": 1000000
       },
       {
         "id": "mimo-v2.6-pro",
@@ -3155,7 +3199,8 @@
           "thinking": true,
           "vision": true,
           "functionCalling": true
-        }
+        },
+        "contextWindow": 1000000
       },
       {
         "id": "minimax-m2.7",
@@ -3176,7 +3221,8 @@
           "thinking": true,
           "vision": true,
           "functionCalling": true
-        }
+        },
+        "contextWindow": 500000
       },
       {
         "id": "minimax-m3.1-flash",
@@ -3187,7 +3233,8 @@
           "thinking": true,
           "vision": true,
           "functionCalling": true
-        }
+        },
+        "contextWindow": 976000
       },
       {
         "id": "mistral-large-3:675b",
@@ -3208,7 +3255,8 @@
           "thinking": true,
           "vision": true,
           "functionCalling": true
-        }
+        },
+        "contextWindow": 1000000
       },
       {
         "id": "muse-spark-open",
@@ -3219,7 +3267,8 @@
           "thinking": true,
           "vision": true,
           "functionCalling": true
-        }
+        },
+        "contextWindow": 1000000
       },
       {
         "id": "nemotron-3-nano:30b",
@@ -3239,7 +3288,8 @@
         "capabilities": {
           "thinking": true,
           "functionCalling": true
-        }
+        },
+        "contextWindow": 256000
       },
       {
         "id": "nemotron-3-ultra",
@@ -3249,7 +3299,8 @@
         "capabilities": {
           "thinking": true,
           "functionCalling": true
-        }
+        },
+        "contextWindow": 256000
       }
     ]
   }
