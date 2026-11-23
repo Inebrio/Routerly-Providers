@@ -3,6 +3,46 @@
     "endpoint": "https://api.openai.com/v1",
     "models": [
       {
+        "id": "gpt-5.5-cyber-preview",
+        "input": 12.5,
+        "output": 75,
+        "cache": 1.25,
+        "notes": "GPT-5.5 Cyber Preview - Daybreak program variant, same price tier as gpt-5.6-cyber; cacheWrite and contextWindow not stated",
+        "capabilities": {
+          "vision": true
+        }
+      },
+      {
+        "id": "gpt-6.2-astra-law",
+        "input": 8,
+        "output": 40,
+        "cache": 0.4,
+        "notes": "GPT-6.2 Astra for Law - new legal model configuration alongside gpt-6-astra-law per official pricing page; cacheWrite and contextWindow not stated",
+        "capabilities": {
+          "vision": true
+        }
+      },
+      {
+        "id": "gpt-6.2-sol",
+        "input": 2,
+        "output": 10,
+        "cache": 0.1,
+        "notes": "GPT-6.2 Sol - new model alongside gpt-6.2-astra per official pricing page; cacheWrite and contextWindow not stated",
+        "capabilities": {
+          "vision": true
+        }
+      },
+      {
+        "id": "gpt-6.2-astra",
+        "input": 8,
+        "output": 40,
+        "cache": 0.4,
+        "notes": "GPT-6.2 Astra - new top-tier flagship above gpt-6-astra per official pricing page; cacheWrite and contextWindow not stated",
+        "capabilities": {
+          "vision": true
+        }
+      },
+      {
         "id": "gpt-6-astra-law",
         "input": 10,
         "output": 50,
@@ -11,10 +51,10 @@
       },
       {
         "id": "gpt-6-rosalind",
-        "input": 15,
-        "output": 75,
-        "cache": 1.5,
-        "cacheWrite": 18.75,
+        "input": 10,
+        "output": 50,
+        "cache": 1,
+        "cacheWrite": 12.5,
         "notes": "GPT-6 Rosalind - new life sciences flagship, above gpt-rosalind-research/gpt-rosalind-discovery; access limited to approved internal research via trusted-access program"
       },
       {
@@ -595,6 +635,32 @@
     "endpoint": "https://api.anthropic.com",
     "models": [
       {
+        "id": "claude-mythos-5-2",
+        "input": 8,
+        "output": 40,
+        "cache": 0.2,
+        "cacheWrite": 10,
+        "contextWindow": 1000000,
+        "notes": "Claude Mythos 5.2 - frontier tier, limited availability; same pricing as Claude Fable 5.2; cache hits priced at 0.025x base input (non-standard)",
+        "capabilities": {
+          "thinking": true,
+          "vision": true
+        }
+      },
+      {
+        "id": "claude-fable-5-2",
+        "input": 8,
+        "output": 40,
+        "cache": 0.2,
+        "cacheWrite": 10,
+        "contextWindow": 1000000,
+        "notes": "Claude Fable 5.2 - new most capable model, supersedes Fable 5.1; cache hits priced at 0.025x base input (non-standard)",
+        "capabilities": {
+          "thinking": true,
+          "vision": true
+        }
+      },
+      {
         "id": "claude-sonnet-4",
         "input": 3,
         "output": 15,
@@ -873,6 +939,17 @@
     "endpoint": "https://api.anthropic.com",
     "models": [
       {
+        "id": "claude-fable-5-2",
+        "input": 0,
+        "output": 0,
+        "contextWindow": 1000000,
+        "notes": "Claude Fable 5.2 - most capable model",
+        "capabilities": {
+          "thinking": true,
+          "vision": true
+        }
+      },
+      {
         "id": "claude-haiku-5-5",
         "input": 0,
         "output": 0,
@@ -1029,6 +1106,22 @@
   "gemini": {
     "endpoint": "https://generativelanguage.googleapis.com/v1beta/openai/",
     "models": [
+      {
+        "id": "gemini-embedding-001",
+        "input": 0.15,
+        "output": 0,
+        "notes": "Gemini Embedding (gemini-embedding-001) - text embedding model, listed alongside gemini-embedding-2 on official pricing page; context window not published",
+        "capabilities": {
+          "embedding": true
+        }
+      },
+      {
+        "id": "gemini-4-neon",
+        "input": 3,
+        "output": 15,
+        "cache": 0.15,
+        "notes": "Gemini 4 Neon - new model on official pricing page (aistudio.google.com/docs/pricing), above gemini-4-carbon/gemini-4-argon; context window not stated on official page"
+      },
       {
         "id": "gemini-4-hydrogen",
         "input": 1.5,
@@ -2110,7 +2203,8 @@
         "id": "ricursive-ai/Ripple-65B-Preview",
         "input": 0.2,
         "output": 0.6,
-        "contextWindow": 131072
+        "contextWindow": 131072,
+        "cache": 0.02
       }
     ]
   },
