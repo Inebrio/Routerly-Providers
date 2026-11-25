@@ -64,6 +64,12 @@ function resolveVersion(index, version) {
 }
 
 // --- schema validation (SCHEMA.md field reference, structural subset) ---
+const VERIFIED_HOW = ["call", "type", "price"];
+function isVerifiedRecord(v) {
+  return typeof v?.at === "string" && /^\d{4}-\d{2}-\d{2}/.test(v.at) &&
+    Array.isArray(v.how) && v.how.length > 0 && v.how.every((h) => VERIFIED_HOW.includes(h));
+}
+
 function validateCatalog(file, data, errors) {
   for (const [providerKey, entry] of Object.entries(data)) {
     const p = `${file}:${providerKey}`;
@@ -80,6 +86,9 @@ function validateCatalog(file, data, errors) {
       else seenIds.add(model.id);
       if (typeof model.input !== "number") errors.push(`${mp}: input required (number)`);
       if (typeof model.output !== "number") errors.push(`${mp}: output required (number)`);
+      if (model.verified !== undefined && !isVerifiedRecord(model.verified)) {
+        errors.push(`${mp}: verified must be {at: "YYYY-MM-DD", how: [call|type|price]}`);
+      }
       if (model.pricingTiers) {
         for (const [j, tier] of model.pricingTiers.entries()) {
           const tp = `${mp}.pricingTiers[${j}]`;

@@ -11,6 +11,15 @@ actually change to — an agent judgment call, not scriptable) and
 fully scriptable, easy to get wrong by hand). This skill's driver does the
 mechanics; you do the research.
 
+## Rule zero (read first)
+
+See "Rule zero" in root `CLAUDE.md`. Unattended or scheduled run (nobody answering): **do not edit,
+commit or push**. Report the differences you found as a proposal and stop.
+
+`add-model` and `set-price` refuse to run unless `ROUTERLY_CATALOG_VERIFIED=1`. Set it only when the
+values come from the verification (`npm run verify:catalog` in the Routerly repo) and a person asked
+for the change.
+
 ## Run (agent path)
 
 ### 1. Research — do this yourself, not the driver
@@ -101,6 +110,7 @@ are the whole interface; a human runs the identical commands.
 
 ## Troubleshooting
 
+- `FAIL  add-model/set-price need a verified source` — see "Rule zero". An unattended run stops here.
 - `FAIL  unknown provider key "X"` — key doesn't exist in the catalog root.
   Provider keys are never invented ad hoc; check CLAUDE.md's Provider keys
   table, or use `add-provider` if it's genuinely new (and update the docs

@@ -6,6 +6,17 @@ No git clone, no database — just JSON files served by GitHub.
 
 ---
 
+## Rule zero: verified changes only
+
+New models, price changes and `verified` records reach this catalog **only through the verification**:
+the product's `npm run verify:catalog` (a real call plus the official price) and the daily catalog job.
+
+An unattended or scheduled session (no person answering) **never commits and never pushes** here.
+It writes what it found as a proposal (a note or an issue) and stops. Do not edit the JSON by hand to
+get around the driver.
+
+---
+
 ## Fetch mechanism
 
 Routerly fetches `index.json` first, resolves the right file for its version/channel, then

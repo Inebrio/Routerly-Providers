@@ -87,7 +87,18 @@ function findModel(data, provider, modelId) {
   return model;
 }
 
+// ROUT-871: an unattended writer added unverified models every week. New models and prices
+// need the verification first; the variable states that the caller has it.
+function requireVerified(cmd) {
+  if (process.env.ROUTERLY_CATALOG_VERIFIED === "1") return;
+  console.error(`FAIL  ${cmd} needs a verified source: new models and prices go through the verification`);
+  console.error(`      ("npm run verify:catalog" in the Routerly repo, see "Rule zero" in the root instructions).`);
+  console.error(`      Unattended or scheduled run: stop here, do not edit, commit or push.`);
+  process.exit(1);
+}
+
 function cmdSetPrice(provider, modelId, field, value) {
+  requireVerified("set-price");
   const allowed = ["input", "output", "cache", "cacheWrite"];
   if (!allowed.includes(field)) {
     console.error(`FAIL  field must be one of: ${allowed.join(", ")}`);
@@ -111,6 +122,7 @@ function cmdSetPrice(provider, modelId, field, value) {
 }
 
 function cmdAddModel(provider, modelJsonPath) {
+  requireVerified("add-model");
   const index = readJSON(INDEX);
   const file = currentStableFile(index);
   const data = readJSON(file);

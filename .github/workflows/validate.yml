@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Validate catalog (checksums and schema)
+        run: node .claude/skills/run-providers/driver.mjs validate
       - name: Validate JSON files
         run: |
           find . -name "*.json" -not -path "./.git/*" | sort | while read -r f; do
