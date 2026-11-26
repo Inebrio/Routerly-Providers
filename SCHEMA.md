@@ -28,6 +28,7 @@
 | `capabilities` | object | No | Capability flags. See table below. |
 | `stripParams` | string[] | No | Request body parameter names to remove before forwarding to this model (e.g. `["temperature"]` for models that reject it). Only list params the model explicitly rejects with a 400. |
 | `pricingTiers` | PricingTier[] | No | Tiered pricing overrides. |
+| `verified` | object | No | `{ "at": "YYYY-MM-DD", "how": ["call", "type", "price"] }`. Written only by the daily verification run, never by hand: `at` is the day of the last confirmation. Routerly proposes only models that carry it. |
 
 ## ModelCapabilities
 
