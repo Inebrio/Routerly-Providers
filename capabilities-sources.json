@@ -1,32 +1,5 @@
 {
   "openai": {
-    "gpt-6-cyber": {
-      "thinking": {
-        "value": true,
-        "source": "https://developers.openai.com/api/docs/models/gpt-6-cyber",
-        "checked": "2026-11-09"
-      },
-      "vision": {
-        "value": true,
-        "source": "https://developers.openai.com/api/docs/models/gpt-6-cyber",
-        "checked": "2026-11-09"
-      },
-      "functionCalling": {
-        "value": true,
-        "source": "https://developers.openai.com/api/docs/models/gpt-6-cyber",
-        "checked": "2026-11-09"
-      },
-      "json": {
-        "value": true,
-        "source": "https://developers.openai.com/api/docs/models/gpt-6-cyber",
-        "checked": "2026-11-09"
-      },
-      "contextWindow": {
-        "value": 1050000,
-        "source": "https://developers.openai.com/api/docs/models/gpt-6-cyber",
-        "checked": "2026-11-17"
-      }
-    },
     "gpt-realtime-1.5": {
       "functionCalling": {
         "value": true,
@@ -178,28 +151,6 @@
         "value": 400000,
         "source": "https://developers.openai.com/api/docs/models/chat-latest",
         "checked": "2026-11-17"
-      }
-    },
-    "o3-mini": {
-      "thinking": {
-        "value": true,
-        "source": "https://developers.openai.com/api/docs/models/o3-mini",
-        "checked": "2026-11-09"
-      },
-      "vision": {
-        "value": false,
-        "source": "https://developers.openai.com/api/docs/models/o3-mini",
-        "checked": "2026-11-09"
-      },
-      "functionCalling": {
-        "value": true,
-        "source": "https://developers.openai.com/api/docs/models/o3-mini",
-        "checked": "2026-11-09"
-      },
-      "json": {
-        "value": true,
-        "source": "https://developers.openai.com/api/docs/models/o3-mini",
-        "checked": "2026-11-09"
       }
     },
     "gpt-5-pro": {
@@ -700,23 +651,6 @@
         "checked": "2026-11-09"
       }
     },
-    "gpt-4.1-nano": {
-      "vision": {
-        "value": true,
-        "source": "https://developers.openai.com/api/docs/models/gpt-4.1-nano",
-        "checked": "2026-11-09"
-      },
-      "functionCalling": {
-        "value": true,
-        "source": "https://developers.openai.com/api/docs/models/gpt-4.1-nano",
-        "checked": "2026-11-09"
-      },
-      "json": {
-        "value": true,
-        "source": "https://developers.openai.com/api/docs/models/gpt-4.1-nano",
-        "checked": "2026-11-09"
-      }
-    },
     "gpt-4o": {
       "vision": {
         "value": true,
@@ -797,28 +731,6 @@
         "checked": "2026-11-09"
       }
     },
-    "o4-mini": {
-      "thinking": {
-        "value": true,
-        "source": "https://developers.openai.com/api/docs/models/o4-mini",
-        "checked": "2026-11-09"
-      },
-      "vision": {
-        "value": true,
-        "source": "https://developers.openai.com/api/docs/models/o4-mini",
-        "checked": "2026-11-09"
-      },
-      "functionCalling": {
-        "value": true,
-        "source": "https://developers.openai.com/api/docs/models/o4-mini",
-        "checked": "2026-11-09"
-      },
-      "json": {
-        "value": true,
-        "source": "https://developers.openai.com/api/docs/models/o4-mini",
-        "checked": "2026-11-09"
-      }
-    },
     "text-embedding-3-large": {
       "embedding": {
         "value": true,
@@ -882,34 +794,22 @@
         "checked": "2026-11-17"
       }
     },
-    "gpt-6-astra-law": {
-      "contextWindow": {
-        "unavailable": "no official model page (404) and not on the OpenAI models index",
-        "checked": "2026-11-17"
-      }
-    },
-    "gpt-6-rosalind": {
-      "contextWindow": {
-        "unavailable": "no official model page (404); index links only the pricing page, no context",
-        "checked": "2026-11-17"
-      }
-    },
-    "gpt-rosalind-discovery": {
-      "contextWindow": {
-        "unavailable": "no official model page (404), not on the models index",
-        "checked": "2026-11-17"
-      }
-    },
-    "gpt-rosalind-research": {
-      "contextWindow": {
-        "unavailable": "no official model page (404); index links only the pricing page, no context",
-        "checked": "2026-11-17"
-      }
-    },
     "gpt-5-search-api": {
       "contextWindow": {
         "unavailable": "no official model page (404), not on the models index",
         "checked": "2026-11-17"
+      }
+    },
+    "gpt-6.2-sol": {
+      "contextWindow": {
+        "unavailable": "no figure read from an official source",
+        "checked": "2026-11-27"
+      }
+    },
+    "gpt-6.2-astra": {
+      "contextWindow": {
+        "unavailable": "no figure read from an official source",
+        "checked": "2026-11-27"
       }
     }
   },
@@ -1693,6 +1593,25 @@
         "value": true,
         "source": "https://aistudio.google.com/docs/models/gemini-2.5-flash-lite",
         "checked": "2026-11-09"
+      }
+    },
+    "gemini-embedding-001": {
+      "embedding": {
+        "value": true,
+        "source": "https://ai.google.dev/gemini-api/docs/embeddings",
+        "checked": "2026-11-27"
+      }
+    },
+    "gemini-4-neon": {
+      "contextWindow": {
+        "unavailable": "no figure read from an official source",
+        "checked": "2026-11-27"
+      }
+    },
+    "gemini-4-carbon": {
+      "contextWindow": {
+        "unavailable": "no figure read from an official source",
+        "checked": "2026-11-27"
       }
     }
   },

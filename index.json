@@ -4,7 +4,7 @@
   "channels": {
     "stable": "providers/providers.20261127050002.json",
     "latest": "providers/providers.20261127050002.json",
-    "next": "providers/providers.20261127050002.json"
+    "next": "providers/providers.20261109050004.json"
   },
   "versions": {
     ">=0.3.0": "providers/providers.20261127050002.json"
@@ -23,7 +23,6 @@
       "checksum": {
         "sha256": "0187ada4e2a748001024b12914a4dd6657759c00ad8446d264ff22c6cb3e274b"
       },
-      "profile": "p1",
       "range": ">=0.3.0",
       "tags": "v0.3.0..v0.6.0"
     },
@@ -33,21 +32,17 @@
       "checksum": {
         "sha256": "b92eb4153741c2bb909191df497eb99e59ed48df722f4d53da4b7c104f83123b"
       },
-      "profile": "p1",
       "range": ">=0.3.0",
       "tags": "v0.3.0..v0.6.0"
     },
     "providers/providers.20261109050004.json": {
       "createdAt": "2026-11-09T05:00:03Z",
-      "updatedAt": "2026-11-27T11:57:50Z",
+      "updatedAt": "2026-11-27T11:58:29Z",
       "checksum": {
-        "sha256": "a3e65b8f7a777a9737180431e5b6ce6c5f3b331f19608a93e4eec8b811ee799f"
+        "sha256": "c4d3805c49d314f483fe6d4ed503b73cde45f24a1a64c5fe24d62bfc4ab614eb"
       },
-      "profile": "pf",
       "range": ">=0.6.1-0",
-      "tags": "v0.3.0..v0.6.0",
-      "forVersion": "0.6.1",
-      "state": "preparato sul canale next, non ancora rilasciato"
+      "forVersion": "0.6.1"
     },
     "providers/providers.20261127050002.json": {
       "createdAt": "2026-11-27T05:00:01Z",
@@ -55,11 +50,9 @@
       "checksum": {
         "sha256": "e7a609e5dec5c9f9b2d2c2a086e53593b7cfedc09a69a1f3b3be85335c6061bf"
       },
-      "profile": "pf",
       "range": ">=0.6.1-0",
       "tags": "v0.3.0..v0.6.0",
-      "forVersion": "0.6.1",
-      "state": "preparato sul canale next, non ancora rilasciato"
+      "forVersion": "0.6.1"
     }
   }
 }

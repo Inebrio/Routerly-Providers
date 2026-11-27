@@ -1,0 +1,7 @@
+# local agent files: they stay on the working machine, never in this repository
+.claude/
+.agents/
+CLAUDE.md
+AGENTS.md
+
+.DS_Store

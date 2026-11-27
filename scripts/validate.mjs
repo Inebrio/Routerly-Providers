@@ -1,24 +1,15 @@
 #!/usr/bin/env node
-// driver.mjs — simulates Routerly's runtime consumption of this catalog repo.
-// Repo has no server/GUI/CLI of its own: Routerly just does
-// `GET index.json` -> resolve version/channel -> `GET <file>` -> verify sha256 -> JSON.parse.
-// This script performs exactly that sequence against the local working tree so an
-// agent can "run" the catalog and see resolution + integrity + schema checks pass/fail.
+// validate.mjs — reads this catalog the way Routerly does: `GET index.json` -> pick the file ->
+// `GET <file>` -> verify sha256 -> JSON.parse. Run by CI and by the daily job.
 //
-// Usage:
-//   node driver.mjs validate                 # full repo validation (JSON, checksums, schema)
-//   node driver.mjs resolve <version> [channel]   # simulate Routerly's file resolution
-//
-// Examples:
-//   node driver.mjs validate
-//   node driver.mjs resolve 0.3.2 stable
-//   node driver.mjs resolve 0.3.2            # channel defaults to index.json's "default"
+//   node scripts/validate.mjs validate                    # JSON, checksums and schema of the whole repository
+//   node scripts/validate.mjs resolve <version> [channel] # which file a Routerly version reads
 
 import { readFileSync, readdirSync } from "node:fs";
 import { createHash } from "node:crypto";
 import path from "node:path";
 
-const ROOT = path.resolve(new URL(".", import.meta.url).pathname, "..", "..", "..");
+const ROOT = path.resolve(new URL(".", import.meta.url).pathname, "..");
 
 function readJSON(relPath) {
   const abs = path.join(ROOT, relPath);
@@ -30,37 +21,34 @@ function sha256(relPath) {
   return createHash("sha256").update(readFileSync(abs)).digest("hex");
 }
 
-// --- minimal npm-style ^range satisfaction (only what this repo's versions map uses) ---
+// --- the semver ranges the `versions` map uses: ">=a.b.c[-0]", "<a.b.c[-0]", "^a.b.c" ---
 function parseVer(v) {
-  const [maj, min, pat] = v.split(".").map((n) => parseInt(n, 10));
-  return { maj, min: min ?? 0, pat: pat ?? 0 };
+  const [core, pre] = v.split(/-(.*)/);
+  const [maj, min, pat] = core.split(".").map((n) => parseInt(n, 10));
+  return { nums: [maj, min ?? 0, pat ?? 0], pre: pre ?? null };
 }
-function satisfiesCaret(version, range) {
-  if (!range.startsWith("^")) throw new Error(`unsupported range syntax: ${range}`);
-  const r = parseVer(range.slice(1));
+function compare(a, b) {
+  for (let i = 0; i < 3; i++) if (a.nums[i] !== b.nums[i]) return a.nums[i] - b.nums[i];
+  if (a.pre === b.pre) return 0;
+  if (a.pre === null) return 1;
+  if (b.pre === null) return -1;
+  return a.pre < b.pre ? -1 : 1;
+}
+function satisfies(version, range) {
   const v = parseVer(version);
-  if (v.maj !== r.maj) return false;
-  if (v.maj === 0) {
-    // ^0.x.y is narrower: locks minor too (npm semantics)
-    if (v.min !== r.min) return false;
-    return v.pat >= r.pat;
-  }
-  if (v.min < r.min) return false;
-  if (v.min === r.min) return v.pat >= r.pat;
-  return true;
-}
-function specificity(range) {
-  // more dotted segments in the range = more specific match wins
-  return range.replace(/^\^/, "").split(".").length;
-}
-
-function resolveVersion(index, version) {
-  const matches = Object.entries(index.versions || {}).filter(([range]) =>
-    satisfiesCaret(version, range)
-  );
-  if (!matches.length) return null;
-  matches.sort((a, b) => specificity(b[0]) - specificity(a[0]));
-  return matches[0][1];
+  const parts = range.trim().split(/\s+/).map((part) => {
+    const m = part.match(/^(>=|<|\^)(\d.*)$/);
+    if (!m) throw new Error(`unsupported range syntax: ${range}`);
+    return { op: m[1], ver: parseVer(m[2]) };
+  });
+  // as in npm: a pre-release matches only a range that names a pre-release of the same version
+  if (v.pre !== null && !parts.some((p) => p.ver.pre !== null && p.ver.nums.join() === v.nums.join())) return false;
+  return parts.every(({ op, ver }) => {
+    if (op === ">=") return compare(v, ver) >= 0;
+    if (op === "<") return compare(v, ver) < 0;
+    const locked = ver.nums[0] === 0 ? 2 : 1; // ^0.x locks the minor too
+    return compare(v, ver) >= 0 && v.nums.slice(0, locked).join() === ver.nums.slice(0, locked).join();
+  });
 }
 
 // --- schema validation (SCHEMA.md field reference, structural subset) ---
@@ -109,7 +97,7 @@ function cmdValidate() {
   const jsonFiles = [];
   (function walk(dir) {
     for (const name of readdirSync(dir, { withFileTypes: true })) {
-      if (name.name === ".git" || name.name === "node_modules") continue;
+      if (name.name.startsWith(".") || name.name === "node_modules") continue;
       const full = path.join(dir, name.name);
       if (name.isDirectory()) walk(full);
       else if (name.name.endsWith(".json")) jsonFiles.push(path.relative(ROOT, full));
@@ -173,35 +161,30 @@ function cmdValidate() {
   console.log("PASS  all checks green");
 }
 
-function cmdResolve(version, channelArg) {
+// Same order as Routerly: the channel the operator set, else `default`; `versions` only when neither names a file.
+function resolveFile(index, version, channel) {
+  const name = channel ?? index.default;
+  if (name && index.channels?.[name]) return { file: index.channels[name], via: `channels.${name}` };
+  const match = Object.entries(index.versions || {}).find(([range]) => satisfies(version, range));
+  if (match) return { file: match[1], via: `versions["${match[0]}"]` };
+  if (index.default && index.channels?.[index.default]) return { file: index.channels[index.default], via: `channels.${index.default}` };
+  return null;
+}
+
+function cmdResolve(version, channel) {
   if (!version) {
-    console.error("usage: node driver.mjs resolve <version> [channel]");
+    console.error("usage: node scripts/validate.mjs resolve <version> [channel]");
     process.exit(2);
   }
   const index = readJSON("index.json");
-  const channel = channelArg || index.default;
-
-  console.log(`GET index.json`);
-  console.log(`  routerly version=${version} channel=${channel}`);
-
-  // Routerly resolution order per CLAUDE.md: X.Y.Z -> X.Y -> X, then channel, then default.
-  let file = resolveVersion(index, version);
-  let via = "versions";
-  if (!file) {
-    file = index.channels?.[channel];
-    via = `channels.${channel}`;
-  }
-  if (!file) {
-    file = index.channels?.[index.default];
-    via = `channels.${index.default} (default)`;
-  }
-  if (!file) {
-    console.log(`FAIL  no resolution found for version=${version} channel=${channel}`);
+  console.log(`routerly version=${version} channel=${channel ?? "(not set)"}`);
+  const found = resolveFile(index, version, channel);
+  if (!found) {
+    console.log(`FAIL  no file for version=${version}`);
     process.exit(1);
   }
+  const { file, via } = found;
   console.log(`  resolved via ${via} -> ${file}`);
-
-  console.log(`GET ${file}`);
   const meta = index.providers?.[file];
   if (!meta) {
     console.log(`FAIL  ${file} not present in index.json "providers" registry`);
@@ -213,18 +196,16 @@ function cmdResolve(version, channelArg) {
     process.exit(1);
   }
   console.log(`  sha256 verified: ${actual}`);
-
   const data = readJSON(file);
-  const providerKeys = Object.keys(data);
-  const modelCount = providerKeys.reduce((n, k) => n + (data[k].models?.length || 0), 0);
-  console.log(`  parsed OK: ${providerKeys.length} providers, ${modelCount} models`);
-  console.log(`PASS  resolution for version=${version} channel=${channel} -> ${file}`);
+  const keys = Object.keys(data);
+  console.log(`  parsed OK: ${keys.length} providers, ${keys.reduce((n, k) => n + (data[k].models?.length || 0), 0)} models`);
+  console.log(`PASS  resolution for version=${version} -> ${file}`);
 }
 
 const [, , cmd, a1, a2] = process.argv;
 if (cmd === "validate") cmdValidate();
 else if (cmd === "resolve") cmdResolve(a1, a2);
 else {
-  console.error("usage: node driver.mjs validate | node driver.mjs resolve <version> [channel]");
+  console.error("usage: node scripts/validate.mjs validate | node scripts/validate.mjs resolve <version> [channel]");
   process.exit(2);
 }

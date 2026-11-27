@@ -23,7 +23,6 @@
 | `cache` | number | No | USD per 1M cached input tokens (prompt cache read). |
 | `cacheWrite` | number | No | USD per 1M cache-write input tokens (Anthropic only). |
 | `contextWindow` | number | No | Maximum context size in tokens. |
-| `notes` | string | No | Human-readable description. Shown in the Routerly dashboard. |
 | `deprecated` | boolean | No | If true, hidden from new project creation. Existing configs still work. |
 | `capabilities` | object | No | Capability flags. See table below. |
 | `stripParams` | string[] | No | Request body parameter names to remove before forwarding to this model (e.g. `["temperature"]` for models that reject it). Only list params the model explicitly rejects with a 400. |
@@ -51,7 +50,7 @@ model with sources. Routerly versions that do not read a flag receive catalog fi
 
 ## capabilities-sources.json
 
-Sidecar file, not read by Routerly. One entry per declared capability value:
+Sidecar file, not read by Routerly. One entry per capability value of the `next` file; the daily job keeps it in step with the catalog:
 
 ```json
 { "<providerKey>": { "<modelId>": { "<flag>": { "value": true, "source": "https://…", "checked": "YYYY-MM-DD" } } } }
@@ -59,7 +58,7 @@ Sidecar file, not read by Routerly. One entry per declared capability value:
 
 `value` must equal the value in the catalog, `source` is the https page that states it, `checked`
 is the date it was read. Check everything with `node scripts/check-capabilities.mjs [catalog.json] [sources.json]`
-(defaults: the `stable` file of `index.json`); it fails on unknown flags, non-boolean values,
+(defaults: the `next` file of `index.json`, which holds every sourced value); it fails on unknown flags, non-boolean values,
 derived flags, values without a source, and sources without a value. Deprecated models are exempt from the missing-source rule.
 
 ### contextWindow sources

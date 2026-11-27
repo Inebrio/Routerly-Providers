@@ -1,129 +1,152 @@
 # Routerly Providers
 
-The public **provider catalog** for [Routerly](https://github.com/Inebrio/Routerly): the list of
-LLM providers, their models, prices, and endpoints.
+The public **provider catalog** for [Routerly](https://github.com/Inebrio/Routerly): LLM providers,
+their models, prices, endpoints and capabilities.
 
-Routerly reads this catalog at runtime over plain HTTP GET from GitHub raw content. There is no
-git clone and no database. Editing a JSON file here and pushing to `main` is all it takes to change
-what models and prices every Routerly instance sees.
-
-## Contents
-
-- [How it works](#how-it-works)
-- [Repository layout](#repository-layout)
-- [Updating the catalog](#updating-the-catalog)
-- [Channels and versions](#channels-and-versions)
-- [Model entry format](#model-entry-format)
-- [Provider keys](#provider-keys)
-- [Validation](#validation)
-- [Multiple repos](#multiple-repos)
-
-## How it works
-
-1. Routerly fetches `index.json`.
-2. It resolves the catalog file for its own version, falling back to the configured channel, then to `default`.
-3. It fetches that one file, verifies the SHA-256 checksum listed in `index.json`, and uses it.
-
-One file per resolution. No layering, no merging. If `index.json` returns 404, Routerly falls back
-to fetching `providers.json` directly.
-
-The base URL is the repo's GitHub raw content root:
+Routerly reads this catalog at runtime with plain HTTP GET requests to GitHub raw content. There is
+no git clone and no database. What is on `main` is what Routerly instances read, so `main` is the
+only branch.
 
 ```
 https://raw.githubusercontent.com/Inebrio/Routerly-Providers/main/
 ```
 
+## Contents
+
+- [Repository layout](#repository-layout)
+- [How Routerly picks a file](#how-routerly-picks-a-file)
+- [Channels and versions](#channels-and-versions)
+- [Verified changes only](#verified-changes-only)
+- [Daily job](#daily-job)
+- [Updating the catalog](#updating-the-catalog)
+- [Model entry format](#model-entry-format)
+- [Provider keys](#provider-keys)
+- [Validation](#validation)
+- [Multiple repos](#multiple-repos)
+
 ## Repository layout
 
 ```
-index.json                          Version/channel map + checksum registry
+index.json                          Channel and version map, checksum registry
 providers/
-  providers.YYYYMMDDHHMMSS.json      Catalog file (mutable; UTC timestamp in the name)
-capabilities-sources.json           Official source (URL + date) for every declared capability value
-scripts/check-capabilities.mjs      Capability check (flags, types, sources); also run by CI
-SCHEMA.md                           Full field reference + official pricing source URLs
-CLAUDE.md                           Instructions for AI agents editing this repo
-.github/workflows/validate.yml      CI: validates every JSON file on push and PR
+  providers.YYYYMMDDHHMMSS.json     Catalog files, updated in place (the timestamp is the creation time)
+capabilities-sources.json           Official source (URL and date) of each capability value and context window
+SCHEMA.md                           Field reference and official pricing pages
+scripts/
+  validate.mjs                      Checks JSON, checksums and schema; shows which file a version reads
+  check-capabilities.mjs            Checks capability values and context windows against their sources
+  catalog.mjs                       Bookkeeping of a manual edit (checksum, index.json, validation)
+.github/workflows/validate.yml      CI: runs both checks on every push to main and pull request
+.gitignore
+README.md
 ```
 
-## Updating the catalog
+When you change this structure, update this README in the same commit.
 
-Catalog files are **mutable**. For routine changes (update a price, add a model, add a provider)
-edit the file in place, then refresh its checksum. You do not create a new file.
+## How Routerly picks a file
 
-1. Edit the catalog file the current channel resolves to (see `index.json` -> `channels.stable`).
-2. Recompute its checksum:
+1. It fetches `index.json`.
+2. It takes the channel set by the operator for the repository, or `default` when none is set. If that
+   name is in `channels`, it uses that file.
+3. Otherwise it takes the first range in `versions` that matches its own version.
+4. It fetches that one file, checks the SHA-256 listed in `providers`, and uses it. No layering, no
+   merging.
 
-   ```bash
-   shasum -a 256 providers/providers.YYYYMMDDHHMMSS.json
-   ```
+It reads `providers.json` at the root only when `index.json` is missing or names no file for the
+version. The daily job writes that file once `default` is gone (see below).
 
-3. In `index.json`, set the new `checksum.sha256` for that file and bump its `updatedAt`.
-4. Validate locally (see [Validation](#validation)) and push.
-
-### When to cut a new file instead
-
-Create a second timestamped file **only** when you need a distinct catalog for a different Routerly
-version range, for example a breaking schema change that older builds must not receive:
-
-1. Copy the current file to `providers/providers.YYYYMMDDHHMMSS.json` and edit it.
-2. Compute its checksum.
-3. In `index.json`, point the relevant version/channel at the new file and add its entry to the
-   `providers` registry (`createdAt`, `updatedAt`, `checksum`). Keep the old file so older version
-   ranges keep resolving to it.
-
-### Golden rules
-
-- **Never rename or remove a provider key.** Operators reference keys by name in their project configs.
-- **Never delete a model.** To retire one, set `"deprecated": true`. It stays valid for existing
-  configs but is hidden from new project creation.
-- **All prices are USD per 1 million tokens.**
-- **Check prices against the official pricing page** (URLs in `SCHEMA.md`), never from memory.
+Routerly skips the download when `updatedAt` of the file has not changed, so every change must bump it.
 
 ## Channels and versions
-
-`index.json` resolves a Routerly build to exactly one catalog file.
 
 ```json
 {
   "schemaVersion": 1,
   "default": "stable",
-  "channels": {
-    "stable": "providers/providers.20260703170500.json",
-    "latest": "providers/providers.20260703170500.json"
-  },
-  "versions": {
-    "^0.3.0": "providers/providers.20260703170500.json"
-  },
+  "channels": { "stable": "providers/A.json", "latest": "providers/A.json", "next": "providers/B.json" },
+  "versions": { ">=0.3.0": "providers/A.json" },
   "providers": {
-    "providers/providers.20260703170500.json": {
-      "createdAt": "2026-07-03T17:05:00Z",
-      "updatedAt": "2026-07-03T17:15:00Z",
-      "checksum": { "sha256": "<hex>" }
+    "providers/A.json": {
+      "createdAt": "…", "updatedAt": "…", "checksum": { "sha256": "…" },
+      "range": ">=0.3.0", "tags": "v0.3.0..v0.6.0"
+    },
+    "providers/B.json": {
+      "createdAt": "…", "updatedAt": "…", "checksum": { "sha256": "…" },
+      "range": ">=0.6.1-0", "forVersion": "0.6.1"
     }
   }
 }
 ```
 
-`versions` keys are semver ranges, same syntax as `package.json`. `^0.3.0` covers `0.3.0`,
-`0.3.5`, and so on. Routerly evaluates every range against its own version and picks the most
-specific match; if none match it falls back to the channel, then to `default`.
+| Channel | File |
+|---------|------|
+| `stable`, `latest` | The newest released Routerly versions |
+| `next` | The next, not yet released version. It can hold providers and fields that released versions do not read |
 
-| Channel | Meaning |
-|---------|---------|
-| `stable` | Tested, updated conservatively. |
-| `latest` | Edge additions; may include models not yet broadly available. |
+`versions` keys are semver ranges. While one range of versions is released, `default` is `stable`, so
+every instance reads the `stable` file unless the operator picks another channel. When a release
+needs its own catalog, the daily job removes `default`, and `versions` then sends each Routerly
+version to its file.
 
-Operators choose per instance: pin to a version range for reproducibility, or follow a channel to
-stay current.
+There is one file per distinct catalog. A refresh edits the existing file. A new file appears only
+when a version range needs a catalog that differs. Files that no channel or range uses are removed.
 
-The `providers` block is an integrity registry. Routerly verifies each downloaded file against its
-listed `checksum.sha256` before using it, so the checksum must be updated on every content change.
+`index.json` holds only the fields above.
+
+## Verified changes only
+
+New models, price changes and `verified` records reach this catalog only after verification: an
+official source for the value, and for `verified` a real call to the model plus its official price.
+
+`verified` is `{ "at": "YYYY-MM-DD", "how": ["call", "type", "price"] }`. Routerly proposes and
+imports only models that carry it. Never write it by hand.
+
+An unattended or scheduled session (no person answering) never commits and never pushes here. It
+reports what it found instead.
+
+## Daily job
+
+A job run by the maintainer once a day:
+
+- reads the official pricing and model pages, and applies a value only when the page states it;
+- verifies models with a real call and the official price, and sets or removes `verified`;
+- removes models that the provider no longer serves;
+- updates the files in place, with checksums, `updatedAt` and `capabilities-sources.json`;
+- runs the checks below, and publishes nothing if one fails;
+- commits to `main`. It creates no branches.
+
+## Updating the catalog
+
+For a manual change (a price, a deprecation, a new provider key):
+
+1. Edit the file that `channels.stable` names. If `channels.next` names another file, apply the change
+   there too.
+2. Recompute the checksum and bump `updatedAt`:
+
+   ```bash
+   node scripts/catalog.mjs sync-checksum providers/providers.YYYYMMDDHHMMSS.json
+   ```
+
+3. Run both checks (see [Validation](#validation)) and push to `main`.
+
+`scripts/catalog.mjs` also has `current-file`, `deprecate`, `add-provider`, `set-price` and
+`add-model`. The last two refuse to run unless `ROUTERLY_CATALOG_VERIFIED=1` states that you verified
+the value.
+
+Rules:
+
+- Never rename or remove a provider key: operator configurations use it.
+- Do not delete a model by hand. Set `"deprecated": true`: existing configurations keep working and the
+  model is hidden from new projects. Only the daily job removes models, after verification shows the
+  provider no longer serves them.
+- Prices are USD per 1 million tokens, read on the official page (URLs in [SCHEMA.md](SCHEMA.md)),
+  never from memory.
+- Every capability value needs a source in `capabilities-sources.json`. An absent flag means unknown.
+- English only. No notes or status text in the catalog files.
 
 ## Model entry format
 
-The catalog root is `{ [providerKey]: ProviderEntry }`. Each provider has an `endpoint` and a
-`models` array, newest model first.
+The root of a catalog file is `{ [providerKey]: ProviderEntry }`. Models are listed newest first.
 
 ```jsonc
 {
@@ -131,33 +154,30 @@ The catalog root is `{ [providerKey]: ProviderEntry }`. Each provider has an `en
     "endpoint": "https://api.openai.com/v1",
     "models": [
       {
-        "id": "gpt-4o",              // exact model id sent to the provider API (required)
-        "input": 2.5,                 // USD / 1M input tokens (required)
-        "output": 10,                 // USD / 1M output tokens (required)
-        "cache": 1.25,                // USD / 1M cached input tokens (optional)
-        "cacheWrite": null,           // USD / 1M cache-write tokens, Anthropic only (optional)
-        "contextWindow": 128000,      // optional
-        "notes": "GPT-4o multimodal", // shown in the dashboard (optional)
-        "deprecated": false,          // hide from new projects, keep backward compat (optional)
-        "capabilities": { "vision": true, "functionCalling": true, "json": true },
-        "pricingTiers": [             // context-length tiered overrides (optional)
+        "id": "model-id",              // exact id sent to the provider API (required)
+        "input": 2.5,                  // USD per 1M input tokens (required)
+        "output": 10,                  // USD per 1M output tokens (required)
+        "cache": 1.25,                 // USD per 1M cached input tokens
+        "cacheWrite": 3.1,             // USD per 1M cache-write tokens
+        "contextWindow": 128000,
+        "deprecated": false,
+        "capabilities": { "vision": true, "functionCalling": true },
+        "pricingTiers": [
           { "metric": "context_tokens", "above": 200000, "input": 5.0, "output": 15.0 }
-        ]
+        ],
+        "verified": { "at": "2026-11-27", "how": ["call", "type", "price"] }
       }
     ]
   }
 }
 ```
 
-Capabilities: see `SCHEMA.md` (absent flag = unknown; each value needs a source in `capabilities-sources.json`).
-
-Minimum required fields: `id`, `input`, `output`. An empty catalog object `{}` is valid. See
-`SCHEMA.md` for the complete field reference and which fields are required.
+Full reference: [SCHEMA.md](SCHEMA.md).
 
 ## Provider keys
 
-Adding a key here only affects the Routerly UI (Discover and model-form dropdowns). The Routerly
-service must also implement the matching adapter for the provider to work at runtime.
+A key here only affects what the Routerly interface offers. The Routerly service must also have the
+matching adapter, so a version without it cannot use the provider.
 
 | Key | Provider |
 |-----|----------|
@@ -165,7 +185,7 @@ service must also implement the matching adapter for the provider to work at run
 | `anthropic` | Anthropic |
 | `anthropic-oauth` | Anthropic via Claude.ai OAuth |
 | `openai-oauth` | OpenAI via ChatGPT OAuth |
-| `gemini` | Google Gemini (OpenAI-compat) |
+| `gemini` | Google Gemini (OpenAI-compatible) |
 | `mistral` | Mistral AI |
 | `cohere` | Cohere |
 | `xai` | xAI (Grok) |
@@ -176,47 +196,28 @@ service must also implement the matching adapter for the provider to work at run
 | `fireworks` | Fireworks AI |
 | `cerebras` | Cerebras |
 | `ollama` | Ollama (local) |
-| `ollama-cloud` | Ollama Cloud (ollama.com, Bearer API key) |
+| `ollama-cloud` | Ollama Cloud (ollama.com, Bearer API key). Only in the `next` file |
 | `custom` | User-defined endpoint |
 | `azure-openai` | Azure OpenAI |
 | `bedrock` | AWS Bedrock |
 | `vertex` | Google Vertex AI |
 
-Do not change `endpoint` for `azure-openai`, `bedrock`, `vertex`, or `custom`: operators set those
-per deployment.
+Do not change `endpoint` of `azure-openai`, `bedrock`, `vertex` or `custom`: operators set it for their
+own deployment.
 
 ## Validation
 
-Run the same check CI runs before pushing:
+CI runs the same checks. Run them before pushing:
 
 ```bash
-find . -name "*.json" -not -path "./.git/*" | sort | while read -r f; do
-  node -e "JSON.parse(require('fs').readFileSync(process.argv[1],'utf8')); process.stdout.write('ok  ' + process.argv[1] + '\n')" "$f"
-done
-```
-
-Capabilities (known flags, boolean values, an official source for every value):
-
-```bash
-node scripts/check-capabilities.mjs
-```
-
-To confirm each catalog file matches the checksum registered in `index.json`:
-
-```bash
-node -e '
-const idx = JSON.parse(require("fs").readFileSync("index.json", "utf8"));
-const cp = require("child_process");
-for (const [file, meta] of Object.entries(idx.providers)) {
-  const real = cp.execSync("shasum -a 256 " + file).toString().split(" ")[0];
-  console.log((real === meta.checksum.sha256 ? "MATCH    " : "MISMATCH ") + file);
-}'
+node scripts/validate.mjs validate        # JSON, checksums, schema
+node scripts/check-capabilities.mjs       # capability values and context windows have a source
+node scripts/validate.mjs resolve 0.6.0   # the file a Routerly version reads
+node scripts/validate.mjs resolve 0.6.1 next
 ```
 
 ## Multiple repos
 
-Routerly can read several provider repos at once. Each is fetched independently and merged, with the
-repo listed first winning on conflict. Operators can add private repos (self-hosted GitHub or plain
-raw HTTP) to extend this public catalog with internal models.
-
-See [SCHEMA.md](SCHEMA.md) for the full field reference and pricing source URLs.
+Routerly can read several provider repositories. Each is fetched on its own and they are merged; the
+one listed first wins on conflict. Operators can add their own (a private GitHub repository or any
+raw HTTP server) to add internal models.

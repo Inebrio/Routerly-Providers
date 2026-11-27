@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 // Validates model `capabilities` in a catalog file against SCHEMA.md and capabilities-sources.json.
-// Usage: node scripts/check-capabilities.mjs [catalog.json] [sources.json]   (defaults: index.json stable file, capabilities-sources.json)
+// Usage: node scripts/check-capabilities.mjs [catalog.json] [sources.json]   (defaults: the `next` file of index.json, the one with every sourced value; capabilities-sources.json)
 import { readFileSync } from 'node:fs';
 
 const root = new URL('..', import.meta.url).pathname;
 const read = (p) => JSON.parse(readFileSync(p, 'utf8'));
-const catalogPath = process.argv[2] ?? root + read(root + 'index.json').channels.stable;
+const catalogPath = process.argv[2] ?? root + read(root + 'index.json').channels.next;
 const sources = read(process.argv[3] ?? root + 'capabilities-sources.json');
 const catalog = read(catalogPath);
 
