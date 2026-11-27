@@ -72,8 +72,11 @@ function validateCatalog(file, data, errors) {
       if (typeof model.id !== "string" || !model.id) errors.push(`${mp}: id required (string)`);
       else if (seenIds.has(model.id)) errors.push(`${mp}: duplicate model id "${model.id}"`);
       else seenIds.add(model.id);
-      if (typeof model.input !== "number") errors.push(`${mp}: input required (number)`);
-      if (typeof model.output !== "number") errors.push(`${mp}: output required (number)`);
+      // price not published: both absent (never write 0 for an unknown price)
+      if (model.input !== undefined || model.output !== undefined) {
+        if (typeof model.input !== "number") errors.push(`${mp}: input must be a number, together with output`);
+        if (typeof model.output !== "number") errors.push(`${mp}: output must be a number, together with input`);
+      }
       if (model.verified !== undefined && !isVerifiedRecord(model.verified)) {
         errors.push(`${mp}: verified must be {at: "YYYY-MM-DD", how: [call|type|price]}`);
       }

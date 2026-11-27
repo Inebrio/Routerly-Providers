@@ -18,8 +18,8 @@
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `id` | string | Yes | Exact model ID sent to the provider API. |
-| `input` | number | Yes | USD per 1M input tokens. |
-| `output` | number | Yes | USD per 1M output tokens. |
+| `input` | number | Yes* | USD per 1M input tokens. *Absent together with `output` when no price is published; never write 0 for an unknown price. |
+| `output` | number | Yes* | USD per 1M output tokens. *See `input`. |
 | `cache` | number | No | USD per 1M cached input tokens (prompt cache read). |
 | `cacheWrite` | number | No | USD per 1M cache-write input tokens (Anthropic only). |
 | `contextWindow` | number | No | Maximum context size in tokens. |
@@ -27,7 +27,7 @@
 | `capabilities` | object | No | Capability flags. See table below. |
 | `stripParams` | string[] | No | Request body parameter names to remove before forwarding to this model (e.g. `["temperature"]` for models that reject it). Only list params the model explicitly rejects with a 400. |
 | `pricingTiers` | PricingTier[] | No | Tiered pricing overrides. |
-| `verified` | object | No | `{ "at": "YYYY-MM-DD", "how": ["call", "type", "price"] }`. Written only by the daily verification run, never by hand: `at` is the day of the last confirmation. Routerly proposes only models that carry it. |
+| `verified` | object | No | `{ "at": "YYYY-MM-DD", "how": ["call", "type", "price"] }`. Written only by the daily verification run, never by hand: `at` is the day of the last confirmation. Routerly proposes only models that carry it. Exception: virtual aliases of a local provider (`omniroute`) carry the record of the verification done by the product. |
 
 ## ModelCapabilities
 

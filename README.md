@@ -88,6 +88,8 @@ every instance reads the `stable` file unless the operator picks another channel
 needs its own catalog, the daily job removes `default`, and `versions` then sends each Routerly
 version to its file.
 
+Some providers appear only in the files of the versions that support them (`omniroute`: 0.6.1 and later).
+
 There is one file per distinct catalog. A refresh edits the existing file. A new file appears only
 when a version range needs a catalog that differs. Files that no channel or range uses are removed.
 
@@ -99,7 +101,8 @@ New models, price changes and `verified` records reach this catalog only after v
 official source for the value, and for `verified` a real call to the model plus its official price.
 
 `verified` is `{ "at": "YYYY-MM-DD", "how": ["call", "type", "price"] }`. Routerly proposes and
-imports only models that carry it. Never write it by hand.
+imports only models that carry it. Never write it by hand. Exception: virtual aliases of a local provider
+(`omniroute`) carry the record of the verification done by the product.
 
 An unattended or scheduled session (no person answering) never commits and never pushes here. It
 reports what it found instead.
@@ -196,6 +199,7 @@ matching adapter, so a version without it cannot use the provider.
 | `fireworks` | Fireworks AI |
 | `cerebras` | Cerebras |
 | `ollama` | Ollama (local) |
+| `omniroute` | OmniRoute (local gateway, virtual routing aliases, no price). Only in files for 0.6.1 and later |
 | `ollama-cloud` | Ollama Cloud (ollama.com, Bearer API key). Only in the `next` file |
 | `custom` | User-defined endpoint |
 | `azure-openai` | Azure OpenAI |
