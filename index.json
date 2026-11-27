@@ -2,12 +2,12 @@
   "schemaVersion": 1,
   "default": "stable",
   "channels": {
-    "stable": "providers/providers.20261109050004.json",
-    "latest": "providers/providers.20261109050004.json",
-    "next": "providers/providers.20261109050004.json"
+    "stable": "providers/providers.20261127050002.json",
+    "latest": "providers/providers.20261127050002.json",
+    "next": "providers/providers.20261127050002.json"
   },
   "versions": {
-    ">=0.3.0": "providers/providers.20261109050004.json"
+    ">=0.3.0": "providers/providers.20261127050002.json"
   },
   "providers": {
     "providers/providers.20260703170500.json": {
@@ -42,6 +42,18 @@
       "updatedAt": "2026-11-23T05:13:09Z",
       "checksum": {
         "sha256": "803ca24a4ea47358ceb5d79ed4c84d718de2d91dfb5cf16ea3d92532cc6edab1"
+      },
+      "profile": "pf",
+      "range": ">=0.6.1-0",
+      "tags": "v0.3.0..v0.6.0",
+      "forVersion": "0.6.1",
+      "state": "preparato sul canale next, non ancora rilasciato"
+    },
+    "providers/providers.20261127050002.json": {
+      "createdAt": "2026-11-27T05:00:01Z",
+      "updatedAt": "2026-11-27T05:00:01Z",
+      "checksum": {
+        "sha256": "e7a609e5dec5c9f9b2d2c2a086e53593b7cfedc09a69a1f3b3be85335c6061bf"
       },
       "profile": "pf",
       "range": ">=0.6.1-0",
