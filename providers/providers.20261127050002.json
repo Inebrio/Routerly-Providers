@@ -7,13 +7,12 @@
         "input": 2,
         "output": 10,
         "cache": 0.1,
-        "notes": "GPT-6.2 Sol - new model alongside gpt-6.2-astra per official pricing page; cacheWrite and contextWindow not stated",
         "capabilities": {
           "vision": true
         },
         "cacheWrite": 2.5,
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -26,13 +25,12 @@
         "input": 8,
         "output": 40,
         "cache": 0.4,
-        "notes": "GPT-6.2 Astra - new top-tier flagship above gpt-6-astra per official pricing page; cacheWrite and contextWindow not stated",
         "capabilities": {
           "vision": true
         },
         "cacheWrite": 10,
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -45,34 +43,29 @@
         "input": 4,
         "output": 16,
         "cache": 0.4,
-        "contextWindow": 32000,
-        "notes": "GPT Realtime 1.5 - text-modality token rate, matches legacy gpt-realtime"
+        "contextWindow": 32000
       },
       {
         "id": "gpt-realtime-2",
         "input": 4,
         "output": 24,
         "cache": 0.4,
-        "contextWindow": 32000,
-        "notes": "GPT Realtime 2 - text-modality token rate, matches gpt-realtime-2.1"
+        "contextWindow": 32000
       },
       {
         "id": "gpt-audio-1.5",
         "input": 2.5,
-        "output": 10,
-        "notes": "GPT Audio 1.5 - text-modality token rate shown (audio modality priced separately at $32/$64 per 1M)"
+        "output": 10
       },
       {
         "id": "gpt-audio-mini",
         "input": 0.6,
-        "output": 2.4,
-        "notes": "GPT Audio Mini - text-modality token rate shown (audio modality priced separately at $10/$20 per 1M)"
+        "output": 2.4
       },
       {
         "id": "gpt-audio",
         "input": 2.5,
-        "output": 10,
-        "notes": "GPT Audio - text-modality token rate shown (audio modality priced separately at $32/$64 per 1M, not representable here)"
+        "output": 10
       },
       {
         "id": "gpt-6.1-sol",
@@ -80,7 +73,6 @@
         "output": 10,
         "cache": 0.1,
         "cacheWrite": 2.5,
-        "notes": "GPT-6.1 Sol - new model on official pricing page, distinct from gpt-6-sol (same input/output/cacheWrite, but cache $0.10 vs $0.20); long-context (>272K input) tier also carries cacheWrite $5 (not representable in pricingTiers schema); contextWindow not stated on official pricing page",
         "pricingTiers": [
           {
             "metric": "context_tokens",
@@ -91,7 +83,7 @@
           }
         ],
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -105,7 +97,6 @@
         "output": 0.5,
         "cache": 0.01,
         "contextWindow": 400000,
-        "notes": "GPT-6 Luna - compact GPT-6 family model; context window inferred from GPT-6 family (not separately verified); long-context (>272K) tier also carries cacheWrite $0.25 (not representable in pricingTiers schema)",
         "capabilities": {
           "vision": true
         },
@@ -120,7 +111,7 @@
           }
         ],
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -134,7 +125,6 @@
         "output": 10,
         "cache": 0.2,
         "contextWindow": 400000,
-        "notes": "GPT-6 Sol - new GPT-6 family model alongside gpt-6-astra; context window inferred from GPT-6 family (not separately verified); long-context (>272K) tier also carries cacheWrite $5 (not representable in pricingTiers schema)",
         "capabilities": {
           "vision": true
         },
@@ -149,7 +139,7 @@
           }
         ],
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -162,9 +152,8 @@
         "input": 1.25,
         "output": 10,
         "cache": 0.125,
-        "notes": "GPT-5 Search API - search-augmented variant",
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -177,9 +166,8 @@
         "input": 5,
         "output": 30,
         "cache": 0.5,
-        "notes": "Alias tracking OpenAI's latest chat-completion frontier model",
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -191,15 +179,13 @@
         "id": "gpt-5-pro",
         "input": 15,
         "output": 120,
-        "contextWindow": 400000,
-        "notes": "GPT-5 Pro - extended-reasoning variant (no cached-input price on the official page)"
+        "contextWindow": 400000
       },
       {
         "id": "gpt-5.2-pro",
         "input": 21,
         "output": 168,
-        "contextWindow": 400000,
-        "notes": "GPT-5.2 Pro - extended-reasoning variant (no cached-input price on the official page)"
+        "contextWindow": 400000
       },
       {
         "id": "gpt-5.6-cyber",
@@ -208,7 +194,6 @@
         "cache": 1.25,
         "cacheWrite": 15.625,
         "contextWindow": 400000,
-        "notes": "GPT-5.6 Cyber - Daybreak program variant (gpt-daybreak-red-latest alias); no long-context tier",
         "capabilities": {
           "vision": true
         },
@@ -221,7 +206,6 @@
         "cache": 1,
         "cacheWrite": 12.5,
         "contextWindow": 400000,
-        "notes": "GPT-6 Astra - new top-tier flagship, above GPT-5.6 Sol; long-context (>272K) tier also carries cacheWrite $25 (not representable in pricingTiers schema)",
         "capabilities": {
           "vision": true
         },
@@ -235,7 +219,7 @@
           }
         ],
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -248,30 +232,26 @@
         "input": 0.6,
         "output": 2.4,
         "cache": 0.06,
-        "contextWindow": 32000,
-        "notes": "GPT Realtime 2.1 Mini - newer versioned realtime model, coexists with unversioned gpt-realtime-mini (text token price)"
+        "contextWindow": 32000
       },
       {
         "id": "gpt-realtime-2.1",
         "input": 4,
         "output": 24,
         "cache": 0.4,
-        "contextWindow": 32000,
-        "notes": "GPT Realtime 2.1 - newer versioned realtime model, coexists with unversioned gpt-realtime (text token price)"
+        "contextWindow": 32000
       },
       {
         "id": "o1-pro",
         "input": 150,
         "output": 600,
-        "contextWindow": 200000,
-        "notes": "o1 Pro - extended-reasoning variant of o1 (no cached-input price on official page)"
+        "contextWindow": 200000
       },
       {
         "id": "o3-pro",
         "input": 20,
         "output": 80,
-        "contextWindow": 200000,
-        "notes": "o3 Pro - extended-reasoning variant of o3 (no cached-input price on official page)"
+        "contextWindow": 200000
       },
       {
         "id": "gpt-5.6-luna",
@@ -280,7 +260,6 @@
         "cache": 0.02,
         "cacheWrite": 0.25,
         "contextWindow": 400000,
-        "notes": "GPT-5.6 Luna - compact variant; long-context (>272K) tier also carries cacheWrite $0.50 (not representable in pricingTiers schema)",
         "capabilities": {
           "vision": true
         },
@@ -294,7 +273,7 @@
           }
         ],
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -309,7 +288,6 @@
         "cache": 0.2,
         "cacheWrite": 2.5,
         "contextWindow": 400000,
-        "notes": "GPT-5.6 Terra; long-context (>272K) tier also carries cacheWrite $5 (not representable in pricingTiers schema)",
         "capabilities": {
           "vision": true
         },
@@ -323,7 +301,7 @@
           }
         ],
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -338,7 +316,6 @@
         "cache": 0.4,
         "cacheWrite": 5,
         "contextWindow": 400000,
-        "notes": "GPT-5.6 Sol - new flagship; promotional pricing (was $5/$30) in effect at least through 2026-11-21 per official pricing page; long-context (>272K) tier also carries cacheWrite $10 (not representable in pricingTiers schema)",
         "capabilities": {
           "vision": true
         },
@@ -352,7 +329,7 @@
           }
         ],
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -366,7 +343,6 @@
         "output": 30,
         "cache": 0.5,
         "contextWindow": 400000,
-        "notes": "GPT-5.5 - current frontier model for complex coding and research",
         "capabilities": {
           "vision": true
         },
@@ -380,7 +356,7 @@
           }
         ],
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -393,7 +369,6 @@
         "input": 30,
         "output": 180,
         "contextWindow": 400000,
-        "notes": "GPT-5.5 Pro - extended-reasoning variant (no cached-input price on the official page)",
         "pricingTiers": [
           {
             "metric": "context_tokens",
@@ -409,7 +384,6 @@
         "output": 15,
         "cache": 0.25,
         "contextWindow": 400000,
-        "notes": "GPT-5.4",
         "capabilities": {
           "vision": true
         },
@@ -423,7 +397,7 @@
           }
         ],
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -436,7 +410,6 @@
         "input": 30,
         "output": 180,
         "contextWindow": 400000,
-        "notes": "GPT-5.4 Pro - extended-reasoning variant (no cached-input price on the official page)",
         "pricingTiers": [
           {
             "metric": "context_tokens",
@@ -452,12 +425,11 @@
         "output": 4.5,
         "cache": 0.075,
         "contextWindow": 400000,
-        "notes": "GPT-5.4 Mini",
         "capabilities": {
           "vision": true
         },
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -471,12 +443,11 @@
         "output": 1.25,
         "cache": 0.02,
         "contextWindow": 400000,
-        "notes": "Ultra-compact GPT-5.4 variant",
         "capabilities": {
           "vision": true
         },
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -490,7 +461,6 @@
         "output": 14,
         "cache": 0.175,
         "contextWindow": 400000,
-        "notes": "GPT-5.3 Codex - coding-specialized; context window follows GPT-5 family (not separately verified)",
         "capabilities": {
           "vision": true
         }
@@ -501,12 +471,11 @@
         "output": 14,
         "cache": 0.175,
         "contextWindow": 400000,
-        "notes": "GPT-5.2 (previous frontier)",
         "capabilities": {
           "vision": true
         },
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -520,12 +489,11 @@
         "output": 10,
         "cache": 0.125,
         "contextWindow": 400000,
-        "notes": "GPT-5.1",
         "capabilities": {
           "vision": true
         },
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -539,12 +507,11 @@
         "output": 10,
         "cache": 0.125,
         "contextWindow": 400000,
-        "notes": "Base GPT-5 model",
         "capabilities": {
           "vision": true
         },
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -558,12 +525,11 @@
         "output": 2,
         "cache": 0.025,
         "contextWindow": 400000,
-        "notes": "Smaller GPT-5 variant for cost-sensitive tasks",
         "capabilities": {
           "vision": true
         },
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -577,12 +543,11 @@
         "output": 0.4,
         "cache": 0.005,
         "contextWindow": 400000,
-        "notes": "Ultra-compact GPT-5 variant",
         "capabilities": {
           "vision": true
         },
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -596,12 +561,11 @@
         "output": 8,
         "cache": 0.5,
         "contextWindow": 1047576,
-        "notes": "GPT-4.1 text model",
         "capabilities": {
           "vision": true
         },
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -615,12 +579,11 @@
         "output": 1.6,
         "cache": 0.1,
         "contextWindow": 1047576,
-        "notes": "Smaller GPT-4.1 variant",
         "capabilities": {
           "vision": true
         },
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -634,12 +597,11 @@
         "output": 10,
         "cache": 1.25,
         "contextWindow": 128000,
-        "notes": "GPT-4o (Omni) multimodal model",
         "capabilities": {
           "vision": true
         },
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -653,12 +615,11 @@
         "output": 0.6,
         "cache": 0.075,
         "contextWindow": 128000,
-        "notes": "Mini variant of GPT-4o",
         "capabilities": {
           "vision": true
         },
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -671,16 +632,14 @@
         "input": 4,
         "output": 16,
         "cache": 0.4,
-        "contextWindow": 32000,
-        "notes": "Low-latency GPT model for streaming (text token price)"
+        "contextWindow": 32000
       },
       {
         "id": "gpt-realtime-mini",
         "input": 0.6,
         "output": 2.4,
         "cache": 0.06,
-        "contextWindow": 32000,
-        "notes": "Compact realtime model (text token price; not verified on live page)"
+        "contextWindow": 32000
       },
       {
         "id": "o3",
@@ -688,9 +647,8 @@
         "output": 8,
         "cache": 0.5,
         "contextWindow": 200000,
-        "notes": "Reasoning model (o3)",
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -704,7 +662,6 @@
         "output": 60,
         "cache": 7.5,
         "contextWindow": 200000,
-        "notes": "Large agentic model (o1), superseded by GPT-5",
         "deprecated": true
       },
       {
@@ -712,12 +669,11 @@
         "input": 0.13,
         "output": 0,
         "contextWindow": 8191,
-        "notes": "OpenAI embedding model (3072-dim)",
         "capabilities": {
           "embedding": true
         },
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -730,12 +686,11 @@
         "input": 0.02,
         "output": 0,
         "contextWindow": 8191,
-        "notes": "OpenAI embedding model (1536-dim, fastest)",
         "capabilities": {
           "embedding": true
         },
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -748,12 +703,11 @@
         "input": 0.1,
         "output": 0,
         "contextWindow": 8191,
-        "notes": "OpenAI legacy embedding model",
         "capabilities": {
           "embedding": true
         },
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -768,7 +722,7 @@
         "cache": 0.05,
         "cacheWrite": 1.25,
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -788,7 +742,6 @@
         "cache": 0.2,
         "cacheWrite": 10,
         "contextWindow": 1000000,
-        "notes": "Claude Fable 5.2 - new most capable model, supersedes Fable 5.1; cache hits priced at 0.025x base input (non-standard)",
         "capabilities": {
           "thinking": true,
           "vision": true
@@ -809,7 +762,6 @@
         "cache": 0.3,
         "cacheWrite": 3.75,
         "contextWindow": 200000,
-        "notes": "Claude Sonnet 4 - legacy, same pricing as Sonnet 4.5/4.6 per official pricing page",
         "deprecated": true,
         "capabilities": {
           "thinking": true,
@@ -823,7 +775,6 @@
         "cache": 1.5,
         "cacheWrite": 18.75,
         "contextWindow": 200000,
-        "notes": "Claude Opus 4 - legacy, same pricing as Opus 4.1 per official pricing page",
         "deprecated": true,
         "capabilities": {
           "thinking": true,
@@ -836,7 +787,6 @@
         "output": 0.5,
         "cache": 0.01,
         "cacheWrite": 0.125,
-        "notes": "Claude Haiku 5.5 - entry-level; tiered pricing above 100k context tokens (input $0.50/output $2.50/cache $0.05 per official pricing page)",
         "capabilities": {
           "vision": true,
           "thinking": true
@@ -866,7 +816,6 @@
         "output": 10,
         "cache": 0.1,
         "cacheWrite": 2.5,
-        "notes": "Claude Sonnet 5.5",
         "capabilities": {
           "thinking": true,
           "vision": true
@@ -888,7 +837,6 @@
         "cache": 0.2,
         "cacheWrite": 5,
         "contextWindow": 1000000,
-        "notes": "Claude Opus 5.5 - new flagship, supersedes Opus 5",
         "capabilities": {
           "thinking": true,
           "vision": true
@@ -909,7 +857,6 @@
         "cache": 0.25,
         "cacheWrite": 12.5,
         "contextWindow": 1000000,
-        "notes": "Claude Mythos 5.1 - frontier tier, limited availability; cache hits priced at 0.025x base input (non-standard). No longer listed on official pricing page as of 2026-10-26 (only Fable 5.1, identical pricing, remains)",
         "capabilities": {
           "thinking": true,
           "vision": true
@@ -923,7 +870,6 @@
         "cache": 0.25,
         "cacheWrite": 12.5,
         "contextWindow": 1000000,
-        "notes": "Claude Fable 5.1 - cache hits priced at 0.025x base input (non-standard; all other Claude models use 0.1x)",
         "capabilities": {
           "thinking": true,
           "vision": true
@@ -944,7 +890,6 @@
         "cache": 0.5,
         "cacheWrite": 6.25,
         "contextWindow": 1000000,
-        "notes": "Claude Opus 5 - new flagship, supersedes Opus 4.8",
         "capabilities": {
           "thinking": true,
           "vision": true
@@ -965,7 +910,6 @@
         "cache": 1,
         "cacheWrite": 12.5,
         "contextWindow": 1000000,
-        "notes": "Claude Fable 5 - most capable model",
         "capabilities": {
           "thinking": true,
           "vision": true
@@ -986,7 +930,6 @@
         "cache": 1,
         "cacheWrite": 12.5,
         "contextWindow": 1000000,
-        "notes": "Claude Mythos 5 - frontier tier, limited availability (glasswing). No longer listed on official pricing page as of 2026-10-26 (only Fable 5, identical pricing, remains)",
         "capabilities": {
           "thinking": true,
           "vision": true
@@ -1000,7 +943,6 @@
         "cache": 0.5,
         "cacheWrite": 6.25,
         "contextWindow": 1000000,
-        "notes": "Claude Opus 4.8 - flagship model",
         "capabilities": {
           "thinking": true,
           "vision": true
@@ -1021,7 +963,6 @@
         "cache": 0.5,
         "cacheWrite": 6.25,
         "contextWindow": 1000000,
-        "notes": "Claude Opus 4.7",
         "capabilities": {
           "thinking": true,
           "vision": true
@@ -1042,7 +983,6 @@
         "cache": 0.5,
         "cacheWrite": 6.25,
         "contextWindow": 1000000,
-        "notes": "Claude Opus 4.6 - full 1M context at standard pricing (no long-context surcharge per official pricing)",
         "capabilities": {
           "thinking": true,
           "vision": true
@@ -1063,7 +1003,6 @@
         "cache": 0.5,
         "cacheWrite": 6.25,
         "contextWindow": 1000000,
-        "notes": "Claude Opus 4.5",
         "capabilities": {
           "thinking": true,
           "vision": true
@@ -1084,7 +1023,6 @@
         "cache": 0.2,
         "cacheWrite": 2.5,
         "contextWindow": 1000000,
-        "notes": "Claude Sonnet 5. $2/$10 input/output is now the standard price permanently (planned 2026-09-01 increase to $3/$15 cancelled per official pricing page)",
         "capabilities": {
           "thinking": true,
           "vision": true
@@ -1105,7 +1043,6 @@
         "cache": 0.3,
         "cacheWrite": 3.75,
         "contextWindow": 1000000,
-        "notes": "Claude Sonnet 4.6 - balanced speed and intelligence",
         "capabilities": {
           "thinking": true,
           "vision": true
@@ -1126,7 +1063,6 @@
         "cache": 0.3,
         "cacheWrite": 3.75,
         "contextWindow": 200000,
-        "notes": "Sonnet 4.5 - long-context (>200k) tier no longer shown on official pricing page as of 2026-09-21; flat rate now",
         "capabilities": {
           "thinking": true,
           "vision": true
@@ -1147,7 +1083,6 @@
         "cache": 0.1,
         "cacheWrite": 1.25,
         "contextWindow": 200000,
-        "notes": "Claude Haiku 4.5 - entry-level",
         "capabilities": {
           "vision": true
         },
@@ -1167,7 +1102,6 @@
         "cache": 1.5,
         "cacheWrite": 18.75,
         "contextWindow": 200000,
-        "notes": "Legacy Opus model",
         "deprecated": true,
         "capabilities": {
           "thinking": true,
@@ -1181,7 +1115,6 @@
         "cache": 0.3,
         "cacheWrite": 3.75,
         "contextWindow": 200000,
-        "notes": "Not present on official pricing; retained deprecated for backward compatibility",
         "deprecated": true,
         "capabilities": {
           "vision": true
@@ -1197,7 +1130,6 @@
         "input": 0,
         "output": 0,
         "contextWindow": 1000000,
-        "notes": "Claude Fable 5.2 - most capable model",
         "capabilities": {
           "thinking": true,
           "vision": true
@@ -1208,7 +1140,6 @@
         "input": 0,
         "output": 0,
         "contextWindow": 1000000,
-        "notes": "Claude Haiku 5.5 - entry-level",
         "capabilities": {
           "vision": true,
           "thinking": true
@@ -1219,7 +1150,6 @@
         "input": 0,
         "output": 0,
         "contextWindow": 1000000,
-        "notes": "Claude Sonnet 5.5",
         "capabilities": {
           "thinking": true,
           "vision": true
@@ -1230,7 +1160,6 @@
         "input": 0,
         "output": 0,
         "contextWindow": 1000000,
-        "notes": "Claude Opus 5.5 - new flagship",
         "capabilities": {
           "thinking": true,
           "vision": true
@@ -1241,7 +1170,6 @@
         "input": 0,
         "output": 0,
         "contextWindow": 1000000,
-        "notes": "Claude Fable 5.1",
         "capabilities": {
           "thinking": true,
           "vision": true
@@ -1252,7 +1180,6 @@
         "input": 0,
         "output": 0,
         "contextWindow": 1000000,
-        "notes": "Claude Opus 5 - new flagship",
         "capabilities": {
           "thinking": true,
           "vision": true
@@ -1263,7 +1190,6 @@
         "input": 0,
         "output": 0,
         "contextWindow": 1000000,
-        "notes": "Claude Fable 5 - most capable model",
         "capabilities": {
           "thinking": true,
           "vision": true
@@ -1274,7 +1200,6 @@
         "input": 0,
         "output": 0,
         "contextWindow": 1000000,
-        "notes": "Claude Opus 4.8 - flagship model",
         "capabilities": {
           "thinking": true,
           "vision": true
@@ -1285,7 +1210,6 @@
         "input": 0,
         "output": 0,
         "contextWindow": 1000000,
-        "notes": "Claude Sonnet 5",
         "capabilities": {
           "thinking": true,
           "vision": true
@@ -1296,7 +1220,6 @@
         "input": 0,
         "output": 0,
         "contextWindow": 1000000,
-        "notes": "Claude Sonnet 4.6 - balanced speed and intelligence",
         "capabilities": {
           "thinking": true,
           "vision": true
@@ -1307,7 +1230,6 @@
         "input": 0,
         "output": 0,
         "contextWindow": 200000,
-        "notes": "Claude Sonnet 4.5",
         "capabilities": {
           "thinking": true,
           "vision": true
@@ -1318,7 +1240,6 @@
         "input": 0,
         "output": 0,
         "contextWindow": 200000,
-        "notes": "Claude Haiku 4.5 - entry-level",
         "capabilities": {
           "vision": true
         }
@@ -1332,7 +1253,6 @@
         "id": "gpt-5.5",
         "input": 0,
         "output": 0,
-        "notes": "GPT-5.5 - frontier model for complex coding and research (ChatGPT Plus/Pro)",
         "capabilities": {
           "vision": true
         }
@@ -1341,7 +1261,6 @@
         "id": "gpt-5.4",
         "input": 0,
         "output": 0,
-        "notes": "GPT-5.4 - strong model for everyday coding (ChatGPT Plus/Pro)",
         "capabilities": {
           "vision": true
         }
@@ -1350,7 +1269,6 @@
         "id": "gpt-5.4-mini",
         "input": 0,
         "output": 0,
-        "notes": "GPT-5.4-Mini - fast model for simpler coding tasks (ChatGPT Plus/Pro)",
         "capabilities": {
           "vision": true
         }
@@ -1364,7 +1282,6 @@
         "id": "gemini-embedding-001",
         "input": 0.15,
         "output": 0,
-        "notes": "Gemini Embedding (gemini-embedding-001) - text embedding model, listed alongside gemini-embedding-2 on official pricing page; context window not published",
         "capabilities": {
           "embedding": true
         }
@@ -1373,35 +1290,30 @@
         "id": "gemini-4-neon",
         "input": 3,
         "output": 15,
-        "cache": 0.15,
-        "notes": "Gemini 4 Neon - new model on official pricing page (aistudio.google.com/docs/pricing), above gemini-4-carbon/gemini-4-argon; context window not stated on official page"
+        "cache": 0.15
       },
       {
         "id": "gemini-4-hydrogen",
         "input": 1.5,
         "output": 7.5,
         "cache": 0.075,
-        "contextWindow": 1000000,
-        "notes": "Gemini 4 Hydrogen - new model on official pricing page (aistudio.google.com/docs/pricing), unified 1M-token context window, free tier available; contributor/invite-only preview tier priced at $0.75/$3.75/$0.0375"
+        "contextWindow": 1000000
       },
       {
         "id": "gemini-4-carbon",
         "input": 2,
         "output": 10,
-        "cache": 0.1,
-        "notes": "Gemini 4 Carbon - new model on official pricing page (aistudio.google.com/docs/pricing), same price tier as gemini-4-argon; intro pricing through 2026-11-30, rises to $4/$20/$0.20 on 2026-12-01 per official page; implicit caching only, no free tier; context window not stated on official page"
+        "cache": 0.1
       },
       {
         "id": "gemini-omni-1.2-flash",
         "input": 1.5,
-        "output": 9,
-        "notes": "Gemini Omni 1.2 Flash - next-gen video generation/editing model, GA; input covers text/image/video; text output rate shown, video output billed separately at $12/1M (5,792 tokens/sec of 720p); supersedes gemini-omni-1.1-flash (auto-routed here since 2026-12-03); context window not published"
+        "output": 9
       },
       {
         "id": "gemini-embedding-2",
         "input": 0.2,
         "output": 0,
-        "notes": "Gemini Embedding 2 - first multimodal embedding model; text rate shown (image $0.45, audio $6.50, video $12.00 per 1M also listed); context window not published",
         "capabilities": {
           "embedding": true
         }
@@ -1410,7 +1322,6 @@
         "id": "gemini-omni-1.1-flash",
         "input": 1.5,
         "output": 9,
-        "notes": "Gemini Omni Flash - GA on paid tier; input covers text/image/video/audio; video output billed separately at $17.50; no caching price listed; context window not published on official page",
         "deprecated": true
       },
       {
@@ -1418,44 +1329,38 @@
         "input": 2,
         "output": 10,
         "cache": 0.1,
-        "contextWindow": 1048576,
-        "notes": "Gemini 4 Argon - new flagship reasoning model, GA 2026-10-13. Intro pricing through 2026-11-30, rises to $4/$20/$0.20 on 2026-12-01 per official pricing page. Not on Free tier."
+        "contextWindow": 1048576
       },
       {
         "id": "gemini-3.7-flash",
         "input": 0.75,
         "output": 3.75,
         "cache": 0.075,
-        "notes": "Gemini 3.7 Flash - high-speed everyday coding/agentic model; intro price through 2026-12-31, rises to $1.50/$7.50/$0.15 on 2027-01-01; context window not verified",
         "deprecated": true
       },
       {
         "id": "gemini-3.8-flash",
         "input": 0.75,
         "output": 3.75,
-        "cache": 0.075,
-        "notes": "Gemini 3.8 Flash - most intelligent Flash model (long-horizon engineering, autonomous agents); intro price through 2026-12-31, rises to $1.50/$7.50/$0.15 on 2027-01-01; context window not verified"
+        "cache": 0.075
       },
       {
         "id": "gemini-3.5-flash-lite",
         "input": 0.3,
         "output": 2.5,
-        "cache": 0.03,
-        "notes": "Gemini 3.5 Flash-Lite - new GA cost-efficient model; context window not verified"
+        "cache": 0.03
       },
       {
         "id": "gemini-3.6-flash",
         "input": 0.75,
         "output": 3.75,
-        "cache": 0.075,
-        "notes": "Gemini 3.6 Flash - now previous-generation (superseded by 3.7/3.8 Flash); intro price through 2026-12-31, rises to $1.50/$7.50/$0.15 on 2027-01-01 (output includes thinking); context window not verified"
+        "cache": 0.075
       },
       {
         "id": "gemini-3.5-flash",
         "input": 1.5,
         "output": 9,
         "cache": 0.15,
-        "notes": "Gemini 3.5 Flash - no longer listed on official ai.google.dev/pricing as of 2026-10-12; superseded by 3.6/3.7/3.8 Flash family (all at $0.75/$3.75)",
         "deprecated": true
       },
       {
@@ -1464,7 +1369,6 @@
         "output": 12,
         "cache": 0.2,
         "contextWindow": 2000000,
-        "notes": "Preview of Gemini 3.1 Pro",
         "pricingTiers": [
           {
             "metric": "context_tokens",
@@ -1479,16 +1383,14 @@
         "id": "gemini-3.1-flash-lite",
         "input": 0.25,
         "output": 1.5,
-        "cache": 0.025,
-        "notes": "Gemini 3.1 Flash Lite; context window not verified"
+        "cache": 0.025
       },
       {
         "id": "gemini-3-flash-preview",
         "input": 0.5,
         "output": 3,
         "cache": 0.05,
-        "contextWindow": 2000000,
-        "notes": "Preview of Gemini 3 Flash"
+        "contextWindow": 2000000
       },
       {
         "id": "gemini-2.5-pro",
@@ -1496,7 +1398,6 @@
         "output": 10,
         "cache": 0.125,
         "contextWindow": 2000000,
-        "notes": "Gemini 2.5 Pro",
         "pricingTiers": [
           {
             "metric": "context_tokens",
@@ -1514,7 +1415,6 @@
         "output": 2.5,
         "cache": 0.03,
         "contextWindow": 2000000,
-        "notes": "Fast inference version of Gemini 2.5",
         "deprecated": true
       },
       {
@@ -1522,8 +1422,7 @@
         "input": 0.1,
         "output": 0.4,
         "cache": 0.01,
-        "contextWindow": 2000000,
-        "notes": "Lightweight version of Gemini 2.5 Flash"
+        "contextWindow": 2000000
       },
       {
         "id": "gemini-3-pro-preview",
@@ -1531,7 +1430,6 @@
         "output": 12,
         "cache": 0.2,
         "contextWindow": 2000000,
-        "notes": "Not GA; superseded by gemini-3.1-pro-preview",
         "deprecated": true,
         "pricingTiers": [
           {
@@ -1548,7 +1446,6 @@
         "input": 0.1,
         "output": 0.4,
         "contextWindow": 2000000,
-        "notes": "Gemini 2.0 Flash - shut down 2026-06-01",
         "deprecated": true
       },
       {
@@ -1556,7 +1453,6 @@
         "input": 0.075,
         "output": 0.3,
         "contextWindow": 2000000,
-        "notes": "Gemini 2.0 Flash Lite - shut down 2026-06-01",
         "deprecated": true
       }
     ]
@@ -1569,22 +1465,19 @@
         "input": 0.7,
         "output": 2.1,
         "cache": 0.07,
-        "contextWindow": 1000000,
-        "notes": "Mistral Large 4 - public preview (2026-10-06), open-weight MoE successor to Large 3; mistral-large-latest still resolves to Large 3"
+        "contextWindow": 1000000
       },
       {
         "id": "zai-glm-5-3-flash",
         "input": 0.15,
         "output": 0.5,
         "cache": 0.03,
-        "contextWindow": 1000000,
-        "notes": "GLM 5.3 Flash - third-party Z.ai model hosted on Mistral's platform, agentic/visual coding"
+        "contextWindow": 1000000
       },
       {
         "id": "codestral-embed",
         "input": 0.15,
         "output": 0,
-        "notes": "Codestral Embed - code-specialized embedding model",
         "capabilities": {
           "embedding": true
         }
@@ -1593,14 +1486,12 @@
         "id": "zai-glm-5-3",
         "input": 1.4,
         "output": 4.4,
-        "notes": "GLM 5.3 - third-party model served on Mistral's platform, listed alongside GLM 5.2; cache price not published",
         "cache": 0.14
       },
       {
         "id": "mistral-embed",
         "input": 0.1,
         "output": 0,
-        "notes": "Mistral Embed - semantic embedding model",
         "capabilities": {
           "embedding": true
         }
@@ -1608,89 +1499,76 @@
       {
         "id": "ministral-14b-latest",
         "input": 0.2,
-        "output": 0.2,
-        "notes": "Ministral 3 (14B) - edge-optimized lightweight model"
+        "output": 0.2
       },
       {
         "id": "ministral-8b-latest",
         "input": 0.15,
-        "output": 0.15,
-        "notes": "Ministral 3 (8B) - edge-optimized lightweight model"
+        "output": 0.15
       },
       {
         "id": "ministral-3b-latest",
         "input": 0.1,
-        "output": 0.1,
-        "notes": "Ministral 3 (3B) - edge-optimized lightweight model"
+        "output": 0.1
       },
       {
         "id": "zai-glm-5-2",
         "input": 1.4,
         "output": 4.4,
         "cache": 0.14,
-        "notes": "GLM 5.2 - third-party model served on Mistral's platform, specializing in long-context agentic workflows and coding",
         "deprecated": true
       },
       {
         "id": "magistral-small-latest",
         "input": 0.5,
         "output": 1.5,
-        "notes": "Magistral Small reasoning model",
         "deprecated": true
       },
       {
         "id": "devstral-small-latest",
         "input": 0.1,
         "output": 0.3,
-        "notes": "Devstral Small 2 - lightweight coding agent model",
         "deprecated": true
       },
       {
         "id": "devstral-medium-latest",
         "input": 0.4,
         "output": 2,
-        "notes": "Devstral 2 - open-weights agentic coding model",
         "deprecated": true
       },
       {
         "id": "mistral-large-latest",
         "input": 0.5,
         "output": 1.5,
-        "notes": "Mistral Large 3 (now cheaper than Medium); context window not verified",
         "deprecated": true
       },
       {
         "id": "mistral-medium-latest",
         "input": 1.5,
         "output": 7.5,
-        "notes": "Mistral Medium 3.5; context window not verified",
         "deprecated": true
       },
       {
         "id": "mistral-small-latest",
         "input": 0.15,
-        "output": 0.6,
-        "notes": "Mistral Small 4; context window not verified"
+        "output": 0.6
       },
       {
         "id": "magistral-medium-latest",
         "input": 2,
         "output": 5,
-        "notes": "Magistral Medium reasoning model",
         "deprecated": true
       },
       {
         "id": "codestral-latest",
         "input": 0.3,
-        "output": 0.9,
-        "notes": "Codestral code-specialized model (latest)"
+        "output": 0.9
       },
       {
         "id": "open-mixtral-8x7b",
         "input": 0.7,
         "output": 0.7,
         "contextWindow": 32000,
-        "notes": "Mixtral 8x7B mixture-of-experts",
         "deprecated": true
       },
       {
@@ -1698,7 +1576,6 @@
         "input": 0.1,
         "output": 0.3,
         "contextWindow": 128000,
-        "notes": "Superseded by mistral-small-latest",
         "deprecated": true
       },
       {
@@ -1706,7 +1583,6 @@
         "input": 0.4,
         "output": 2,
         "contextWindow": 128000,
-        "notes": "Superseded by mistral-medium-latest",
         "deprecated": true
       },
       {
@@ -1714,7 +1590,6 @@
         "input": 2,
         "output": 6,
         "contextWindow": 128000,
-        "notes": "Superseded by mistral-large-latest",
         "deprecated": true
       },
       {
@@ -1722,7 +1597,6 @@
         "input": 0.3,
         "output": 0.9,
         "contextWindow": 256000,
-        "notes": "Superseded by codestral-latest",
         "deprecated": true
       },
       {
@@ -1730,7 +1604,6 @@
         "input": 0.7,
         "output": 0.7,
         "contextWindow": 32000,
-        "notes": "Use open-mixtral-8x7b instead",
         "deprecated": true
       }
     ]
@@ -1743,34 +1616,29 @@
         "input": 3,
         "output": 15,
         "contextWindow": 128000,
-        "notes": "Command R+ (April 2024) - legacy, superseded by command-r-plus-08-2024",
         "deprecated": true
       },
       {
         "id": "aya-expanse-8b",
         "input": 0.5,
-        "output": 1.5,
-        "notes": "Aya Expanse 8B - Cohere's multilingual research model"
+        "output": 1.5
       },
       {
         "id": "aya-expanse-32b",
         "input": 0.5,
-        "output": 1.5,
-        "notes": "Aya Expanse 32B - Cohere's multilingual research model"
+        "output": 1.5
       },
       {
         "id": "command-r-plus-08-2024",
         "input": 2.5,
         "output": 10,
-        "contextWindow": 128000,
-        "notes": "Command R+ (August 2024), live per official docs; catalog's separate 'command-r-plus-0824' id is kept deprecated for back-compat"
+        "contextWindow": 128000
       },
       {
         "id": "command-r7b-12-2024",
         "input": 0.0375,
         "output": 0.15,
         "contextWindow": 128000,
-        "notes": "Edge-optimized 7B model, Dec 2024 release. No longer in cohere.com/pricing's per-token table as of 2026-10-26 (page now split between legacy per-token list and Model Vault instance pricing)",
         "deprecated": true
       },
       {
@@ -1778,7 +1646,6 @@
         "input": 0.15,
         "output": 0.6,
         "contextWindow": 128000,
-        "notes": "Command R (Aug 2024 release); the bare 'command-r' id is a deprecated alias for the older command-r-03-2024. No longer in cohere.com/pricing's per-token table as of 2026-10-26 (page now split between legacy per-token list and Model Vault instance pricing)",
         "deprecated": true
       },
       {
@@ -1786,7 +1653,6 @@
         "input": 0,
         "output": 0,
         "contextWindow": 256000,
-        "notes": "Served as command-a-plus-05-2026; was free via API and open-weights (Apache 2.0) per official pricing page as of 2026-09. Absent entirely from cohere.com/pricing as of 2026-10-26 (page restructured around Model Vault instance pricing + a legacy per-token list); $0 price unconfirmed on current page, kept as last-known value",
         "deprecated": true
       },
       {
@@ -1794,7 +1660,6 @@
         "input": 0.5,
         "output": 1.5,
         "contextWindow": 128000,
-        "notes": "Deprecated bare alias for command-r-03-2024 (retired Sept 15, 2025 per official docs); use command-r-08-2024 for the current live Command R",
         "deprecated": true
       },
       {
@@ -1802,7 +1667,6 @@
         "input": 0.0375,
         "output": 0.15,
         "contextWindow": 128000,
-        "notes": "Edge-optimized 7B model; price not published on a live page. No longer in cohere.com/pricing's per-token table as of 2026-10-26 (page now split between legacy per-token list and Model Vault instance pricing)",
         "deprecated": true
       },
       {
@@ -1810,7 +1674,6 @@
         "input": 2.5,
         "output": 10,
         "contextWindow": 128000,
-        "notes": "Command R+ (August 2024) - legacy",
         "deprecated": true
       },
       {
@@ -1818,7 +1681,6 @@
         "input": 0.5,
         "output": 1.5,
         "contextWindow": 128000,
-        "notes": "Command R (March 2024) - legacy",
         "deprecated": true
       },
       {
@@ -1826,7 +1688,6 @@
         "input": 1,
         "output": 2,
         "contextWindow": 4000,
-        "notes": "Original Command model - legacy",
         "deprecated": true
       },
       {
@@ -1834,7 +1695,6 @@
         "input": 0.3,
         "output": 0.6,
         "contextWindow": 4000,
-        "notes": "Lightweight Command variant - legacy",
         "deprecated": true
       }
     ]
@@ -1847,7 +1707,6 @@
         "input": 2,
         "output": 6,
         "cache": 0.5,
-        "notes": "Grok 4.7 - new flagship above grok-4.6; base rate <200k context tokens; contextWindow not verified",
         "pricingTiers": [
           {
             "metric": "context_tokens",
@@ -1864,7 +1723,6 @@
         "input": 1.25,
         "output": 2.5,
         "cache": 0.2,
-        "notes": "Grok 4.20 (0309) multi-agent variant; base rate <200k context tokens",
         "pricingTiers": [
           {
             "metric": "context_tokens",
@@ -1881,7 +1739,6 @@
         "input": 1.25,
         "output": 2.5,
         "cache": 0.2,
-        "notes": "Grok 4.20 (0309) non-reasoning variant; base rate <200k context tokens",
         "pricingTiers": [
           {
             "metric": "context_tokens",
@@ -1898,7 +1755,6 @@
         "input": 1.25,
         "output": 2.5,
         "cache": 0.2,
-        "notes": "Grok 4.20 (0309) reasoning variant; base rate <200k context tokens",
         "pricingTiers": [
           {
             "metric": "context_tokens",
@@ -1915,7 +1771,6 @@
         "input": 2,
         "output": 6,
         "cache": 0.5,
-        "notes": "Grok 4.6 - new flagship above grok-4.5; base rate <200k context tokens; contextWindow not verified",
         "pricingTiers": [
           {
             "metric": "context_tokens",
@@ -1932,7 +1787,6 @@
         "input": 2,
         "output": 6,
         "contextWindow": 500000,
-        "notes": "Grok 4.5 - new flagship, leads on coding/agentic tool calling, configurable reasoning; rate doubles at/above 200k context tokens per official pricing",
         "cache": 0.3,
         "pricingTiers": [
           {
@@ -1950,7 +1804,6 @@
         "output": 2.5,
         "cache": 0.2,
         "contextWindow": 1000000,
-        "notes": "Grok 4.3 - base rate <200k context tokens; now has a long-context tier per official xAI pricing page as of 2026-10-12 (previously flat-rate)",
         "pricingTiers": [
           {
             "metric": "context_tokens",
@@ -1967,7 +1820,6 @@
         "output": 2,
         "cache": 0.2,
         "contextWindow": 256000,
-        "notes": "Grok Build 0.1 - coding model; base rate <200k context tokens; now has a long-context tier per official xAI pricing page as of 2026-10-12 (previously flat-rate)",
         "pricingTiers": [
           {
             "metric": "context_tokens",
@@ -1984,7 +1836,6 @@
         "output": 0.5,
         "cache": 0.1,
         "contextWindow": 2000000,
-        "notes": "Retired",
         "deprecated": true
       },
       {
@@ -1993,7 +1844,6 @@
         "output": 15,
         "cache": 0.75,
         "contextWindow": 256000,
-        "notes": "Retired",
         "deprecated": true
       },
       {
@@ -2002,7 +1852,6 @@
         "output": 10,
         "cache": 0.5,
         "contextWindow": 128000,
-        "notes": "Retired",
         "deprecated": true
       },
       {
@@ -2010,7 +1859,6 @@
         "input": 0.1,
         "output": 0.3,
         "contextWindow": 128000,
-        "notes": "Retired",
         "deprecated": true
       }
     ]
@@ -2022,78 +1870,67 @@
         "id": "llama3.3",
         "input": 0,
         "output": 0,
-        "contextWindow": 128000,
-        "notes": "Meta Llama 3.3"
+        "contextWindow": 128000
       },
       {
         "id": "qwen3",
         "input": 0,
         "output": 0,
-        "contextWindow": 128000,
-        "notes": "Alibaba Qwen 3"
+        "contextWindow": 128000
       },
       {
         "id": "llama3.2",
         "input": 0,
         "output": 0,
-        "contextWindow": 128000,
-        "notes": "Meta Llama 3.2"
+        "contextWindow": 128000
       },
       {
         "id": "llama3.1",
         "input": 0,
         "output": 0,
-        "contextWindow": 128000,
-        "notes": "Meta Llama 3.1"
+        "contextWindow": 128000
       },
       {
         "id": "mistral",
         "input": 0,
         "output": 0,
-        "contextWindow": 128000,
-        "notes": "Mistral 7B"
+        "contextWindow": 128000
       },
       {
         "id": "mixtral",
         "input": 0,
         "output": 0,
-        "contextWindow": 32000,
-        "notes": "Mixtral 8x7B"
+        "contextWindow": 32000
       },
       {
         "id": "gemma2",
         "input": 0,
         "output": 0,
-        "contextWindow": 8192,
-        "notes": "Google Gemma 2"
+        "contextWindow": 8192
       },
       {
         "id": "qwen2.5",
         "input": 0,
         "output": 0,
-        "contextWindow": 128000,
-        "notes": "Alibaba Qwen 2.5"
+        "contextWindow": 128000
       },
       {
         "id": "deepseek-r1",
         "input": 0,
         "output": 0,
-        "contextWindow": 128000,
-        "notes": "DeepSeek R1"
+        "contextWindow": 128000
       },
       {
         "id": "phi4",
         "input": 0,
         "output": 0,
-        "contextWindow": 16384,
-        "notes": "Microsoft Phi-4"
+        "contextWindow": 16384
       },
       {
         "id": "nomic-embed-text",
         "input": 0,
         "output": 0,
         "contextWindow": 8192,
-        "notes": "Nomic embedding model for Ollama",
         "capabilities": {
           "embedding": true
         }
@@ -2103,7 +1940,6 @@
         "input": 0,
         "output": 0,
         "contextWindow": 512,
-        "notes": "MixedBread large embedding model for Ollama",
         "capabilities": {
           "embedding": true
         }
@@ -2113,7 +1949,6 @@
         "input": 0,
         "output": 0,
         "contextWindow": 512,
-        "notes": "all-MiniLM embedding model for Ollama",
         "capabilities": {
           "embedding": true
         }
@@ -2129,7 +1964,6 @@
         "output": 1.2,
         "cache": 0.003,
         "contextWindow": 1000000,
-        "notes": "DeepSeek Flash (DeepSeek-V4.1-Flash) - off-peak rate shown; peak hours (01:00-04:00, 06:00-10:00 UTC) bill at 2x. Replaces deepseek-v4-flash and deepseek-v4-flash-vision-exp, now retired and auto-routed here at this price",
         "capabilities": {
           "vision": true
         },
@@ -2148,7 +1982,6 @@
         "output": 0.6,
         "cache": 0.003,
         "contextWindow": 1000000,
-        "notes": "DeepSeek V4 Flash Vision (experimental) - off-peak rate shown, same as deepseek-v4-flash; peak hours (01:00-04:00, 06:00-10:00 UTC) bill at 2x",
         "capabilities": {
           "vision": true
         },
@@ -2160,7 +1993,6 @@
         "output": 0.6,
         "cache": 0.003,
         "contextWindow": 1000000,
-        "notes": "DeepSeek V4 Flash - off-peak rate shown; peak hours (01:00-04:00, 06:00-10:00 UTC) bill at 2x",
         "deprecated": true
       },
       {
@@ -2169,7 +2001,6 @@
         "output": 3.96,
         "cache": 0.022,
         "contextWindow": 1000000,
-        "notes": "DeepSeek V4 Pro - off-peak rate shown; peak hours (01:00-04:00, 06:00-10:00 UTC) bill at 2x",
         "verified": {
           "at": "2026-11-27",
           "how": [
@@ -2185,7 +2016,6 @@
         "output": 0.28,
         "cache": 0.0028,
         "contextWindow": 1000000,
-        "notes": "Retires 2026-07-24; aliases deepseek-v4-flash non-thinking mode",
         "deprecated": true
       },
       {
@@ -2194,7 +2024,6 @@
         "output": 0.28,
         "cache": 0.0028,
         "contextWindow": 1000000,
-        "notes": "Retires 2026-07-24; aliases deepseek-v4-flash thinking mode",
         "deprecated": true
       }
     ]
@@ -2206,15 +2035,13 @@
         "id": "qwen/qwen3.8-27b",
         "input": 0.8,
         "output": 4,
-        "contextWindow": 131042,
-        "notes": "Qwen3.8 27B on Groq"
+        "contextWindow": 131042
       },
       {
         "id": "qwen/qwen3.6-27b",
         "input": 0.6,
         "output": 3,
         "contextWindow": 131072,
-        "notes": "Qwen3.6 27B on Groq - recommended replacement for llama-3.3-70b-versatile",
         "deprecated": true
       },
       {
@@ -2222,23 +2049,20 @@
         "input": 0.15,
         "output": 0.6,
         "cache": 0.075,
-        "contextWindow": 128000,
-        "notes": "GPT-OSS 120B on Groq"
+        "contextWindow": 128000
       },
       {
         "id": "openai/gpt-oss-20b",
         "input": 0.075,
         "output": 0.3,
         "cache": 0.0375,
-        "contextWindow": 128000,
-        "notes": "GPT-OSS 20B on Groq"
+        "contextWindow": 128000
       },
       {
         "id": "moonshotai/kimi-k2-instruct-0905",
         "input": 1,
         "output": 3,
         "cache": 0.5,
-        "notes": "Kimi K2 Instruct on Groq",
         "deprecated": true
       },
       {
@@ -2246,7 +2070,6 @@
         "input": 0.11,
         "output": 0.34,
         "contextWindow": 128000,
-        "notes": "Llama 4 Scout 17B on Groq",
         "deprecated": true
       },
       {
@@ -2254,7 +2077,6 @@
         "input": 0.29,
         "output": 0.59,
         "contextWindow": 131000,
-        "notes": "Qwen3 32B on Groq",
         "deprecated": true
       },
       {
@@ -2262,7 +2084,6 @@
         "input": 0.59,
         "output": 0.79,
         "contextWindow": 128000,
-        "notes": "Llama 3.3 70B on Groq",
         "deprecated": true
       },
       {
@@ -2270,7 +2091,6 @@
         "input": 0.05,
         "output": 0.08,
         "contextWindow": 128000,
-        "notes": "Llama 3.1 8B instant on Groq",
         "deprecated": true
       },
       {
@@ -2278,7 +2098,6 @@
         "input": 0.24,
         "output": 0.24,
         "contextWindow": 32768,
-        "notes": "Removed from Groq lineup",
         "deprecated": true
       },
       {
@@ -2286,7 +2105,6 @@
         "input": 0.2,
         "output": 0.2,
         "contextWindow": 8192,
-        "notes": "Removed from Groq lineup",
         "deprecated": true
       },
       {
@@ -2294,7 +2112,6 @@
         "input": 0.75,
         "output": 0.99,
         "contextWindow": 128000,
-        "notes": "Removed from Groq lineup",
         "deprecated": true
       }
     ]
@@ -2306,22 +2123,19 @@
         "id": "gpt-oss-120b",
         "input": 0.15,
         "output": 0.6,
-        "notes": "GPT-OSS 120B on Together (also served on Groq/Fireworks/Cerebras)",
         "contextWindow": 131072
       },
       {
         "id": "Qwen/Qwen3-235B-A22B-fp8-tput",
         "input": 0.2,
         "output": 0.6,
-        "contextWindow": 41000,
-        "notes": "Qwen3 235B MoE on Together"
+        "contextWindow": 41000
       },
       {
         "id": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
         "input": 1.04,
         "output": 1.04,
         "contextWindow": 131072,
-        "notes": "Llama 3.3 70B Instruct Turbo",
         "deprecated": true
       },
       {
@@ -2329,7 +2143,6 @@
         "input": 0.18,
         "output": 0.18,
         "contextWindow": 131072,
-        "notes": "Llama 3.1 8B Instruct Turbo",
         "deprecated": true
       },
       {
@@ -2337,7 +2150,6 @@
         "input": 3.5,
         "output": 3.5,
         "contextWindow": 130815,
-        "notes": "Llama 3.1 405B Instruct Turbo",
         "deprecated": true
       },
       {
@@ -2345,7 +2157,6 @@
         "input": 7,
         "output": 7,
         "contextWindow": 163840,
-        "notes": "No longer available on Together Serverless API",
         "deprecated": true
       },
       {
@@ -2513,15 +2324,13 @@
         "id": "sonar",
         "input": 0.25,
         "output": 2.5,
-        "contextWindow": 127000,
-        "notes": "Perplexity Sonar - repriced from $1/$1 after Sonar Chat Completions sunset (ended 2026-09-27); now served as perplexity/sonar via the Agent API. per-request search fees apply"
+        "contextWindow": 127000
       },
       {
         "id": "sonar-pro",
         "input": 3,
         "output": 15,
         "contextWindow": 200000,
-        "notes": "Perplexity Sonar Pro; per-request search fees apply. Retired: Sonar Chat Completions support ended 2026-09-27, not on Agent/Orchestrator API pricing pages",
         "deprecated": true
       },
       {
@@ -2529,7 +2338,6 @@
         "input": 2,
         "output": 8,
         "contextWindow": 127000,
-        "notes": "Perplexity Sonar Reasoning Pro; per-request search fees apply. Retired: Sonar Chat Completions support ended 2026-09-27, not on Agent/Orchestrator API pricing pages",
         "deprecated": true
       },
       {
@@ -2537,7 +2345,6 @@
         "input": 2,
         "output": 8,
         "contextWindow": 127000,
-        "notes": "Perplexity deep research; per-request citation/reasoning/search fees apply. Retired: Sonar Chat Completions support ended 2026-09-27, not on Agent/Orchestrator API pricing pages",
         "deprecated": true
       },
       {
@@ -2545,7 +2352,6 @@
         "input": 1,
         "output": 5,
         "contextWindow": 127000,
-        "notes": "Removed from Perplexity lineup",
         "deprecated": true
       }
     ]
@@ -2557,29 +2363,25 @@
         "id": "accounts/fireworks/models/deepseek-v4-pro",
         "input": 1.74,
         "output": 3.48,
-        "cache": 0.145,
-        "notes": "DeepSeek V4 Pro on Fireworks"
+        "cache": 0.145
       },
       {
         "id": "accounts/fireworks/models/kimi-k2-instruct-0905",
         "input": 0.95,
         "output": 4,
-        "cache": 0.16,
-        "notes": "Kimi K2.6 on Fireworks (verify exact slug against Fireworks model list)"
+        "cache": 0.16
       },
       {
         "id": "accounts/fireworks/models/gpt-oss-120b",
         "input": 0.15,
         "output": 0.6,
-        "cache": 0.015,
-        "notes": "GPT-OSS 120B on Fireworks"
+        "cache": 0.015
       },
       {
         "id": "accounts/fireworks/models/gpt-oss-20b",
         "input": 0.07,
         "output": 0.3,
-        "cache": 0.007,
-        "notes": "GPT-OSS 20B on Fireworks"
+        "cache": 0.007
       }
     ]
   },
@@ -2590,8 +2392,7 @@
         "id": "gpt-oss-120b",
         "input": 0.35,
         "output": 0.75,
-        "contextWindow": 131000,
-        "notes": "GPT-OSS 120B on Cerebras (~3000 tok/s)"
+        "contextWindow": 131000
       }
     ]
   },
@@ -2608,7 +2409,6 @@
         "output": 15,
         "cache": 2.5,
         "contextWindow": 128000,
-        "notes": "GPT-4o via Azure OpenAI",
         "capabilities": {
           "vision": true
         }
@@ -2618,7 +2418,6 @@
         "input": 0.165,
         "output": 0.66,
         "contextWindow": 128000,
-        "notes": "GPT-4o mini via Azure OpenAI",
         "capabilities": {
           "vision": true
         }
@@ -2628,7 +2427,6 @@
         "input": 10,
         "output": 30,
         "contextWindow": 128000,
-        "notes": "GPT-4 Turbo via Azure OpenAI",
         "capabilities": {
           "vision": true
         }
@@ -2645,7 +2443,6 @@
         "cache": 0.25,
         "cacheWrite": 12.5,
         "contextWindow": 1000000,
-        "notes": "Claude Fable 5.1 on AWS Bedrock (US East Ohio baseline tier), GA, new top-tier Claude model line",
         "capabilities": {
           "thinking": true,
           "vision": true
@@ -2658,7 +2455,6 @@
         "cache": 0.01,
         "cacheWrite": 0.125,
         "contextWindow": 1000000,
-        "notes": "Claude Haiku 5.5 on AWS Bedrock (US East Ohio baseline tier). Tiered pricing above 100k context tokens per official page",
         "capabilities": {
           "vision": true
         },
@@ -2679,7 +2475,6 @@
         "cache": 0.2,
         "cacheWrite": 5,
         "contextWindow": 1000000,
-        "notes": "Claude Opus 5.5 on AWS Bedrock (US East Ohio baseline tier; Geo/in-region pricing ~10% higher). 1-hour cache-write rate $8.00 not representable in this schema (5-minute rate shown).",
         "capabilities": {
           "thinking": true,
           "vision": true
@@ -2691,15 +2486,13 @@
         "output": 10,
         "cache": 0.1,
         "cacheWrite": 2.5,
-        "contextWindow": 1000000,
-        "notes": "Claude Sonnet 5.5 on AWS Bedrock (US East Ohio baseline tier; Geo/in-region pricing ~10% higher). 1-hour cache-write rate $4.00 not representable in this schema (5-minute rate shown). Also available via us./eu./au./global. cross-region inference-profile IDs."
+        "contextWindow": 1000000
       },
       {
         "id": "anthropic.claude-3-5-sonnet-20241022-v2:0",
         "input": 3,
         "output": 15,
         "contextWindow": 200000,
-        "notes": "Claude 3.5 Sonnet v2 on AWS Bedrock",
         "cache": 0.3,
         "cacheWrite": 3.75
       },
@@ -2708,7 +2501,6 @@
         "input": 0.25,
         "output": 1.25,
         "contextWindow": 200000,
-        "notes": "Claude 3 Haiku on AWS Bedrock",
         "deprecated": true
       },
       {
@@ -2716,7 +2508,6 @@
         "input": 2.65,
         "output": 3.5,
         "contextWindow": 8192,
-        "notes": "Llama 3 70B Instruct on AWS Bedrock",
         "deprecated": true
       }
     ]
@@ -2728,43 +2519,37 @@
         "id": "google/gemini-4-argon-preview",
         "input": 2,
         "output": 10,
-        "cache": 0.1,
-        "notes": "Gemini 4 Argon Preview via Vertex AI. Preview through 2026-11-30, global pricing (non-global 2.20/11.00); GA 'Gemini 4 Argon' from 2026-12-01 at 4.00/20.00/cache 0.20."
+        "cache": 0.1
       },
       {
         "id": "google/gemini-3.8-flash",
         "input": 0.75,
         "output": 3.75,
-        "cache": 0.075,
-        "notes": "Gemini 3.8 Flash via Vertex AI. Launch promo through 2026-12-31, global pricing (non-global 0.825/4.125); standard price from 2027-01-01 is 1.50/7.50."
+        "cache": 0.075
       },
       {
         "id": "google/gemini-3.1-flash-lite",
         "input": 0.25,
         "output": 1.5,
-        "cache": 0.025,
-        "notes": "Gemini 3.1 Flash Lite via Vertex AI, GA, global text/image/video pricing (audio input 0.50; non-global 0.275/1.65)."
+        "cache": 0.025
       },
       {
         "id": "google/gemini-3.5-flash-lite",
         "input": 0.3,
         "output": 2.5,
-        "cache": 0.03,
-        "notes": "Gemini 3.5 Flash Lite via Vertex AI, GA, global pricing (non-global 0.33/2.75)."
+        "cache": 0.03
       },
       {
         "id": "google/gemini-3.5-flash",
         "input": 1.5,
         "output": 9,
-        "cache": 0.15,
-        "notes": "Gemini 3.5 Flash via Vertex AI, GA, global pricing (non-global 1.65/9.90)."
+        "cache": 0.15
       },
       {
         "id": "google/gemini-3.1-pro-preview",
         "input": 2,
         "output": 12,
         "cache": 0.2,
-        "notes": "Gemini 3.1 Pro Preview via Vertex AI, global endpoint. >200k-token tier: input 4.00/output 18.00/cache 0.40.",
         "pricingTiers": [
           {
             "metric": "context_tokens",
@@ -2779,22 +2564,19 @@
         "id": "google/gemini-2.5-flash-lite",
         "input": 0.1,
         "output": 0.4,
-        "cache": 0.01,
-        "notes": "Gemini 2.5 Flash Lite via Vertex AI, GA. Audio input 0.30."
+        "cache": 0.01
       },
       {
         "id": "google/gemini-2.5-flash",
         "input": 0.3,
         "output": 2.5,
-        "cache": 0.03,
-        "notes": "Gemini 2.5 Flash via Vertex AI, GA. Audio input 1.00 (<=200k, drops to 0.30 above)."
+        "cache": 0.03
       },
       {
         "id": "google/gemini-2.5-pro",
         "input": 1.25,
         "output": 10,
         "cache": 0.125,
-        "notes": "Gemini 2.5 Pro via Vertex AI, GA. >200k-token tier: input 2.50/output 15.00/cache 0.25. No context-window figure on pricing page.",
         "pricingTiers": [
           {
             "metric": "context_tokens",
@@ -2810,7 +2592,6 @@
         "input": 0.15,
         "output": 0.6,
         "contextWindow": 1048576,
-        "notes": "Gemini 2.0 Flash via Vertex AI",
         "deprecated": true
       },
       {
@@ -2818,15 +2599,13 @@
         "input": 1.25,
         "output": 5,
         "contextWindow": 2097152,
-        "notes": "Gemini 1.5 Pro 002 via Vertex AI",
         "deprecated": true
       },
       {
         "id": "meta/llama-3.3-70b-instruct-maas",
         "input": 0.72,
         "output": 0.72,
-        "contextWindow": 128000,
-        "notes": "Llama 3.3 70B Instruct via Vertex AI Model as a Service"
+        "contextWindow": 128000
       }
     ]
   }

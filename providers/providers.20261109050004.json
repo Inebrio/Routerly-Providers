@@ -9,7 +9,7 @@
         "cache": 0.1,
         "cacheWrite": 2.5,
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -24,7 +24,7 @@
         "cache": 0.4,
         "cacheWrite": 10,
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -97,7 +97,7 @@
           }
         ],
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -135,7 +135,7 @@
           }
         ],
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -166,7 +166,7 @@
           }
         ],
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -180,7 +180,7 @@
         "output": 10,
         "cache": 0.125,
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -194,7 +194,7 @@
         "output": 30,
         "cache": 0.5,
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -266,7 +266,7 @@
           }
         ],
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -345,7 +345,7 @@
           }
         ],
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -376,7 +376,7 @@
           }
         ],
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -407,7 +407,7 @@
           }
         ],
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -437,7 +437,7 @@
           }
         ],
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -487,7 +487,7 @@
           }
         ],
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -527,7 +527,7 @@
           "json": true
         },
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -548,7 +548,7 @@
           "json": true
         },
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -582,7 +582,7 @@
           "json": true
         },
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -603,7 +603,7 @@
           "json": true
         },
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -624,7 +624,7 @@
           "json": true
         },
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -645,7 +645,7 @@
           "json": true
         },
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -666,7 +666,7 @@
           "json": true
         },
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -686,7 +686,7 @@
           "json": true
         },
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -706,7 +706,7 @@
           "json": true
         },
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -726,7 +726,7 @@
           "json": true
         },
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -746,7 +746,7 @@
           "json": true
         },
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -783,7 +783,7 @@
         "cache": 0.5,
         "contextWindow": 200000,
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -815,7 +815,7 @@
           "vision": false
         },
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -833,7 +833,7 @@
           "vision": false
         },
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -851,7 +851,7 @@
           "vision": false
         },
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
@@ -866,7 +866,7 @@
         "cache": 0.05,
         "cacheWrite": 1.25,
         "verified": {
-          "at": "2026-11-24",
+          "at": "2026-11-27",
           "how": [
             "call",
             "type",
