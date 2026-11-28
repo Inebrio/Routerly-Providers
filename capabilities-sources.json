@@ -3343,5 +3343,79 @@
         "checked": "2026-11-17"
       }
     }
+  },
+  "omniroute": {
+    "auto": {
+      "contextWindow": {
+        "unavailable": "no figure read from an official source",
+        "checked": "2026-11-28"
+      }
+    },
+    "auto/best-chat": {
+      "contextWindow": {
+        "unavailable": "no figure read from an official source",
+        "checked": "2026-11-28"
+      }
+    },
+    "auto/best-coding": {
+      "contextWindow": {
+        "unavailable": "no figure read from an official source",
+        "checked": "2026-11-28"
+      }
+    },
+    "auto/best-coding-fast": {
+      "contextWindow": {
+        "unavailable": "no figure read from an official source",
+        "checked": "2026-11-28"
+      }
+    },
+    "auto/best-fast": {
+      "contextWindow": {
+        "unavailable": "no figure read from an official source",
+        "checked": "2026-11-28"
+      }
+    },
+    "auto/best-reasoning": {
+      "contextWindow": {
+        "unavailable": "no figure read from an official source",
+        "checked": "2026-11-28"
+      }
+    },
+    "auto/coding": {
+      "contextWindow": {
+        "unavailable": "no figure read from an official source",
+        "checked": "2026-11-28"
+      }
+    },
+    "auto/fast": {
+      "contextWindow": {
+        "unavailable": "no figure read from an official source",
+        "checked": "2026-11-28"
+      }
+    },
+    "auto/pro-chat": {
+      "contextWindow": {
+        "unavailable": "no figure read from an official source",
+        "checked": "2026-11-28"
+      }
+    },
+    "auto/pro-coding": {
+      "contextWindow": {
+        "unavailable": "no figure read from an official source",
+        "checked": "2026-11-28"
+      }
+    },
+    "auto/pro-fast": {
+      "contextWindow": {
+        "unavailable": "no figure read from an official source",
+        "checked": "2026-11-28"
+      }
+    },
+    "auto/pro-reasoning": {
+      "contextWindow": {
+        "unavailable": "no figure read from an official source",
+        "checked": "2026-11-28"
+      }
+    }
   }
 }

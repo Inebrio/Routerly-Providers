@@ -12,7 +12,7 @@
         },
         "cacheWrite": 2.5,
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -30,7 +30,7 @@
         },
         "cacheWrite": 10,
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -83,7 +83,7 @@
           }
         ],
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -111,7 +111,7 @@
           }
         ],
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -139,7 +139,7 @@
           }
         ],
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -153,7 +153,7 @@
         "output": 10,
         "cache": 0.125,
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -167,7 +167,7 @@
         "output": 30,
         "cache": 0.5,
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -219,7 +219,7 @@
           }
         ],
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -273,7 +273,7 @@
           }
         ],
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -301,7 +301,7 @@
           }
         ],
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -329,7 +329,7 @@
           }
         ],
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -356,7 +356,7 @@
           }
         ],
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -397,7 +397,7 @@
           }
         ],
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -429,7 +429,7 @@
           "vision": true
         },
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -447,7 +447,7 @@
           "vision": true
         },
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -475,7 +475,7 @@
           "vision": true
         },
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -493,7 +493,7 @@
           "vision": true
         },
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -511,7 +511,7 @@
           "vision": true
         },
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -529,7 +529,7 @@
           "vision": true
         },
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -547,7 +547,7 @@
           "vision": true
         },
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -565,7 +565,7 @@
           "vision": true
         },
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -583,7 +583,7 @@
           "vision": true
         },
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -601,7 +601,7 @@
           "vision": true
         },
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -619,7 +619,7 @@
           "vision": true
         },
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -648,7 +648,7 @@
         "cache": 0.5,
         "contextWindow": 200000,
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -673,7 +673,7 @@
           "embedding": true
         },
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -690,7 +690,7 @@
           "embedding": true
         },
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -707,7 +707,7 @@
           "embedding": true
         },
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -722,7 +722,7 @@
         "cache": 0.05,
         "cacheWrite": 1.25,
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -747,7 +747,7 @@
           "vision": true
         },
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -802,7 +802,7 @@
         ],
         "contextWindow": 1000000,
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -822,7 +822,7 @@
         },
         "contextWindow": 1000000,
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -842,7 +842,7 @@
           "vision": true
         },
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -875,7 +875,7 @@
           "vision": true
         },
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -895,7 +895,7 @@
           "vision": true
         },
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -915,7 +915,7 @@
           "vision": true
         },
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -948,7 +948,7 @@
           "vision": true
         },
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -968,7 +968,7 @@
           "vision": true
         },
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -988,7 +988,7 @@
           "vision": true
         },
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -1008,7 +1008,7 @@
           "vision": true
         },
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -1028,7 +1028,7 @@
           "vision": true
         },
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -1048,7 +1048,7 @@
           "vision": true
         },
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -1068,7 +1068,7 @@
           "vision": true
         },
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -1087,7 +1087,7 @@
           "vision": true
         },
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -1968,7 +1968,7 @@
           "vision": true
         },
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",
@@ -2002,7 +2002,7 @@
         "cache": 0.022,
         "contextWindow": 1000000,
         "verified": {
-          "at": "2026-11-27",
+          "at": "2026-11-28",
           "how": [
             "call",
             "type",

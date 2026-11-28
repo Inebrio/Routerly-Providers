@@ -12,18 +12,18 @@
   "providers": {
     "providers/providers.20261109050004.json": {
       "createdAt": "2026-11-09T05:00:03Z",
-      "updatedAt": "2026-11-27T13:53:28Z",
+      "updatedAt": "2026-11-28T05:00:01Z",
       "checksum": {
-        "sha256": "4148e185c1da42ab06b15af4c30e94b85401d71307ceb36185c781d2aed6e983"
+        "sha256": "8522b662aa1a995b5ce39deba38762d26ca5f4a179b28e3e21d57ddc74221cf0"
       },
       "range": ">=0.6.1-0",
       "forVersion": "0.6.1"
     },
     "providers/providers.20261127050002.json": {
       "createdAt": "2026-11-27T05:00:01Z",
-      "updatedAt": "2026-11-27T13:53:28Z",
+      "updatedAt": "2026-11-28T05:00:01Z",
       "checksum": {
-        "sha256": "ab0e6cf48660cdf272c0279e8354786359d9883f123e920b0cf553c600d7c3ab"
+        "sha256": "16f0424978800fe9e6aac482e8a3322c67635ffc45c8280f5b85cd6707c03e65"
       },
       "range": ">=0.3.0",
       "tags": "v0.3.0..v0.6.0"
